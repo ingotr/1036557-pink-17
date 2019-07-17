@@ -1,0 +1,115 @@
+/*
+  Содержание
+*/
+
+
+
+/*
+  Содержание
+*/
+
+
+/*
+  $Раздел хедера
+*/
+
+.page-header {
+  background-image: url("../img/bg-back-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.page-header__top-menu {
+  background-color: #283645;
+}
+
+/*
+  $Раздел навигации
+*/
+
+.main-nav__wrapper {
+  background-color: #283645;
+}
+
+.site-list__item {
+  font-family: "Open Sans";
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 32px;
+  text-transform: uppercase;
+}
+
+/*
+  $Раздел загрузки
+*/
+
+.app-download {
+  background-color: #283645;
+}
+
+.app-download__button {
+  color: #ffffff;
+  font-family: "Open Sans";
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 18px;
+}
+
+.app-download__description {
+  color: #ffffff;
+  font-family: "Open Sans";
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 24px;
+}
+
+/*
+  $Раздел особенностей
+*/
+
+.features-list {
+  background-color: #f2f2f2;
+}
+
+.features__slogan {
+  color: #283645;
+  font-family: "Open Sans";
+  font-size: 24px;
+  font-weight: 300;
+}
+
+.features-title {
+  color: #000000;
+  font-family: "Open Sans";
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 24px;
+}
+
+.features-description {
+  color: #283645;
+  font-family: "Open Sans";
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+/*
+  $Раздел отзывов
+*/
+
+.reviews__author {
+  color: #000000;
+  font-family: "Open Sans";
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 30px;
+}
+
+.reviews__description {
+  color: #283645;
+  font-family: "Open Sans";
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 30px;
+}
