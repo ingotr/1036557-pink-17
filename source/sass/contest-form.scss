@@ -1,0 +1,84 @@
+/*
+  $Раздел конкурса
+*/
+
+.contest-form__title {
+  color: #283645;
+  font-family: "Open Sans";
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 30px;
+}
+
+.contest-form__label {
+  color: #d22856;
+  font-family: "Open Sans";
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+
+.contest-form__input-text {
+  color: #283645;
+  font-family: "Open Sans";
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 30px;
+}
+
+.contest-form__fields-legend {
+  color: #d22856;
+  font-family: "Open Sans";
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+  text-transform: uppercase;
+}
+
+.contest-form__label--select {
+  color: #283645;
+  font-family: "Open Sans";
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 30px;
+  text-transform: none;
+}
+
+.contest-form__fields-achievments,
+.contest-form__fields-app-version {
+  background-color: #f2f2f2;
+}
+
+.contest-form__input-checkbox,
+.contest-form__input-radio {
+  color: #283645;
+  font-family: "Open Sans";
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 30px;
+}
+
+.contest-form__button {
+  background-color: #2aab6d;
+  color: #ffffff;
+  font-family: "Open Sans";
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+
+.contest-form__note {
+  color: #283645;
+  font-family: "Open Sans";
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+
+.contest-form__note span {
+  color: #d22856;
+}
+

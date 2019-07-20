@@ -4,6 +4,8 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Пинк</title>
+  <link href="css/normalize.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
 </head>
 
 <body>
@@ -49,9 +51,10 @@
       </p>
       <ul class="photos-list">
         <li class="photos-list__item panorama-of-day">
+          <span class="panorama--ribbon">Панорама дня</span>
           <a href="#">
             <figure class="panorama-image">
-              <img src="img/panorama-of-day.jpg" width="320" height="137" alt="Панорама дня">
+              <img src="img/panorama-mobile@1x.jpg" width="320" height="137" alt="Панорама дня">
             </figure>
           </a>
           <h4 class="photos-list__item-author">Анна
@@ -66,7 +69,7 @@
         <li class="photos-list__item">
           <a href="#">
             <figure class="photos-list__image">
-              <img src="img/photos-1.jpg" width="280" height="180" alt="#">
+              <img src="img/photo-car-mobile@1x.jpg" width="280" height="180" alt="#">
             </figure>
           </a>
           <h4 class="photos-list__item-author">Левон
@@ -79,7 +82,7 @@
         <li class="photos-list__item">
           <a href="#">
             <figure class="photos-list__image">
-              <img src="img/photos-2.jpg" width="280" height="180" alt="#">
+              <img src="img/photo-drumset-mobile@1x.jpg" width="280" height="180" alt="#">
             </figure>
           </a>
           <h4 class="photos-list__item-author">Антон
@@ -92,7 +95,7 @@
         <li class="photos-list__item">
           <a href="#">
             <figure class="photos-list__image">
-              <img src="img/photos-3.jpg" width="280" height="180" alt="#">
+              <img src="img/photo-window-mobile@1x.jpg" width="280" height="180" alt="#">
             </figure>
           </a>
           <h4 class="photos-list__item-author">Борис
@@ -105,7 +108,7 @@
         <li class="photos-list__item">
           <a href="#">
             <figure class="photos-list__image">
-              <img src="img/photos-4.jpg" width="280" height="180" alt="#">
+              <img src="img/photo-fair-mobile@1x.jpg" width="280" height="180" alt="#">
             </figure>
           </a>
           <h4 class="photos-list__item-author">Сергей
@@ -118,7 +121,7 @@
         <li class="photos-list__item">
           <a href="#">
             <figure class="photos-list__image">
-              <img src="img/photos-5.jpg" width="280" height="180" alt="#">
+              <img src="img/photo-pov-mobile@1x.jpg" width="280" height="180" alt="#">
             </figure>
           </a>
           <h4 class="photos-list__item-author">Максим
@@ -131,7 +134,7 @@
         <li class="photos-list__item">
           <a href="#">
             <figure class="photos-list__image">
-              <img src="img/photos-6.jpg" width="280" height="180" alt="#">
+              <img src="img/photo-wing-mobile@1x.jpg" width="280" height="180" alt="#">
             </figure>
           </a>
           <h4 class="photos-list__item-author">Надежда
@@ -142,7 +145,8 @@
           <p class="photos-list__item-likes">Нравится: 2560</p>
         </li>
       </ul>
-      <p class="photos__title title-down"></p>
+      <p class="photos__title title-down">Затмите их всех!
+        Выкладывайте все, что накопилось в телефоне!</p>
     </div>
   </section>
 
@@ -150,24 +154,24 @@
     <h2 class="visually hidden">Раздел загрузки:</h2>
     <div class="container">
       <div class="upload__wrapper">
-        <img class="upload__photo" src="img/upload-photo.jpg" width="280" height="374" alt="">
+        <img class="upload__photo" src="img/photo-road-mobile@1x.jpg" width="280" height="374" alt="">
         <ul class="upload__filter-list list-filter">
           <li class="list-filter__item current-item">
             <a class="list-filter__item-button">
               Обрез
-              <img src="img/crop.svg" width="44" height="44" alt="">
+              <img src="img/icon-editor-crop.svg" width="44" height="44" alt="">
             </a>
           </li>
           <li class="list-filter__item">
             <a class="list-filter__item-button">
               Заливка
-              <img src="img/fill.svg" width="44" height="44" alt="">
+              <img src="img/icon-editor-fill.svg" width="44" height="44" alt="">
             </a>
           </li>
           <li class="list-filter__item">
             <a class="list-filter__item-button">
               Контраст
-              <img src="img/contrast.svg" width="44" height="44" alt="">
+              <img src="img/icon-editor-contrast.svg" width="44" height="44" alt="">
             </a>
           </li>
         </ul>
@@ -180,21 +184,21 @@
   <footer class="page-footer">
     <h2 class="visually hidden">Раздел футера:</h2>
     <div class="container">
-      <img class="logotype-pink" src="img/logotype-pink.svg" width="147" height="40" alt="#">
+      <img class="logotype-pink" src="img/logo-pink-blue-mobile.svg" width="147" height="40" alt="#">
       <ul class="page-footer__list social-list">
         <li class="social-list__item">
-          <a><img src="img/twitter.svg" width="18" height="14" alt="#"></a>
+          <a><img src="img/icon-twitter.svg" width="18" height="14" alt="#"></a>
         </li>
         <li class="social-list__item">
-          <a><img src="img/facebook.svg" width="9" height="18" alt="#"></a>
+          <a><img src="img/icon-facebook.svg" width="9" height="18" alt="#"></a>
         </li>
         <li class="social-list__item">
-          <a><img src="img/youtube.svg" width="15" height="13" alt="#"></a>
+          <a><img src="img/icon-youtube.svg" width="15" height="13" alt="#"></a>
         </li>
       </ul>
       <a class="page-footer__made-in" href="https://htmlacademy.ru/intensive/adaptive">
         Разработано
-        <img src="img/htmlacademy.svg" width="27" height="34" alt="">
+        <img src="img/logo-htmlacademy.svg" width="27" height="34" alt="">
       </a>
     </div>
   </footer>

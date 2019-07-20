@@ -4,6 +4,8 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Пинк</title>
+  <link href="css/normalize.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
 </head>
 
 <body>
@@ -62,34 +64,34 @@
           <legend class="contest-form__fields-legend">
             Ваши безбашенные достижения в путешествии
           </legend>
-          <label for="contest-form__selfie-with-shark" class="contest-form__label">
-            <input id="contest-form__selfie-with-shark" class="contest-form__input-checkbox" type="checkbox" name="achievments"
-              value="Сделал селфи с акулой" checked>
+          <label for="contest-form__selfie-with-shark" class="contest-form__label contest-form__label--select">
+            <input id="contest-form__selfie-with-shark" class="contest-form__input-checkbox" type="checkbox"
+              name="achievments" value="Сделал селфи с акулой" checked>
             Сделал селфи с акулой
           </label>
-          <label for="contest-form__burned-on-beach" class="contest-form__label">
-            <input id="contest-form__burned-on-beach" class="contest-form__input-checkbox" type="checkbox" name="achievments"
-              value="Сгорел на пляже" checked>
+          <label for="contest-form__burned-on-beach" class="contest-form__label contest-form__label--select">
+            <input id="contest-form__burned-on-beach" class="contest-form__input-checkbox" type="checkbox"
+              name="achievments" value="Сгорел на пляже" checked>
             Обгорел на пляже
           </label>
-          <label for="contest-form__seen-chuck-norris" class="contest-form__label">
-            <input id="contest-form__seen-chuck-norris" class="contest-form__input-checkbox" type="checkbox" name="achievments"
-              value="Видел Чака Норриса">
+          <label for="contest-form__seen-chuck-norris" class="contest-form__label contest-form__label--select">
+            <input id="contest-form__seen-chuck-norris" class="contest-form__input-checkbox" type="checkbox"
+              name="achievments" value="Видел Чака Норриса">
             Видел Чака Норриса
           </label>
-          <label for="contest-form__buy-souvenir" class="contest-form__label">
-            <input id="contest-form__buy-souvenir" class="contest-form__input-checkbox" type="checkbox" name="achievments"
-              value="Накупил сувениров">
+          <label for="contest-form__buy-souvenir" class="contest-form__label contest-form__label--select">
+            <input id="contest-form__buy-souvenir" class="contest-form__input-checkbox" type="checkbox"
+              name="achievments" value="Накупил сувениров">
             Накупил сувениров
           </label>
-          <label for="contest-form__hold-the-tower" class="contest-form__label">
-            <input id="contest-form__hold-the-tower" class="contest-form__input-checkbox" type="checkbox" name="achievments"
-              value="Удержал башню">
+          <label for="contest-form__hold-the-tower" class="contest-form__label contest-form__label--select">
+            <input id="contest-form__hold-the-tower" class="contest-form__input-checkbox" type="checkbox"
+              name="achievments" value="Удержал башню">
             Удержал башню
           </label>
-          <label for="contest-form__crush-hotel" class="contest-form__label">
-            <input id="contest-form__crush-hotel" class="contest-form__input-checkbox" type="checkbox" name="achievments"
-              value="Разгромил отель">
+          <label for="contest-form__crush-hotel" class="contest-form__label contest-form__label--select">
+            <input id="contest-form__crush-hotel" class="contest-form__input-checkbox" type="checkbox"
+              name="achievments" value="Разгромил отель">
             Разгромил отель
           </label>
         </fieldset>
@@ -99,22 +101,23 @@
               placeholder="Номер, пожалуйста">
           </label>
           <label for="contest-form__email" class="contest-form__label">Адрес почты
-            <input id="contest-form__email" class="contest-form__input-text" type="email" name="emai" placeholder="Введите почту *">
+            <input id="contest-form__email" class="contest-form__input-text" type="email" name="emai"
+              placeholder="Введите почту *">
           </label>
         </fieldset>
         <fieldset class="contest-form__fields-app-version">
-          <legend class="contest-form__fields-legend">С каким приложением путешествовали?</legend> <label for="contest-form__pink-ios"
-            class="contest-form__label">
-            <input id="contest-form__pink-ios" class="contest-form__input-radio" type="radio" name="app-version" value="Pink для iOS"
-              checked>
+          <legend class="contest-form__fields-legend">С каким приложением путешествовали?</legend> <label
+            for="contest-form__pink-ios" class="contest-form__label contest-form__label--select">
+            <input id="contest-form__pink-ios" class="contest-form__input-radio" type="radio" name="app-version"
+              value="Pink для iOS" checked>
             Pink для iOS
           </label>
-          <label for="contest-form__pink-android" class="contest-form__label">
+          <label for="contest-form__pink-android" class="contest-form__label contest-form__label--select">
             <input id="contest-form__pink-android" class="contest-form__input-radio" type="radio" name="app-version"
               value="Pink на Android">
             Pink на Android
           </label>
-          <label for="contest-form__pink-windows" class="contest-form__label">
+          <label for="contest-form__pink-windows" class="contest-form__label contest-form__label--select">
             <input id="contest-form__pink-windows" class="contest-form__input-radio" type="radio" name="app-version"
               value="Windows Phone">
             Windows Phone
@@ -129,28 +132,28 @@
         </fieldset>
         <button class="contest-form__button button" type="submit">Отправить форму</button>
       </form>
-      <p class="contest-form__note">* — обязательные поля</p>
+      <p class="contest-form__note"><span>*</span> — обязательные поля</p>
     </div>
   </section>
 
   <footer class="page-footer">
     <h2 class="visually hidden">Раздел футера:</h2>
     <div class="container">
-      <img class="logotype-pink" src="img/logotype-pink.svg" width="147" height="40" alt="#">
+      <img class="logotype-pink" src="img/logo-pink-blue-mobile.svg" width="147" height="40" alt="#">
       <ul class="page-footer__list social-list">
         <li class="social-list__item">
-          <a><img src="img/twitter.svg" width="18" height="14" alt="#"></a>
+          <a><img src="img/icon-twitter.svg" width="18" height="14" alt="#"></a>
         </li>
         <li class="social-list__item">
-          <a><img src="img/facebook.svg" width="9" height="18" alt="#"></a>
+          <a><img src="img/icon-facebook.svg" width="9" height="18" alt="#"></a>
         </li>
         <li class="social-list__item">
-          <a><img src="img/youtube.svg" width="15" height="13" alt="#"></a>
+          <a><img src="img/icon-youtube.svg" width="15" height="13" alt="#"></a>
         </li>
       </ul>
       <a class="page-footer__made-in" href="https://htmlacademy.ru/intensive/adaptive">
         Разработано
-        <img src="img/htmlacademy.svg" width="27" height="34" alt="">
+        <img src="img/logo-htmlacademy.svg" width="27" height="34" alt="">
       </a>
     </div>
   </footer>
