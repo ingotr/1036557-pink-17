@@ -1,7 +1,11 @@
 /*
-  Подключение внешний файлов
+  Подключение внешних файлов
 */
 
+@import "fonts";
+@import "variables";
+@import "mixins";
+@import "visually-hidden";
 @import "page-header";
 @import "main-nav";
 @import "app-download";
@@ -13,4 +17,3 @@
 @import "upload";
 @import "page-footer";
 @import "contest-form";
-

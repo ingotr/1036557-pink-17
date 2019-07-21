@@ -3,20 +3,24 @@
 */
 
 .app-download {
-  background-color: #283645;
+  margin-top: 28px;
+  margin-bottom: 30px;
+  background-color: $top-menu-bg-color;
+}
+
+.app-list {
+  @include list-style-none;
 }
 
 .app-download__button {
-  color: #ffffff;
-  font-family: "Open Sans";
+  color: $top-menu-text-color;
   font-size: 18px;
   font-weight: 700;
   line-height: 18px;
 }
 
 .app-download__description {
-  color: #ffffff;
-  font-family: "Open Sans";
+  color: $top-menu-text-color;
   font-size: 14px;
   font-weight: 300;
   line-height: 24px;

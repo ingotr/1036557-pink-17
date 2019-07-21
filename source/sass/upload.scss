@@ -3,12 +3,15 @@
 */
 
 .upload__wrapper {
-  background-color: #f2f2f2;
+  background-color: $features-list-bg-color;
+}
+
+.list-filter {
+  @include list-style-none;
 }
 
 .upload__post {
-  color: #d22856;
-  font-family: "Open Sans";
+  color: $contacts__link-color;
   font-size: 18px;
   font-weight: 700;
   line-height: 18px;
@@ -16,8 +19,7 @@
 
 .upload__cancel {
   opacity: 0.1;
-  color: #283645;
-  font-family: "Open Sans";
+  color: $top-menu-bg-color;
   font-size: 18px;
   font-weight: 700;
   line-height: 18px;

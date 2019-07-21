@@ -3,11 +3,10 @@
 */
 
 .main-nav__wrapper {
-  background-color: #283645;
+  background-color: $top-menu-bg-color;
 }
 
 .site-list__item {
-  font-family: "Open Sans";
   font-size: 18px;
   font-weight: 700;
   line-height: 32px;

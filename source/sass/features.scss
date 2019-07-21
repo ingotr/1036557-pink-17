@@ -2,28 +2,30 @@
   $Раздел особенностей
 */
 
+.features {
+  background-color: $features-list-bg-color;
+}
+
 .features-list {
-  background-color: #f2f2f2;
+  margin-bottom: 45px;
 }
 
 .features__slogan {
-  color: #283645;
-  font-family: "Open Sans";
+  background-color: $top-menu-text-color;
+  color: $top-menu-bg-color;
   font-size: 24px;
   font-weight: 300;
 }
 
 .features-title {
-  color: #000000;
-  font-family: "Open Sans";
+  color: $features-title-text-color;
   font-size: 18px;
   font-weight: 700;
   line-height: 24px;
 }
 
 .features-description {
-  color: #283645;
-  font-family: "Open Sans";
+  color: $top-menu-bg-color;
   font-size: 14px;
   font-weight: 400;
   line-height: 24px;

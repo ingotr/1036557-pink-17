@@ -3,17 +3,15 @@
 */
 
 .photos__title {
-  color: #283645;
-  font-family: "Open Sans";
+  color: $top-menu-bg-color;
   font-size: 14px;
   font-weight: 400;
   line-height: 30px;
 }
 
 .panorama--ribbon {
-  background-color: #d22856;
+  background-color: $contacts__link-color;
   color: #ffffff;
-  font-family: "Open Sans";
   font-size: 12px;
   font-weight: 700;
   line-height: 24px;
@@ -21,38 +19,32 @@
 }
 
 .photos-list__item {
-  background-color: #f2f2f2;
+  background-color: $features-list-bg-color;
 }
 
 .photos-list__item-author {
-  color: #283645;
-  font-family: "Open Sans";
+  color: $top-menu-bg-color;
   font-size: 14px;
   font-weight: 700;
   line-height: 24px;
 }
 
 .photos-list__item-author span {
-  font-family: "Open Sans Light";
   font-size: 12px;
   font-weight: 300;
 }
 
 .photos-list__item-description {
-  color: #283645;
-  font-family: "Open Sans";
+  color: $top-menu-bg-color;
   font-size: 14px;
   font-weight: 400;
   line-height: 24px;
 }
 
 .photos-list__item-likes {
-  color: #d22856;
-  font-family: "Open Sans";
+  color: $contacts__link-color;
   font-size: 12px;
   font-weight: 400;
   line-height: 24px;
   text-transform: uppercase;
 }
-
-

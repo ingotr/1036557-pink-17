@@ -2,17 +2,26 @@
   $Раздел отзывов
 */
 
+.reviews {
+  margin-top: -60px;
+  background-color: $top-menu-text-color;
+}
+
+.slider__list {
+  @include list-style-none;
+}
+
 .reviews__author {
-  color: #000000;
-  font-family: "Open Sans";
+  padding-top: 44px;
+
+  color: $features-title-text-color;
   font-size: 18px;
   font-weight: 700;
   line-height: 30px;
 }
 
 .reviews__description {
-  color: #283645;
-  font-family: "Open Sans";
+  color: $top-menu-bg-color;
   font-size: 14px;
   font-weight: 400;
   line-height: 30px;
