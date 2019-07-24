@@ -1,0 +1,118 @@
+/*
+  $Раздел конкурса
+*/
+
+.contest-form {
+  margin-top: 50px;
+}
+
+.fieldset-none {
+  @include fieldset-style-none;
+}
+
+.contest-form__title {
+  color: $top-menu-bg-color;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 30px;
+}
+
+.contest-form__label {
+  margin-bottom: 16px;
+
+  color: $contacts__link-color;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+
+.contest-form__input-text {
+  color: $top-menu-bg-color;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 30px;
+}
+
+.contest-form__fields-legend {
+  padding-top: 82px;
+
+  color: $contacts__link-color;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+  text-transform: uppercase;
+}
+
+.contest-form__label--select {
+  color: $top-menu-bg-color;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 30px;
+  text-transform: none;
+}
+
+.contest-form__fields-name {
+  margin-bottom: 44px;
+}
+
+.contest-form__fields-achievments {
+  margin-bottom: 44px;
+  padding-top: 41px;
+}
+
+.contest-form__fields-achievments,
+.contest-form__fields-app-version {
+  background-color: $features-list-bg-color;
+}
+
+.contest-form__input-checkbox,
+.contest-form__input-radio {
+  color: $top-menu-bg-color;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 30px;
+}
+
+.contest-form__fields-contacts {
+  margin-bottom: 44px;
+}
+
+.contest-form__fields-app-version {
+  margin-bottom: 44px;
+  padding-top: 41px;
+}
+
+.contest-form__fields-emotions {
+  margin-bottom: 50px;
+  padding-top: 19px;
+}
+
+.contest-form__button {
+  background-color: $contest-form__button-bg-color;
+  color: $top-menu-text-color;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+
+.contest-form__note {
+  color: $top-menu-bg-color;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+
+.contest-form__note span {
+  color: $contacts__link-color;
+}
+
+.logotype-pink {
+  margin-bottom: 43px;
+}
+
+.page-footer__list {
+  margin-bottom: 43px;
+}

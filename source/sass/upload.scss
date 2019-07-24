@@ -1,0 +1,26 @@
+/*
+  $Раздел загрузки
+*/
+
+.upload__wrapper {
+  background-color: $features-list-bg-color;
+}
+
+.list-filter {
+  @include list-style-none;
+}
+
+.upload__post {
+  color: $contacts__link-color;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 18px;
+}
+
+.upload__cancel {
+  opacity: 0.1;
+  color: $top-menu-bg-color;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 18px;
+}

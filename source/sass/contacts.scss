@@ -1,0 +1,28 @@
+/*
+  $Раздел контактов
+*/
+
+.contacts {
+  background-image: url("../img/bg-map-mobile@1x.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+.contacts__title {
+  color: $top-menu-bg-color;
+  font-size: 24px;
+  font-weight: 300;
+}
+
+.contacts_list__item-title {
+  color: $top-menu-bg-color;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.contacts_list__item-link {
+  color: $contacts__link-color;
+  font-size: 24px;
+  font-weight: 300;
+}

@@ -1,0 +1,40 @@
+/*
+  $Раздел хедера
+*/
+
+.page-header__wrapper {
+  background-image: url("../img/iphone-hand-mobile@1x.png"),
+    url("../img/bg-back-mobile@1x.jpg");
+  background-repeat: no-repeat, no-repeat;
+  background-size: contain, contain;
+  background-position: center, center;
+}
+
+.page-header__top-menu {
+  background-color: $top-menu-bg-color;
+}
+
+.page-header__logo-image {
+  margin-top: 22px;
+  margin-right: 225px;
+  margin-bottom: 22px;
+  margin-left: 20px;
+}
+
+.page-header__title {
+  color: $top-menu-text-color;
+  font-size: 24px;
+  font-weight: 300;
+}
+
+.site-list {
+  @include list-style-none;
+}
+
+.site-list__item {
+  color: $top-menu-text-color;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 32px;
+  text-transform: uppercase;
+}

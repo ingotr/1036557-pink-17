@@ -1,0 +1,18 @@
+/*
+  $Раздел футера
+*/
+
+.page-footer {
+  margin-bottom: 40px;
+}
+
+.social-list {
+  @include list-style-none;
+}
+
+.page-footer__made-in {
+  color: $top-menu-bg-color;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+}

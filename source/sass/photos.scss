@@ -1,0 +1,50 @@
+/*
+  $Раздел фотогалерии
+*/
+
+.photos__title {
+  color: $top-menu-bg-color;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 30px;
+}
+
+.panorama--ribbon {
+  background-color: $contacts__link-color;
+  color: #ffffff;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 24px;
+  text-transform: uppercase;
+}
+
+.photos-list__item {
+  background-color: $features-list-bg-color;
+}
+
+.photos-list__item-author {
+  color: $top-menu-bg-color;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 24px;
+}
+
+.photos-list__item-author span {
+  font-size: 12px;
+  font-weight: 300;
+}
+
+.photos-list__item-description {
+  color: $top-menu-bg-color;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.photos-list__item-likes {
+  color: $contacts__link-color;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 24px;
+  text-transform: uppercase;
+}
