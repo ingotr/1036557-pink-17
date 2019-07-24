@@ -42,3 +42,11 @@
   line-height: 30px;
   text-transform: uppercase;
 }
+
+.price__features-item--desktop {
+  display: none;
+}
+
+.price__empty-cell {
+  background-color: transparent;
+}
