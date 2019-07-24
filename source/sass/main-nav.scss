@@ -2,13 +2,63 @@
   $Раздел навигации
 */
 
+.main-nav {
+  width: 320px;
+  margin: 0 auto;
+}
+
+.main-nav__list {
+  @include list-style-none;
+
+  /* Временно для сетки */
+  min-height: 256px;
+}
+
 .main-nav__wrapper {
   background-color: $top-menu-bg-color;
 }
 
 .site-list__item {
+  color: $top-menu-text-color;
   font-size: 18px;
   font-weight: 700;
   line-height: 32px;
   text-transform: uppercase;
+}
+
+@media (min-width: $tablet-width) {
+  .main-nav {
+    width: auto;
+    margin: 0;
+  }
+
+  .main-nav__wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    max-width: 660px;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .main-nav {
+    width: auto;
+    margin: 0;
+  }
+
+  .main-nav__wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .main-nav__list {
+    width: 620px;
+
+    /* Временно для сетки */
+    min-height: 70px;
+  }
 }
