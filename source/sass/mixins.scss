@@ -13,3 +13,13 @@
 
   border: none;
 }
+
+@mixin zero-margin-padding {
+  margin: 0;
+  padding: 0;
+}
+
+@mixin container-flex {
+  display: flex;
+  justify-content: space-between;
+}

@@ -19,11 +19,29 @@
 }
 
 .site-list__item {
+  // margin-top: 26px;
+  // margin-right: 89px;
+  // margin-bottom: 25px;
+  // margin-left: 88px;
+
+  padding-top: 26px;
+  padding-right: 89px;
+  padding-bottom: 25px;
+  padding-left: 88px;
+
   color: $top-menu-text-color;
   font-size: 18px;
   font-weight: 700;
   line-height: 32px;
   text-transform: uppercase;
+}
+
+.site-list__item a {
+  text-decoration: none;
+}
+
+.site-list__item a:visited {
+  color: $top-menu-text-color;
 }
 
 @media (min-width: $tablet-width) {

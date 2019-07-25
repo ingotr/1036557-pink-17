@@ -2,24 +2,59 @@
   $Раздел загрузки
 */
 
-.app-download {
+.app-download__wrapper {
+  display: flex;
+  flex-direction: column;
   margin-top: 28px;
   margin-bottom: 30px;
+
   background-color: $top-menu-bg-color;
+}
+
+.button {
+  text-decoration: none;
+}
+
+.app-download__button {
+  width: 221px;
+
+  margin-top: 28px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  margin-left: 20px;
+  padding-top: 20px;
+  padding-right: 20px;
+  padding-bottom: 17px;
+  padding-left: 40px;
+
+  color: $top-menu-text-color;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 18px;
+
+  border: 3px solid #ffffff;
+  border-radius: 50px;
 }
 
 .app-list {
   @include list-style-none;
 }
 
-.app-download__button {
-  color: $top-menu-text-color;
-  font-size: 18px;
-  font-weight: 700;
-  line-height: 18px;
+.app-download__list {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+
+  min-width: 205px;
 }
 
 .app-download__description {
+  margin-top: 28px;
+  margin-right: 45px;
+  margin-bottom: 35px;
+  margin-left: 45px;
+
   color: $top-menu-text-color;
   font-size: 14px;
   font-weight: 300;

@@ -2,6 +2,12 @@
   $Раздел хедера
 */
 
+.container {
+  width: $mobile-width;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
 .page-header {
   display: flex;
   flex-direction: column;
@@ -21,6 +27,7 @@
 }
 
 .page-header__wrapper {
+  // width: $mobile-width;
   background-image: url("../img/iphone-hand-mobile@1x.png"),
     url("../img/bg-back-mobile@1x.jpg");
   background-repeat: no-repeat, no-repeat;
@@ -48,6 +55,12 @@
 }
 
 @media (min-width: $tablet-width) {
+  .container {
+    width: $tablet-width;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+
   .page-header__wrapper {
     /* Временно для сетки */
     min-height: 110px;
@@ -74,6 +87,11 @@
 }
 
 @media (min-width: $desktop-width) {
+  .container {
+    width: $desktop-width;
+    margin: 0 auto;
+    padding: 0 10px;
+  }
 
   .page-header__logo-image {
     content: url("../img/logo-pink-white-desktop.svg");

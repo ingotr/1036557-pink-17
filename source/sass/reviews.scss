@@ -11,6 +11,10 @@
   @include list-style-none;
 }
 
+.reviews__wrapper {
+  background-color: $top-menu-text-color;
+}
+
 .reviews__author {
   padding-top: 44px;
 
