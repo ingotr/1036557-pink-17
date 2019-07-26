@@ -8,9 +8,19 @@
 
 .social-list {
   @include list-style-none;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 171px;
 }
 
 .page-footer__made-in {
+  display: flex;
+  align-items: center;
+  padding-right: 15px;
+
   color: $top-menu-bg-color;
   font-size: 14px;
   font-weight: 400;

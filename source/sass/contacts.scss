@@ -9,10 +9,20 @@
   background-size: contain;
 }
 
+.contacts_list {
+  @include list-style-none;
+}
+
+.contacts_list__item {
+  text-align: center;
+}
+
 .contacts__title {
   color: $top-menu-bg-color;
   font-size: 24px;
   font-weight: 300;
+
+  text-align: center;
 }
 
 .contacts_list__item-title {
@@ -25,4 +35,6 @@
   color: $contacts__link-color;
   font-size: 24px;
   font-weight: 300;
+
+  text-decoration: none;
 }
