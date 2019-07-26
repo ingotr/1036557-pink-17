@@ -18,7 +18,8 @@
 }
 
 .reviews__author {
-  padding-top: 44px;
+  @include zero-margin-padding;
+  // padding-top: 44px;
 
   color: $features-title-text-color;
   font-size: 18px;
@@ -26,9 +27,47 @@
   line-height: 30px;
 }
 
+.reviews__author-job {
+  @include zero-margin-padding;
+
+  display: none;
+}
+
 .reviews__description {
+  @include zero-margin-padding;
+
   color: $top-menu-bg-color;
   font-size: 14px;
   font-weight: 400;
   line-height: 30px;
+}
+
+@media (min-width: $tablet-width) {
+  .reviews__item {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .reviews__author {
+    order: 2;
+  }
+
+  .reviews__author-job {
+    order: 3;
+    display: block;
+
+    color: $top-menu-bg-color;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 30px;
+  }
+
+  .reviews__description {
+    order: 1;
+  }
+}
+
+
+@media (min-width: $desktop-width) {
+
 }

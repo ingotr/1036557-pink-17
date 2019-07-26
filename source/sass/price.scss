@@ -71,3 +71,22 @@
 .price__empty-cell {
   background-color: transparent;
 }
+
+@media (min-width: $tablet-width) {
+
+  .price__features-item {
+    max-width: 150px;
+
+    color: #ffffff;
+  }
+
+  .price__features-item--desktop {
+    display: block;
+
+    color: $top-menu-bg-color;
+  }
+}
+
+@media (min-width: $desktop-width) {
+
+}

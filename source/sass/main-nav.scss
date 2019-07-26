@@ -3,8 +3,13 @@
 */
 
 .main-nav {
+  display: none;
   width: 320px;
   margin: 0 auto;
+}
+
+.main-nav__title {
+  display: none;
 }
 
 .main-nav__list {
@@ -56,6 +61,13 @@
     justify-content: space-between;
     max-width: 660px;
     margin: 0 auto;
+  }
+
+  .main-nav__title {
+    display: block;
+    color: $top-menu-text-color;
+    font-size: 40px;
+    font-weight: 300;
   }
 }
 

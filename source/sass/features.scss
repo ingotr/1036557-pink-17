@@ -2,6 +2,10 @@
   $Раздел особенностей
 */
 
+.features {
+  margin-bottom: 60px;
+}
+
 .features__wrapper {
   background-color: $features-list-bg-color;
 }
@@ -45,4 +49,38 @@
   font-size: 14px;
   font-weight: 400;
   line-height: 24px;
+}
+
+.features__facts {
+  display: none;
+}
+
+@media (min-width: $tablet-width) {
+  .features__wrapper {
+    display: flex;
+  }
+
+  .features__slogan {
+    font-size: 40px;
+    font-weight: 300;
+    text-align: center;
+  }
+
+  .information__iphone-screen {
+    order: 1;
+
+    margin-top: -10px;
+  }
+
+  .features-list {
+    order: 2;
+
+    padding-top: 20px;
+  }
+
+  .features__facts {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
 }
