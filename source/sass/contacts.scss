@@ -40,8 +40,27 @@
 }
 
 @media (min-width: $tablet-width) {
+  .contacts {
+    margin-bottom: 30px;
+    min-height: 848px;
+
+    background-image: url("../img/bg-map-tablet@1x.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+  }
+
+  .contacts__wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: $top-menu-text-color;
+    padding-bottom: 60px;
+  }
 
   .contacts__title {
+    margin-right: 120px;
+    margin-left: 120px;
     font-size: 40px;
     font-weight: 300;
   }
@@ -49,8 +68,9 @@
   .contacts_list {
     display: flex;
     flex-direction: row;
-    align-content: center;
+    justify-content: center;
     flex-wrap: wrap;
+    margin-left: 40px;
   }
 
   .contacts_list__item {

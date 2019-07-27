@@ -14,6 +14,10 @@
   border-collapse: none;
 }
 
+.price__toggles {
+  display: block;
+}
+
 .price__item-title,
 .price__item-value {
   border: 2px solid $top-menu-bg-color;
@@ -74,6 +78,10 @@
 
 @media (min-width: $tablet-width) {
 
+  .price__wrapper {
+    padding-bottom: 50px;
+  }
+
   .price__features-item {
     max-width: 150px;
 
@@ -84,6 +92,10 @@
     display: block;
 
     color: $top-menu-bg-color;
+  }
+
+  .price__toggles {
+    display: none;
   }
 }
 
