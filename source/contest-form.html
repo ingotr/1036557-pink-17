@@ -11,13 +11,17 @@
 <body>
   <header class="page-header">
     <div class="container">
-      <div class="page-header__top-menu">
-        <a class="page-header__logo">
-          <img class="page-header__logo-image" src="img/logo-pink-white-mobile.svg" width="75" height="22" alt="Пинк">
-        </a>
-        <a class="page-header__burger">
-          <img class="page-header__burger-image" src="img/icon-menu-burger.svg" width="50" height="22" alt="">
-        </a>
+      <div class="page-header__wrapper-contest">
+        <div class="page-header__top-menu">
+          <a class="page-header__logo">
+            <img class="page-header__logo-image" src="img/logo-pink-white-mobile.svg" width="75" height="22" alt="Пинк">
+          </a>
+          <a class="page-header__burger">
+            <img class="page-header__burger-image" src="img/icon-menu-burger.svg" width="50" height="22" alt="">
+          </a>
+
+        </div>
+        <p class="page-header__title">Конкурс на самое безбашенное путешествие с Пинк</p>
       </div>
       <nav class="main-nav">
         <div class="main-nav__wrapper">
@@ -37,7 +41,6 @@
           </ul>
         </div>
       </nav>
-      <p class="page-header__title">Конкурс на самое безбашенное путешествие с Пинк</p>
     </div>
   </header>
 
@@ -50,15 +53,21 @@
       </p>
       <form class="contest-form__fields" action="https://echo.htmlacademy.ru" method="get">
         <fieldset class="contest-form__fields-name fieldset-none">
-          <label for="contest-form__surname" class="contest-form__label">Фамилия:</label>
-          <input id="contest-form__surname" class="contest-form__input-text" type="text" name="surname" value=""
-            placeholder="Укажите фамилию *">
-          <label for="contest-form__name" class="contest-form__label">Имя:</label>
-          <input id="contest-form__name" class="contest-form__input-text" type="text" name="name" value=""
-            placeholder="Введите ваше имя *">
-          <label for="contest-form__middle-name" class="contest-form__label">Отчество:</label>
-          <input id="contest-form__middle-name" class="contest-form__input-text" type="text" name="middle-name" value=""
-            placeholder="Ну и отчество тоже">
+          <div class="contest-form__input-wrapper">
+            <label for="contest-form__surname" class="contest-form__label">Фамилия:</label>
+            <input id="contest-form__surname" class="contest-form__input-text" type="text" name="surname" value=""
+              placeholder="Укажите фамилию *">
+          </div>
+          <div class="contest-form__input-wrapper">
+            <label for="contest-form__name" class="contest-form__label">Имя:</label>
+            <input id="contest-form__name" class="contest-form__input-text" type="text" name="name" value=""
+              placeholder="Введите ваше имя *">
+          </div>
+          <div class="contest-form__input-wrapper">
+            <label for="contest-form__middle-name" class="contest-form__label">Отчество:</label>
+            <input id="contest-form__middle-name" class="contest-form__input-text" type="text" name="middle-name"
+              value="" placeholder="Ну и отчество тоже">
+          </div>
         </fieldset>
         <fieldset class="contest-form__fields-achievments fieldset-none container-flex">
           <legend class="contest-form__fields-legend">
@@ -96,18 +105,21 @@
           </label>
         </fieldset>
         <fieldset class="contest-form__fields-contacts fieldset-none">
-          <label for="contest-form__telephone" class="contest-form__label">Номер телефона
+          <legend class="contest-form__fields-legend contacts-mobile">Контактная информация</legend>
+          <div class="contest-form__input-wrapper contest-form__input-wrapper--contacts">
+            <label for="contest-form__telephone" class="contest-form__label">Номер телефона</label>
             <input id="contest-form__telephone" class="contest-form__input-text" type="tel" name="telehpone"
               placeholder="Номер, пожалуйста">
-          </label>
-          <label for="contest-form__email" class="contest-form__label">Адрес почты
+          </div>
+          <div class="contest-form__input-wrapper contest-form__input-wrapper--contacts">
+            <label for="contest-form__email" class="contest-form__label">Адрес почты</label>
             <input id="contest-form__email" class="contest-form__input-text" type="email" name="emai"
               placeholder="Введите почту *">
-          </label>
+          </div>
         </fieldset>
         <fieldset class="contest-form__fields-app-version fieldset-none container-flex">
-          <legend class="contest-form__fields-legend">С каким приложением путешествовали?</legend> <label
-            for="contest-form__pink-ios" class="contest-form__label contest-form__label--select">
+          <legend class="contest-form__fields-legend">С каким приложением путешествовали?</legend>
+          <label for="contest-form__pink-ios" class="contest-form__label contest-form__label--select">
             <input id="contest-form__pink-ios" class="contest-form__input-radio" type="radio" name="app-version"
               value="Pink для iOS" checked>
             Pink для iOS
@@ -124,21 +136,25 @@
           </label>
         </fieldset>
         <fieldset class="contest-form__fields-emotions fieldset-none">
-          <legend class="contest-form__fields-legend">
-            Опишите свои эмоции
-          </legend>
-          <input class="contest-form__input-text" type="text" name="emotions"
-            placeholder="Можно прям в красках, не стесняясь в выражениях">
+          <legend class="contest-form__fields-legend">Опишите свои эмоции</legend>
+          <div class="contest-form__input-wrapper">
+            <input class="contest-form__input-text contest-form__input-text--emotions" type="text" name="emotions"
+              placeholder="Можно прям в красках, не стесняясь в выражениях">
+          </div>
         </fieldset>
-        <button class="contest-form__button button" type="submit">Отправить форму</button>
+        <div class="contest-form__button-wrapper">
+          <button class="contest-form__button button" type="submit">Отправить форму</button>
+          <p class="contest-form__note"><span>*</span> — обязательные поля</p>
+        </div>
       </form>
-      <p class="contest-form__note"><span>*</span> — обязательные поля</p>
+
     </div>
   </section>
 
   <footer class="page-footer">
     <h2 class="visually-hidden">Раздел футера:</h2>
-    <div class="container container-flex">
+    <div class="container container--flex-row">
+      <!-- <div class="page-footer__wrapper"> -->
       <img class="logotype-pink" src="img/logo-pink-blue-mobile.svg" width="147" height="40" alt="#">
       <ul class="page-footer__list social-list">
         <li class="social-list__item">
@@ -155,6 +171,7 @@
         Разработано
         <img src="img/logo-htmlacademy.svg" width="27" height="34" alt="">
       </a>
+      <!-- </div> -->
     </div>
   </footer>
 </body>
