@@ -100,5 +100,9 @@
 }
 
 @media (min-width: $desktop-width) {
-
+  .price__wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 }

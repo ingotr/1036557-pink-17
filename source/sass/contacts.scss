@@ -73,11 +73,22 @@
     margin-left: 40px;
   }
 
-  .contacts_list__item {
-    margin-right: 80px;
+  .contacts_list__item-title {
+    margin-bottom: 14px;
   }
 }
 
 @media (min-width: $desktop-width) {
+  .contacts__title {
+    padding-right: 70px;
+    padding-left: 70px;
+  }
 
+  .contacts_list {
+    justify-content: space-around;
+  }
+
+  .contacts_list__item-title {
+    margin-bottom: 24px;
+  }
 }
