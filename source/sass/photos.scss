@@ -40,8 +40,10 @@
   text-decoration: none;
 }
 
-.photos-list__image {
+.photos-list__image,
+.panorama-image {
   align-self: flex-start;
+  @include zero-margin-padding;
 }
 
 .photos-list__item-author {
@@ -103,16 +105,19 @@
   }
 
   .photos-list {
+    display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     width: $tablet-width;
   }
 
   .photos-list__item {
+    margin-right: 20px;
     width: $mobile-width - 20px;
   }
 
   .panorama-of-day {
+    margin-right: 0px;
     width: $tablet-width - 40px;
   }
 
@@ -124,8 +129,20 @@
 
   .photos-list__item-card {
     display: flex;
+    flex-direction: column;
     flex-wrap: wrap;
+    // justify-content: center;
     justify-content: space-between;
+    width: 300px;
+    min-height: 156px;
+
+  }
+
+  .photos-list__item-card--panorama {
+    flex-direction: row;
+    justify-content: flex-start;
+    width: 620px;
+    min-height: 121px;
   }
 
   .panorama-of-day .photos-list__item-author {
@@ -186,6 +203,10 @@
     content: url("../img/photo-wing-tablet@1x.jpg");
     width: 300px;
     min-height: 300px;
+  }
+
+  .title-down {
+    margin-top: 40px;
   }
 }
 

@@ -6,12 +6,23 @@
   margin-bottom: 40px;
 }
 
+.container--flex-row {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .page-footer--index-page {
   display: none;
 }
 
+.logotype-pink {
+  margin-bottom: 40px;
+}
+
 .social-list {
   @include list-style-none;
+  margin-bottom: 40px;
 
   display: flex;
   flex-direction: row;
@@ -50,8 +61,13 @@
     align-items: center;
   }
 
+  .logotype-pink {
+    margin-bottom: 0;
+  }
+
   .social-list {
     flex-direction: row;
+    margin-bottom: 0;
   }
 
 }

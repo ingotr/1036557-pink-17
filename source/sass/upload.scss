@@ -23,7 +23,7 @@
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
-  width: 200px;
+  // width: 200px;
   margin-right: 56px;
   margin-bottom: 20px;
   margin-left: 56px;
@@ -38,17 +38,17 @@
 .upload__button-wrapper {
   display: flex;
   flex-direction: column;
-  margin-bottom: 40px;
+  // margin-bottom: 40px;
 }
 
 .upload__button {
   margin-right: 20px;
   margin-bottom: 12px;
   margin-left: 20px;
-  padding-top: 20px;
-  padding-right: 90px;
-  padding-bottom: 20px;
-  padding-left: 91px;
+  padding-top: 15px;
+  padding-right: 80px;
+  padding-bottom: 15px;
+  padding-left: 81px;
 
   font-size: 18px;
   font-weight: 700;
@@ -70,4 +70,46 @@
   color: $top-menu-bg-color;
 
   border: 3px solid #000000;
+}
+
+@media (min-width: $tablet-width) {
+  .upload__wrapper {
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+  }
+
+  .upload__photo {
+    content: url("../img/photo-road-tablet@1x.jpg");
+    width: 300px;
+    min-height: 400px;
+
+    order: 1;
+  }
+
+  .upload__filter-list {
+    flex-direction: column;
+    align-items: center;
+    // justify-content: space-between;
+    margin: 0;
+    padding-top: 10px;
+    padding-right: 30px;
+    padding-left: 20px;
+    padding-bottom: 20px;
+
+    order: 2;
+  }
+
+  .list-filter__item {
+    margin-bottom: 15px;
+    padding-right: 200px;
+    padding-bottom: 15px;
+  }
+
+  .upload__button-wrapper {
+    order: 3;
+  }
+}
+
+@media (min-width: $desktop-width) {
 }
