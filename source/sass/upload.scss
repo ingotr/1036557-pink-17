@@ -87,6 +87,10 @@
     order: 1;
   }
 
+  .upload_filter-button-wrapper {
+    order: 2;
+  }
+
   .upload__filter-list {
     flex-direction: column;
     align-items: center;
@@ -96,8 +100,6 @@
     padding-right: 30px;
     padding-left: 20px;
     padding-bottom: 20px;
-
-    order: 2;
   }
 
   .list-filter__item {
@@ -106,10 +108,13 @@
     padding-bottom: 15px;
   }
 
-  .upload__button-wrapper {
-    order: 3;
-  }
+  // .upload__button-wrapper {
+  //   order: 3;
+  // }
 }
 
 @media (min-width: $desktop-width) {
+  .upload__button-wrapper {
+    flex-direction: row;
+  }
 }

@@ -30,6 +30,7 @@
 .contest-form__fields {
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 
 .contest-form__fields-name {
@@ -192,6 +193,15 @@
     background-color: $top-menu-text-color;
   }
 
+  .fieldset-none {
+    padding-top: 30px;
+    padding-right: 40px;
+    padding-bottom: 30px;
+    padding-left: 40px;
+
+    border: 2px solid #e5e5e5;
+  }
+
   .contest-form__fields {
     width: $tablet-width;
   }
@@ -221,6 +231,8 @@
 
   .contest-form__fields-name {
     order: 1;
+
+    border: none;
   }
 
   .contest-form__fields-app-version {
@@ -245,15 +257,6 @@
     order: 6;
   }
 
-  .fieldset-none {
-    padding-top: 30px;
-    padding-right: 40px;
-    padding-bottom: 30px;
-    padding-left: 40px;
-
-    border: 2px solid #e5e5e5;
-  }
-
   .contest-form__fields-legend {
     margin: 0 auto;
     padding: 0 20px;
@@ -274,4 +277,74 @@
 }
 
 @media (min-width: $desktop-width) {
+  .contest-form__fields {
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+
+    width: $desktop-width;
+  }
+
+  .contest-form__fields-name {
+    width: 400px;
+    margin-right: 20px;
+    padding-right: 20px;
+    padding-left: 20px;
+
+    order: 1;
+  }
+
+  .contest-form__fields-app-version {
+    width: 400px;
+    margin-bottom: 72px;
+    padding-top: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+
+    order: 2;
+  }
+
+  .contest-form__label--select {
+    padding-top: 16px;
+    padding-bottom: 16px;
+  }
+
+  .contest-form__fields-contacts {
+    width: $desktop-width;
+    flex-direction: row;
+    justify-content: space-around;
+
+    order: 3;
+  }
+
+  .contest-form__input-wrapper {
+    flex-grow: 1;
+  }
+
+  .contest-form__input-text {
+    width: auto;
+  }
+
+  .contest-form__fields-achievments {
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: $desktop-width;
+    max-height: 228px;
+
+
+    order: 4;
+  }
+
+  .contest-form__fields-emotions {
+    width: $desktop-width;
+
+    order: 5;
+  }
+
+  .contest-form__button-wrapper {
+    justify-content: space-between;
+    flex-direction: row;
+    flex-grow: 1;
+  }
 }

@@ -42,6 +42,10 @@
   line-height: 18px;
 }
 
+.page-footer__made-in img {
+  margin-left: 14px;
+}
+
 @media (min-width: $tablet-width) {
   .page-footer--index-page {
     display: block;
