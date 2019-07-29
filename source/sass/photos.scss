@@ -42,8 +42,8 @@
 
 .photos-list__image,
 .panorama-image {
-  align-self: flex-start;
   @include zero-margin-padding;
+  align-self: flex-start;
 }
 
 .photos-list__item-author {
@@ -117,7 +117,7 @@
   }
 
   .panorama-of-day {
-    margin-right: 0px;
+    margin-right: 0;
     width: $tablet-width - 40px;
   }
 
@@ -135,7 +135,6 @@
     justify-content: space-between;
     width: 300px;
     min-height: 156px;
-
   }
 
   .photos-list__item-card--panorama {
@@ -211,4 +210,58 @@
 }
 
 @media (min-width: $desktop-width) {
+  .photos-list {
+    width: $desktop-width;
+  }
+
+  .panorama-of-day {
+    margin-right: 0;
+    width: $desktop-width - 40px;
+  }
+
+  .panorama-image {
+    content: url("../img/panorama-desktop@1x.jpg");
+    width: 1200px;
+    min-height: 506px;
+  }
+
+  .photos-list__item:nth-child(3n + 1) {
+    margin-right: 0;
+  }
+
+  .photos-list__item:nth-child(2) .photos-list__image {
+    content: url("../img/photo-car-desktop@1x.jpg");
+    width: 300px;
+    min-height: 400px;
+  }
+
+  .photos-list__item:nth-child(3) .photos-list__image {
+    content: url("../img/photo-drumset-desktop@1x.jpg");
+    width: 300px;
+    min-height: 400px;
+  }
+
+  .photos-list__item:nth-child(4) .photos-list__image {
+    content: url("../img/photo-window-desktop@1x.jpg");
+    width: 300px;
+    min-height: 400px;
+  }
+
+  .photos-list__item:nth-child(5) .photos-list__image {
+    content: url("../img/photo-fair-desktop@1x.jpg");
+    width: 300px;
+    min-height: 400px;
+  }
+
+  .photos-list__item:nth-child(6) .photos-list__image {
+    content: url("../img/photo-pov-desktop@1x.jpg");
+    width: 300px;
+    min-height: 400px;
+  }
+
+  .photos-list__item:nth-child(7) .photos-list__image {
+    content: url("../img/photo-wing-desktop@1x.jpg");
+    width: 300px;
+    min-height: 400px;
+  }
 }

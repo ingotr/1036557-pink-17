@@ -62,7 +62,7 @@
 
   background-color: #2a3a4a;
   background-image: url("../img/bg-back-mobile@1x.jpg");
-  background-repeat:  no-repeat;
+  background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
 }
@@ -165,6 +165,28 @@
     background-repeat: no-repeat, no-repeat;
     background-size: contain, cover;
     background-position: bottom, center;
+  }
+
+  .page-header__wrapper-photo {
+    width: $desktop-width;
+    min-height: 853px;
+
+    background-color: #2a3a4a;
+    background-image: url("../img/bg-back-desktop@1x.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+
+  .page-header__wrapper-contest {
+    width: $desktop-width;
+    min-height: 853px;
+
+    background-color: #2a3a4a;
+    background-image: url("../img/bg-back-desktop@1x.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
   }
 
   .page-header__top-menu {
