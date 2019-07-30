@@ -37,6 +37,7 @@
   display: flex;
   flex-direction: column;
   // align-items: center;
+  width: $mobile-width - 40px;
   margin-bottom: 44px;
 
   order: 1;
@@ -80,7 +81,8 @@
   text-align: center;
 }
 
-.contest-form__label--select {
+.contest-form__label--select,
+.contest-form__label--checkbox {
   color: $top-menu-bg-color;
   font-size: 18px;
   font-weight: 400;
@@ -89,6 +91,8 @@
 }
 
 .contest-form__fields-achievments {
+  width: $mobile-width - 40px;
+
   order: 2;
 }
 
@@ -114,6 +118,7 @@
 }
 
 .contest-form__fields-contacts {
+  width: $mobile-width - 40px;
   display: flex;
   flex-direction: column;
   margin-bottom: 44px;
@@ -126,6 +131,7 @@
 }
 
 .contest-form__fields-app-version {
+  width: $mobile-width - 40px;
   margin-bottom: 44px;
   padding-top: 41px;
 
@@ -133,10 +139,15 @@
 }
 
 .contest-form__fields-emotions {
+  width: $mobile-width - 40px;
   margin-bottom: 50px;
   padding-top: 19px;
 
   order: 5;
+}
+
+.contest-form__input-text--emotions {
+  padding-bottom: 190px;
 }
 
 .contest-form__button-wrapper {
@@ -219,7 +230,13 @@
 
   .contest-form__input-wrapper--contacts {
     flex-direction: column-reverse;
+    align-items: stretch;
+    margin-right: 20px;
   }
+
+  // .contest-form__input-wrapper--contacts:nth-child(1) {
+  //   margin-right: 20px;
+  // }
 
   .contest-form__label {
     margin-right: 22px;
@@ -230,24 +247,29 @@
   }
 
   .contest-form__fields-name {
+    width: $tablet-width - 20px;
     order: 1;
 
     border: none;
   }
 
   .contest-form__fields-app-version {
+    width: $tablet-width - 20px;
     order: 2;
   }
 
   .contest-form__fields-contacts {
+    width: $tablet-width - 20px;
     order: 3;
   }
 
   .contest-form__fields-achievments {
+    width: $tablet-width - 20px;
     order: 4;
   }
 
   .contest-form__fields-emotions {
+    width: $tablet-width - 20px;
     order: 5;
   }
 
@@ -260,6 +282,8 @@
   .contest-form__fields-legend {
     margin: 0 auto;
     padding: 0 20px;
+
+    text-align: center;
   }
 
   .contest-form__fields-achievments,
@@ -331,7 +355,6 @@
     flex-wrap: wrap;
     width: $desktop-width;
     max-height: 228px;
-
 
     order: 4;
   }
