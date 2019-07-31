@@ -7,6 +7,10 @@
 }
 
 .features__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
   background-color: $features-list-bg-color;
 }
 
@@ -17,6 +21,10 @@
   padding-top: 90px;
   padding-right: 14px;
   padding-left: 14px;
+
+  text-align: center;
+
+  order: 1;
 }
 
 .features__slogan {
@@ -55,9 +63,22 @@
   display: none;
 }
 
+.features__iphones-screen-list {
+  @include list-style-none;
+  display: flex;
+  flex-direction: column;
+
+  order: 2;
+}
+
+.information__iphone-screen:nth-child(1),
+.information__iphone-screen:nth-child(2) {
+  display: none;
+}
+
 @media (min-width: $tablet-width) {
   .features__wrapper {
-    display: flex;
+    flex-direction: row;
   }
 
   .features__slogan {
@@ -66,7 +87,7 @@
     text-align: center;
   }
 
-  .information__iphone-screen {
+  .features__iphones-screen-list {
     order: 1;
 
     margin-top: -10px;
@@ -86,7 +107,27 @@
 }
 
 @media (min-width: $desktop-width) {
+  .features__wrapper {
+    flex-direction: column;
+  }
+
   .features__slogan {
     font-size: 50px;
   }
+
+  .features-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .features__iphones-screen-list {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .information__iphone-screen:nth-child(1),
+  .information__iphone-screen:nth-child(2) {
+  display: block;
+}
 }

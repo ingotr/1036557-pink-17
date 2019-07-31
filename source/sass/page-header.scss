@@ -2,6 +2,11 @@
   $Раздел хедера
 */
 
+*, ::after, ::before {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+}
+
 .container {
   width: $mobile-width;
   margin: 0 auto;
@@ -14,10 +19,8 @@
   align-items: center;
 }
 
-
 .page-header {
-  display: flex;
-  flex-direction: column;
+  position: relative;
 }
 
 .page-header__top-menu {

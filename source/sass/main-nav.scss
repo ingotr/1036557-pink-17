@@ -16,6 +16,9 @@
 }
 
 .main-nav__wrapper {
+  display: flex;
+  flex-direction: column;
+
   background-color: $top-menu-bg-color;
 }
 
