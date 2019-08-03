@@ -8,6 +8,36 @@
   margin: 0 auto;
 }
 
+.main-nav__top-menu {
+  background-color: transparentize($top-menu-bg-color, 0.3);
+
+  display: flex;
+  flex-direction: row;
+  align-self: flex-start;
+  align-items: center;
+  justify-content: space-between;
+  width: $mobile-width;
+
+  z-index: 10;
+}
+
+.main-nav__logo {
+  height: 75px;
+}
+
+.main-nav__logo-image {
+  margin-top: 22px;
+  // margin-right: 155px;
+  margin-bottom: 22px;
+  margin-left: 20px;
+}
+
+.main-nav__burger {
+  margin-top: 22px;
+  margin-right: 20px;
+  margin-bottom: 21px;
+}
+
 .main-nav__list {
   @include list-style-none;
 
@@ -62,6 +92,18 @@
     margin: 0 auto;
   }
 
+  .main-nav__top-menu {
+    width: $tablet-width;
+  }
+
+  .main-nav__logo-image {
+    content: url("../img/logo-pink-white-tablet.svg");
+
+    width: 147px;
+    min-height: 40px;
+    object-fit: contain;
+  }
+
   .site-list {
     width: 570px;
 
@@ -89,5 +131,22 @@
 
     /* Временно для сетки */
     min-height: 70px;
+  }
+
+  .main-nav__logo-image {
+    content: url("../img/logo-pink-white-desktop.svg");
+
+    margin-top: 27px;
+    margin-right: 173px;
+    margin-bottom: 43px;
+    margin-left: 54px;
+
+    width: 147px;
+    min-height: 40px;
+    object-fit: contain;
+  }
+
+  .main-nav__burger-image {
+    display: none;
   }
 }
