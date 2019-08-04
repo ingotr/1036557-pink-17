@@ -7,7 +7,7 @@
   min-height: 462px;
 
   // background-color: transparent;
-  background-color: #2a3a4a;
+  background-color: transparent;
   background-image: url("../img/iphone-hand-mobile@1x.png");
   background-repeat: no-repeat;
   background-size: contain;
@@ -18,7 +18,7 @@
   .hand-iphone__image {
     // content: url("../img/bg-back-mobile@1x.jpg");
     width: $tablet-width;
-    min-height: 729px;
+    min-height: 570px;
 
     background-image: url("../img/iphone-hand-tablet@1x.png");
     background-repeat: no-repeat;
@@ -31,7 +31,7 @@
   .hand-iphone__image {
     // content: url("../img/bg-back-mobile@1x.jpg");
     width: $desktop-width;
-    min-height: 853px;
+    min-height: 740px;
 
     background-image: url("../img/iphone-hand-desktop@1x.png");
     background-repeat: no-repeat;

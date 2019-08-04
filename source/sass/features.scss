@@ -3,13 +3,14 @@
 */
 
 .features {
-  margin-bottom: 60px;
+  margin-bottom: 80px;
 }
 
 .features__wrapper {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-bottom: 20px;
 
   background-color: $features-list-bg-color;
 }
@@ -109,6 +110,7 @@
 @media (min-width: $desktop-width) {
   .features__wrapper {
     flex-direction: column;
+    align-items: inherit;
   }
 
   .features__slogan {
@@ -123,7 +125,7 @@
 
   .features__iphones-screen-list {
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-evenly;
   }
 
   .information__iphone-screen:nth-child(1),

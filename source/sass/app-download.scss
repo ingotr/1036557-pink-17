@@ -12,6 +12,8 @@
   align-items: center;
 
   background-color: $top-menu-bg-color;
+
+  z-index: 1;
 }
 
 .app-download__title {
@@ -110,7 +112,7 @@
 
 @media (min-width: $desktop-width) {
   .app-download__wrapper {
-    margin-top: -730px;
+    margin-top: -650px;
     margin-left: 60px;
     // margin-left: -260px;
     width: $tablet-width / 2;
