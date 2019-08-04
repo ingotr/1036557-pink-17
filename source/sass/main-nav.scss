@@ -105,10 +105,16 @@
   }
 
   .site-list {
-    width: 570px;
+    display: flex;
+    flex-direction: column;
+    // width: 570px;
 
     /* Временно для сетки */
     min-height: 70px;
+  }
+
+  .site-list__item  {
+    text-align: center;
   }
 }
 
