@@ -40,6 +40,7 @@
 
 .main-nav__list {
   @include list-style-none;
+  display: none;
 
   /* Временно для сетки */
   min-height: 256px;
@@ -119,6 +120,8 @@
   }
 
   .main-nav__list {
+    display: none;
+
     background-color: #283645;
   }
 
@@ -132,6 +135,7 @@
     display: flex;
     width: auto;
     align-items: center;
+    justify-content: space-between;
     margin: 0;
     min-height: 115px;
   }
@@ -160,13 +164,20 @@
     margin: 0;
   }
 
+  .main-nav__logo {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+  }
+
   .main-nav__logo-image {
     content: url("../img/logo-pink-white-desktop.svg");
 
     // margin-top: 27px;
     // margin-right: 173px;
     // margin-bottom: 43px;
-    margin-left: 54px;
+    // margin-left: 54px;
 
     width: 147px;
     min-height: 40px;
@@ -186,5 +197,7 @@
     font-size: 18px;
     font-weight: 400;
     line-height: 18px;
+
+    text-transform: none;
   }
 }

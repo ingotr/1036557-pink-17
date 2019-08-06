@@ -76,8 +76,8 @@
 
 @media (min-width: $tablet-width) {
   .app-download__wrapper {
-    margin-top: -530px;
-    margin-left: 20px;
+    // margin-top: -530px;
+    // margin-left: 20px;
     // margin-left: -260px;
     width: $tablet-width / 2;
 
@@ -97,7 +97,7 @@
     padding-left: 49px;
   }
 
-  .app-download__list{
+  .app-download__list {
     max-width: 205px;
     margin-bottom: 40px;
   }
@@ -112,8 +112,8 @@
 
 @media (min-width: $desktop-width) {
   .app-download__wrapper {
-    margin-top: -650px;
-    margin-left: 60px;
+    // margin-top: -650px;
+    // margin-left: 60px;
     // margin-left: -260px;
     width: $tablet-width / 2;
 
@@ -132,7 +132,7 @@
     padding-left: 30px;
   }
 
-  .app-download__list{
+  .app-download__list {
     margin-bottom: 50px;
   }
 }
