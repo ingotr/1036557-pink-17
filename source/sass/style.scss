@@ -2,12 +2,15 @@
   Подключение внешних файлов
 */
 
+@import "normalize";
 @import "fonts";
 @import "variables";
 @import "mixins";
+@import "outlines";
 @import "visually-hidden";
 @import "page-header";
 @import "main-nav";
+// @import "hand-iphone";
 @import "app-download";
 @import "features";
 @import "reviews";
