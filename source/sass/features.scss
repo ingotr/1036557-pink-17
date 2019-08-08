@@ -12,14 +12,15 @@
   align-items: center;
   margin-bottom: 20px;
 
-  background-color: $features-list-bg-color;
+  background: #f2f2f2;
+  background: linear-gradient(170deg, transparent 10%, $features-list-bg-color 0%);
 }
 
 .features-list {
   @include list-style-none;
 
   margin-bottom: 45px;
-  padding-top: 90px;
+  padding-top: 146px;
   padding-right: 14px;
   padding-left: 14px;
 
@@ -38,6 +39,7 @@
   color: $top-menu-bg-color;
   font-size: 24px;
   font-weight: 300;
+  text-align: center;
 }
 
 .features-title {

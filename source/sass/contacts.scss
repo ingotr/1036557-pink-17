@@ -3,10 +3,23 @@
 */
 
 .contacts {
+  min-height: 600px;
+
   background-image: url("../img/bg-map-mobile@1x.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
+}
+
+.contacts__wrapper {
+  min-height: 447px;
+
+  background-color: gray;
+  background:
+      linear-gradient(-15deg, transparent 55px, white 0)bottom right,
+      linear-gradient(15deg, transparent 55px,white 0)bottom left;
+  background-size: 50% 100%;
+  background-repeat: no-repeat;
 }
 
 .contacts_list {

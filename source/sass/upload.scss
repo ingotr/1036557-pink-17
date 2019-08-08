@@ -35,6 +35,15 @@
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
 
+.filter-icon {
+  fill: #d22856;
+}
+
+.list-filter__item-button:hover .filter-icon {
+  fill:black;
+  opacity: 0.3;
+}
+
 .upload__button-wrapper {
   display: flex;
   flex-direction: column;

@@ -6,7 +6,12 @@
 }
 
 .price__wrapper {
-  background-color: $features-list-bg-color;
+  padding-top: 150px;
+
+  background: #f2f2f2;
+  background: linear-gradient(170deg, transparent 10%, $features-list-bg-color 0%);
+
+  overflow: hidden;
 }
 
 .price__features-list {
@@ -15,11 +20,14 @@
 }
 
 .price__toggles {
-  display: block;
+  display: flex;
+  justify-content: center;
 }
 
 .price__item-title,
 .price__item-value {
+  width: 280px;
+
   border: 2px solid $top-menu-bg-color;
   background-color: $top-menu-bg-color;
   border-style: none;
@@ -55,6 +63,7 @@
 }
 
 .price__features-item {
+  width: 280px;
   padding-top: 14px;
   padding-right: 22px;
   padding-bottom: 14px;
@@ -75,6 +84,10 @@
 .price__empty-cell {
   background-color: transparent;
 }
+
+#price__toggle-1:checked ~ .price__features-table { margin-left: 0; }
+#price__toggle-2:checked ~ .price__features-table { margin-left: -70px; }
+#price__toggle-3:checked ~ .price__features-table { margin-left: -140px; }
 
 @media (min-width: $tablet-width) {
 
