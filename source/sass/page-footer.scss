@@ -21,7 +21,7 @@
 }
 
 .page-footer__logo-icon {
-  fill: #283645;;
+  fill: #283645;
 }
 
 .page-footer__logo:hover .page-footer__logo-icon {
@@ -44,7 +44,27 @@
   width: 171px;
 }
 
+.social-list__item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 45px;
+  height: 45px;
+
+  border: 3px solid $social-button-border-color;
+  border-radius: 50%;
+
+  &:hover {
+    border-color: $top-menu-bg-color;
+  }
+
+  &:active {
+    opacity: 0.1;
+  }
+}
+
 .page-footer__made-in {
+  @include link-decoration-none;
   display: flex;
   align-items: center;
   padding-right: 15px;
@@ -53,9 +73,22 @@
   font-size: 14px;
   font-weight: 400;
   line-height: 18px;
+
+  svg {
+    fill: $contacts__link-color;
+  }
+
+  &:hover svg{
+    fill: $features-title-text-color;
+  }
+
+  &:active svg{
+    fill: $features-title-text-color;
+    opacity: 0.3;
+  }
 }
 
-.page-footer__made-in img {
+.page-footer__made-in svg {
   margin-left: 14px;
 }
 

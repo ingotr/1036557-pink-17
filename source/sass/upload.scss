@@ -71,7 +71,17 @@
 .upload__post {
   color: $contacts__link-color;
 
-  border: 3px solid #d22856;
+  border: 3px solid $contacts__link-color;
+
+  &:hover {
+    color: $top-menu-text-color;
+
+    background-color: $contacts__link-color;
+  }
+
+  &:active {
+    color: opacify($top-menu-text-color, 0.3);
+  }
 }
 
 .upload__cancel {
@@ -79,6 +89,51 @@
   color: $top-menu-bg-color;
 
   border: 3px solid #000000;
+
+  &:hover {
+    opacity: 0.3;
+  }
+
+  &:active {
+    color: opacify($top-menu-bg-color, 0.3);
+
+    border: 3px solid #283645;
+    background-color: opacify($top-menu-bg-color, 0.3);
+  }
+}
+
+.range-controls {
+  position: relative;
+
+  height: 20px;
+  margin-right: 40px;
+  margin-left: 40px;
+}
+
+.range-controls__bar {
+  height: 2px;
+
+  background-color: #000000;
+}
+
+.range-controls__toggle {
+  position: absolute;
+
+  top: -8px;
+  left: 190px;
+
+  width: 12px;
+  height: 12px;
+  padding: 0;
+
+  border: 2px solid $contacts__link-color;
+  background-color: $features-list-bg-color;
+  border-radius: 50%;
+  cursor: pointer;
+
+  &:active {
+    background-color: $contacts__link-color;
+  }
 }
 
 @media (min-width: $tablet-width) {
