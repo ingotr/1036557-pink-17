@@ -20,6 +20,7 @@
   font-size: 14px;
   font-weight: 400;
   line-height: 30px;
+  text-align: center;
 }
 
 .contest-form__input-wrapper {
@@ -65,12 +66,20 @@
   font-weight: 400;
   line-height: 30px;
 
-  border: 2px solid #e5e5e5;
+  border: 2px solid $price__features-list-bg-color;
+
+  &:hover {
+    border: 2px solid $top-menu-bg-color;
+  }
+
+  &:focus {
+    border: 2px solid $contacts__link-color;
+  }
 }
 
 .contest-form__fields-legend {
-  margin-bottom: 50px;
   padding-top: 82px;
+  padding-bottom: 20px;
 
   color: $contacts__link-color;
   font-size: 14px;
@@ -81,7 +90,7 @@
   text-align: center;
 }
 
-.contest-form__label--select,
+.contest-form__label--radio,
 .contest-form__label--checkbox {
   color: $top-menu-bg-color;
   font-size: 18px;
@@ -100,7 +109,6 @@
 .contest-form__fields-app-version {
   align-items: flex-start;
   margin-bottom: 44px;
-  padding-top: 41px;
 
   background-color: $features-list-bg-color;
 }
@@ -113,8 +121,115 @@
   line-height: 30px;
 }
 
+.contest-form__label--checkbox {
+  position: relative;
+  padding: 5px 20px 20px 50px;
+  margin-left: 10px;
+
+  cursor: pointer;
+
+  &:hover input ~ .checkbox__checkmark {
+    border: 2px solid #283645;
+  }
+
+  input:active ~ .checkbox__checkmark {
+    border: 2px solid #d22856;
+  }
+
+  input:checked ~ .checkbox__checkmark::after {
+    display: block;
+  }
+
+  text-align: center;
+}
+
 .contest-form__input-checkbox {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+
   margin-bottom: 50px;
+}
+
+.checkbox__checkmark {
+  position: absolute;
+  top: 0;
+  left: 5px;
+
+  width: 35px;
+  height: 35px;
+  border: 2px solid #e5e5e5;
+  background-color: #ffffff;
+
+  &::after {
+    content: "";
+    position: absolute;
+    display: none;
+
+    left: 13px;
+    top: 4px;
+    width: 8px;
+    height: 20px;
+    border: solid $contacts__link-color;
+    border-width: 0 3px 3px 0;
+    transform: rotate(45deg);
+  }
+}
+
+.contest-form__label--radio {
+  position: relative;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  padding: 5px 20px 20px 50px;
+  margin-left: 10px;
+
+  cursor: pointer;
+
+  &:hover input ~ .radio__checkmark {
+    border: 2px solid #283645;
+  }
+
+  input:active ~ .radio__checkmark {
+    border: 2px solid #d22856;
+  }
+
+  input:checked ~ .radio__checkmark::after {
+    display: block;
+  }
+}
+
+.contest-form__input-radio {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+.radio__checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 35px;
+  width: 35px;
+  background-color: #ffffff;
+  border: 2px solid #e5e5e5;
+  border-radius: 50%;
+
+  &::after {
+    content: "";
+    position: absolute;
+    display: none;
+
+    left: 11px;
+    top: 9px;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background: $contacts__link-color;
+  }
 }
 
 .contest-form__fields-contacts {
@@ -133,7 +248,6 @@
 .contest-form__fields-app-version {
   width: $mobile-width - 40px;
   margin-bottom: 44px;
-  padding-top: 41px;
 
   order: 4;
 }
@@ -175,6 +289,18 @@
 
   border: none;
   border-radius: 5px;
+
+  &:hover {
+    background-color: $contest-form__button-hover;
+  }
+
+  &:active {
+    color: opacify($top-menu-text-color, 0.3)
+  }
+}
+
+.contest-form__button--disabled {
+  background-color: #e5e5e5;
 }
 
 .contest-form__note {
@@ -327,11 +453,6 @@
     padding-left: 20px;
 
     order: 2;
-  }
-
-  .contest-form__label--select {
-    padding-top: 16px;
-    padding-bottom: 16px;
   }
 
   .contest-form__fields-contacts {
