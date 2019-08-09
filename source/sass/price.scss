@@ -6,18 +6,25 @@
 }
 
 .price__wrapper {
+  position: relative;
   padding-top: 150px;
 
   background: #f2f2f2;
-  background: linear-gradient(170deg, transparent 10%, $features-list-bg-color 0%);
+  background: linear-gradient(175deg, transparent 10%, $features-list-bg-color 0%);
 
   overflow: hidden;
 }
 
-.price__features-list {
-  border: 2px solid $price__features-list-bg-color;
-  border-collapse: none;
+.table__wrapper {
+  // position: absolute;
+  margin-left: -170px;
 }
+
+// .price__features-list {
+//   border: 2px solid $price__features-list-bg-color;
+//   border-collapse: none;
+//   border-collapse: collapse;
+// }
 
 .price__toggles {
   display: flex;
@@ -63,9 +70,9 @@
 }
 
 .price__features-item {
-  width: 280px;
+  // width: 280px;
   padding-top: 14px;
-  padding-right: 22px;
+  padding-right: 100px;
   padding-bottom: 14px;
   padding-left: 22px;
 
@@ -77,6 +84,24 @@
   text-transform: uppercase;
 }
 
+.price__features-item-yes {
+  position: relative;
+
+  &::after {
+    content: url("../img/icon-yes.svg");
+    width: 31px;
+    height: 21px;
+  }
+}
+
+.price__features-item-no {
+  position: relative;
+
+  &::after {
+    content: url("../img/icon-no.svg");
+  }
+}
+
 .price__features-item--desktop {
   display: none;
 }
@@ -85,11 +110,18 @@
   background-color: transparent;
 }
 
-#price__toggle-1:checked ~ .price__features-table { margin-left: 0; }
-#price__toggle-2:checked ~ .price__features-table { margin-left: -70px; }
-#price__toggle-3:checked ~ .price__features-table { margin-left: -140px; }
+// .price__toggles {
+//   #price__toggle-2:checked ~ .price__features-table { margin-left: -70px; }
+// }
+
+#price__toggle-1:checked ~ .table__wrapper { margin-left: 0px; }
+#price__toggle-2:checked ~ .table__wrapper { margin-left: -70px; }
+#price__toggle-3:checked ~ .table__wrapper { margin-left: -140px; }
 
 @media (min-width: $tablet-width) {
+  .table__wrapper {
+    margin: 0;
+  }
 
   .price__wrapper {
     padding-bottom: 50px;
@@ -97,6 +129,8 @@
 
   .price__features-item {
     max-width: 150px;
+    margin: 0;
+    padding: 0;
 
     color: #ffffff;
   }

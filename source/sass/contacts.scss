@@ -16,8 +16,8 @@
 
   background-color: gray;
   background:
-      linear-gradient(-15deg, transparent 55px, white 0)bottom right,
-      linear-gradient(15deg, transparent 55px,white 0)bottom left;
+      linear-gradient(-10deg, transparent 55px, white 0)bottom right,
+      linear-gradient(10deg, transparent 55px,white 0)bottom left;
   background-size: 50% 100%;
   background-repeat: no-repeat;
 }
@@ -28,6 +28,18 @@
 
 .contacts_list__item {
   text-align: center;
+}
+
+.contacts_list__item-link--mail {
+  &:hover {
+    color: $top-menu-bg-color;
+    text-decoration: underline;
+  }
+
+  &:focus {
+    opacity: 0.3;
+    color: $top-menu-bg-color;
+  }
 }
 
 .contacts__title {

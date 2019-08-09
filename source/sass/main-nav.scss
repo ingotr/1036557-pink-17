@@ -53,6 +53,10 @@
   background-color: $top-menu-bg-color;
 }
 
+.site-list__item a {
+  text-decoration: none;
+}
+
 .site-list__item {
   // margin-top: 26px;
   // margin-right: 89px;
@@ -70,18 +74,24 @@
   line-height: 32px;
   text-transform: uppercase;
   text-align: center;
+
+  box-shadow: 0 1px 0 #000000, inset 0 1px 0 rgba(255, 255, 255, 0.15);
+
+  a:visited {
+    color: $top-menu-text-color;
+  }
+
+  &:hover a {
+    color: $contacts__link-color;
+  }
+
+  &:active a {
+    color: transparentize($contacts__link-color, 0.7)
+  }
 }
 
 .main-nav__list {
   background-color: #283645;
-}
-
-.site-list__item a {
-  text-decoration: none;
-}
-
-.site-list__item a:visited {
-  color: $top-menu-text-color;
 }
 
 @media (min-width: $tablet-width) {
@@ -199,5 +209,16 @@
     line-height: 18px;
 
     text-transform: none;
+    box-shadow: none;
+
+    &:hover {
+      color: #d22856;
+    }
+
+    &:focus {
+      color: opacify(#ffffff, 0.3);
+    }
+
+    cursor: pointer;
   }
 }

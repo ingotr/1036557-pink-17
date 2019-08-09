@@ -4,13 +4,14 @@
 
 .reviews {
   margin-top: -60px;
-  margin-bottom: 120px;
+  margin-bottom: 20px;
 
   background-color: $top-menu-text-color;
 }
 
 .slider__list {
   @include list-style-none;
+  margin-bottom: 30px;
 }
 
 .reviews__wrapper {
@@ -42,6 +43,61 @@
   font-size: 18px;
   font-weight: 400;
   line-height: 30px;
+}
+
+.slider__toggle-container {
+  position: relative;
+  padding: 10px;
+
+  cursor: pointer;
+
+  &:hover input ~ .slide__toggle-checkmark {
+    background-color: transparentize(#283645, 0.4);
+
+  }
+
+  input:active ~ .slide__toggle-checkmark {
+    background-color: transparentize(#283645, 0.9);
+  }
+
+  input:checked ~ .slide__toggle-checkmark::after {
+    display: block;
+  }
+}
+
+.slider__toggle {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+.slide__toggle-checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 6px;
+  width: 6px;
+  // margin-right: 5px;
+  // margin-left: 5px;
+
+  background-color: transparentize(#283645, 0.7);
+  border-radius: 50%;
+
+  &::after {
+    content: "";
+    position: absolute;
+    display: none;
+
+    top: -1px;
+    left: -1px;
+    width: 6px;
+    height: 6px;
+    border: 2px solid #283645;
+    border-radius: 50%;
+    background: #ffffff;
+  }
 }
 
 @media (min-width: $tablet-width) {

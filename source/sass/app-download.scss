@@ -27,24 +27,32 @@
 }
 
 .app-download__button {
-  width: 221px;
-
   margin-top: 28px;
   margin-right: 15px;
   margin-bottom: 20px;
   margin-left: 15px;
   padding-top: 20px;
-  padding-right: 30px;
+  padding-right: 20px;
   padding-bottom: 17px;
-  padding-left: 30px;
+  padding-left: 20px;
 
   color: $top-menu-text-color;
-  font-size: 18px;
+  font-size: 21px;
   font-weight: 700;
   line-height: 18px;
 
   border: 3px solid #ffffff;
   border-radius: 50px;
+
+  &:hover {
+    color: $contacts__link-color;
+    background-color: #ffffff;
+  }
+
+  &:active {
+    color: opacify($contacts__link-color, 0.3);
+    background-color: #ffffff;
+  }
 }
 
 .app-list {

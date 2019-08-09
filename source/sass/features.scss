@@ -13,7 +13,7 @@
   margin-bottom: 20px;
 
   background: #f2f2f2;
-  background: linear-gradient(170deg, transparent 10%, $features-list-bg-color 0%);
+  background: linear-gradient(175deg, transparent 10%, $features-list-bg-color 0%);
 }
 
 .features-list {
@@ -32,7 +32,7 @@
 .features__slogan {
   margin-top: 46px;
   margin-right: 60px;
-  margin-bottom: 119px;
+  margin-bottom: 20px;
   margin-left: 58px;
 
   background-color: $top-menu-text-color;
@@ -74,9 +74,15 @@
   order: 2;
 }
 
-.information__iphone-screen:nth-child(1),
-.information__iphone-screen:nth-child(2) {
-  display: none;
+.information__iphone-screen {
+  &:nth-child(1),
+  &:nth-child(2) {
+    display: none;
+  }
+
+  figure {
+    margin: 0;
+  }
 }
 
 @media (min-width: $tablet-width) {
