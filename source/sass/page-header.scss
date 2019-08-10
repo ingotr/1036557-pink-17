@@ -111,6 +111,15 @@
     // background-position: center;
   }
 
+  .page-header--no-main-bg {
+    background-color: #2a3a4a;
+
+    background-image: url("../img/bg-back-tablet@1x.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+
   .app-wrapper {
     flex-direction: row;
   }
@@ -169,6 +178,15 @@
     // background-repeat: no-repeat;
     // background-size: cover;
     // background-position: center;
+  }
+
+  .page-header--no-main-bg {
+    background-color: #2a3a4a;
+
+    background-image: url("../img/bg-back-tablet@1x.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
   }
 
   .app-wrapper {

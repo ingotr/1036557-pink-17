@@ -72,8 +72,8 @@
 }
 
 .main-nav--opened {
-  position: absolute;
-  top: -10px;
+  // position: absolute;
+  // top: -10px;
 
   z-index: 10;
 
@@ -189,14 +189,6 @@
     margin: 0;
   }
 
-  .main-nav__wrapper {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    max-width: 660px;
-    margin: 0 auto;
-  }
-
   .main-nav__top-menu {
     width: $tablet-width;
   }
@@ -219,7 +211,7 @@
   }
 
   .main-nav__list {
-    display: none;
+    // display: none;
 
     background-color: #283645;
   }
@@ -232,43 +224,31 @@
 @media (min-width: $desktop-width) {
   .main-nav {
     display: flex;
-    width: auto;
+    flex-direction: row;
+    // width: auto;
     align-items: center;
     justify-content: space-between;
     margin: 0;
     min-height: 115px;
-  }
 
-  .main-nav__wrapper {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    max-width: 940px;
-    margin: 0 auto;
-  }
-
-  .main-nav__list {
-    display: flex;
-    flex-direction: row;
-    width: 620px;
-
-    /* Временно для сетки */
-    min-height: 70px;
-
-    background-color: rgba(40, 54, 69, 0.3);
+    background-color: transparentize(#000000, 0.7);
+    z-index: 20;
   }
 
   .main-nav__top-menu {
     width: auto;
     margin: 0;
+    align-self: center;
+
+    background-color: transparent;
   }
 
-  .main-nav__logo {
-    margin: 0;
-    padding: 0;
-    display: flex;
-    align-items: center;
-  }
+  // .main-nav__logo {
+  //   margin: 0;
+  //   padding: 0;
+  //   display: flex;
+  //   align-items: center;
+  // }
 
   .main-nav__logo-image {
     content: url("../img/logo-pink-white-desktop.svg");
@@ -287,7 +267,35 @@
     display: none;
   }
 
-  .site-list__item {
+  .main-nav__list {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    width: 570px;
+
+    // background-color: rgba(40, 54, 69, 0.3);
+    background-color: transparent;
+  }
+
+  .site-list__item--active {
+      position: relative;
+
+      &::after {
+        content: "";
+
+        position: absolute;
+        right: 0;
+        bottom: 25px;
+        left: 0;
+
+        height: 2px;
+
+        background: #ffffff;
+      }
+    }
+  }
+
+  .site-list__item a {
     // padding-top: 26px;
     padding-right: 20px;
     padding-bottom: 35px;
@@ -299,15 +307,17 @@
 
     text-transform: none;
     box-shadow: none;
+    background-color: transparent;
+    border: none;
+
+    cursor: pointer;
 
     &:hover {
       color: #d22856;
     }
 
-    &:focus {
-      color: opacify(#ffffff, 0.3);
+    &:active {
+      color: transparentize(#ffffff, 0.7);
     }
-
-    cursor: pointer;
   }
 }
