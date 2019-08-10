@@ -46,24 +46,6 @@
   flex-direction: column;
 }
 
-.main-nav__logo-image:hover .logo-image__path {
-  fill: #d22856;
-}
-
-.main-nav__logo-image:active .logo-image__path {
-  fill: #ffffff;
-  opacity: 0.3;
-}
-
-.main-nav__burger:hover .main-nav__burger-image {
-  fill: #d22856;
-}
-
-.main-nav__burger:active .main-nav__burger-image {
-  fill: #ffffff;
-  opacity: 0.3;
-}
-
 // .page-header__wrapper-photo,
 // .page-header__wrapper-contest {
 //   display: flex;
