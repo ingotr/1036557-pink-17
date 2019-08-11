@@ -422,13 +422,14 @@
 
     &::after {
       content: url("../img/icon-phone.svg");
+      display: block;
       position: absolute;
       top: 10px;
       right: 10px;
       width: 60px;
       height: 60px;
 
-      // background-image: url("../img/icon-phone.svg");
+      background-image: url("../img/icon-phone.svg");
       background-repeat: no-repeat;
       background-size: 20px 19px;
       background-position: center;

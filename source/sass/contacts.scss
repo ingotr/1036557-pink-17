@@ -11,6 +11,10 @@
   // background-size: contain;
 }
 
+.contacts__container {
+  position: relative;
+}
+
 .contacts__wrapper {
   position: relative;
   min-height: 447px;
@@ -21,6 +25,8 @@
       linear-gradient(10deg, transparent 55px,white 0)bottom left;
   background-size: 50% 100%;
   background-repeat: no-repeat;
+
+  z-index: 10;
 }
 
 .contacts_list {
@@ -99,12 +105,24 @@
     background-size: contain;
   }
 
+  .contacts__container {
+    position: relative;
+  }
+
   .contacts__wrapper {
+    position: relative;
     display: flex;
     flex-direction: column;
     justify-content: center;
+
     background-color: $top-menu-text-color;
-    padding-bottom: 60px;
+    background:
+        linear-gradient(-10deg, transparent 55px, white 0)bottom right,
+        linear-gradient(10deg, transparent 55px,white 0)bottom left;
+    background-size: 50% 100%;
+    background-repeat: no-repeat;
+
+    z-index: 10;
   }
 
   .contacts__title {
@@ -119,15 +137,55 @@
     flex-direction: row;
     justify-content: center;
     flex-wrap: wrap;
-    margin-left: 40px;
   }
 
   .contacts_list__item-title {
-    margin-bottom: 14px;
+    margin-top: 0;
+    margin-bottom: 10px;
+  }
+
+  .contacts_list__item {
+    margin-left: 40px;
+    margin-right: 40px;
+    padding-bottom: 20px;
   }
 }
 
+.contacts__map {
+  position: absolute;
+  z-index: -1;
+
+  width: 100%;
+  min-height: 729px;
+  margin: 0;
+  padding: 0;
+
+  // background-image: url("../img/bg-map-tablet@1x.png");
+  // background-position: 50%;
+  // background-repeat: no-repeat;
+  // background-size: cover;
+}
+
+.contacts__map {
+  min-height: 848px;
+  width: 100%;
+  z-index: 1;
+  border: none;
+  position: absolute;
+  top: 0;
+}
+
 @media (min-width: $desktop-width) {
+  .contacts {
+    margin-bottom: 30px;
+    min-height: 848px;
+
+    background-image: url("../img/bg-map-desktop@1x.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+  }
+
   .contacts__title {
     padding-right: 70px;
     padding-left: 70px;
@@ -139,5 +197,16 @@
 
   .contacts_list__item-title {
     margin-bottom: 24px;
+  }
+
+  .contacts__wrapper {
+    background-color: $top-menu-text-color;
+    background:
+        linear-gradient(-5deg, transparent 55px, white 0)bottom right,
+        linear-gradient(5deg, transparent 55px,white 0)bottom left;
+    background-size: 50% 100%;
+    background-repeat: no-repeat;
+
+    z-index: 10;
   }
 }

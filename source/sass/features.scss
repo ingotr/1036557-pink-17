@@ -88,6 +88,8 @@
 @media (min-width: $tablet-width) {
   .features__wrapper {
     flex-direction: row;
+
+    background: linear-gradient(176deg, transparent 20%, $features-list-bg-color 0%);
   }
 
   .features__slogan {
@@ -115,6 +117,42 @@
   }
 }
 
+// Циферблат часов
+.timer {
+  position: relative;
+
+  &:before {
+    position: absolute;
+    content: "";
+    width: 175px;
+    height: 175px;
+    top: 54px;
+    left: 16px;
+
+    border: 15px solid #d22856;
+    border-radius: 50%;
+  }
+
+  &:after {
+    position: absolute;
+    content: "24";
+    top: 70px;
+    left: 63px;
+
+    color: #d22856;
+    font-family: "Open Sans";
+    font-size: 96px;
+    font-weight: 700;
+    line-height: 149.47px;
+  }
+}
+
+.features__facts-link {
+  color: #d22856;
+
+  text-decoration: underline;
+}
+
 @media (min-width: $desktop-width) {
   .features__wrapper {
     flex-direction: column;
@@ -122,6 +160,8 @@
   }
 
   .features__slogan {
+    margin-bottom: 75px;
+
     font-size: 50px;
   }
 
@@ -139,5 +179,25 @@
   .information__iphone-screen:nth-child(1),
   .information__iphone-screen:nth-child(2) {
     display: block;
+  }
+
+  .features__facts-title {
+    color: #000000;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 30px;
+  }
+
+  .features__facts-description {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 30px;
+  }
+
+  .features__facts-link {
+    color: #d22856;
+    font-weight: 400;
+    line-height: 30px;
+    text-decoration: underline;
   }
 }

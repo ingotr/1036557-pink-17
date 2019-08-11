@@ -125,6 +125,8 @@
 
   .price__wrapper {
     padding-bottom: 50px;
+
+    background: linear-gradient(176deg, transparent 20%, $features-list-bg-color 0%);
   }
 
   .price__features-item {

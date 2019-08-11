@@ -277,29 +277,26 @@
     background-color: transparent;
   }
 
-  .site-list__item--active {
-      position: relative;
+  .site-list__item--active a[href] {
+    border-bottom: 2px solid #ffffff;
+    text-decoration: none;
+  }
 
-      &::after {
-        content: "";
-
-        position: absolute;
-        right: 0;
-        bottom: 25px;
-        left: 0;
-
-        height: 2px;
-
-        background: #ffffff;
-      }
-    }
+  .site-list__item {
+    display: flex;
+    align-items: center;
   }
 
   .site-list__item a {
     // padding-top: 26px;
-    padding-right: 20px;
-    padding-bottom: 35px;
-    padding-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 0;
+    margin-left: 20px;
+    padding: 0;
+    padding-bottom: 8px;
+    // padding-right: 20px;
+    // padding-bottom: 35px;
+    // padding-left: 20px;
 
     font-size: 18px;
     font-weight: 400;
