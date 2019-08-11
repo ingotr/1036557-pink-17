@@ -35,13 +35,18 @@
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
 
-.filter-icon {
+.filter-path {
   fill: #d22856;
 }
 
-.list-filter__item-button:hover .filter-icon {
-  fill:black;
+.list-filter__item-button:hover .filter-path {
+  fill:#283645;
   opacity: 0.3;
+}
+
+.list-filter__item-button:active .filter-path {
+  fill:#283645;
+  opacity: 0.5;
 }
 
 .upload__button-wrapper {
@@ -80,7 +85,7 @@
   }
 
   &:active {
-    color: opacify($top-menu-text-color, 0.3);
+    color: transparentize($top-menu-text-color, 0.7);
   }
 }
 
@@ -98,7 +103,7 @@
     color: opacify($top-menu-bg-color, 0.3);
 
     border: 3px solid #283645;
-    background-color: opacify($top-menu-bg-color, 0.3);
+    background-color: transparentize($top-menu-bg-color, 0.7);
   }
 }
 
@@ -136,11 +141,73 @@
   }
 }
 
+.range-controls__toggle--fill {
+  left: 20px;
+}
+
+.range-controls__toggle--contrast {
+  left: 130px;
+}
+
+.range-controls--fill,
+.range-controls--contrast {
+  display: none;
+}
+
+
+.slider {
+  -webkit-appearance: none;
+  width: 180%;
+  height: 2px;
+  background: #000000;
+  outline: none;
+  opacity: 1.0;
+  -webkit-transition: .2s;
+  transition: opacity .2s;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 16px;
+    height: 16px;
+    border: 2px solid #d22856;
+    background: $features-list-bg-color;
+    cursor: pointer;
+    border-radius: 50%;
+  }
+
+  &::-webkit-slider-thumb:hover {
+    background: #d22856;
+  }
+
+  &::-moz-range-thumb {
+    width: 16px;
+    height: 16px;
+    border: 2px solid #d22856;
+    background: $features-list-bg-color;
+    cursor: pointer;
+    border-radius: 50%;
+  }
+
+  &::-moz-range-thumb:hover {
+    background: #d22856;
+  }
+}
+
+.slider--fill,
+.slider--contrast {
+  display: none;
+}
+
 @media (min-width: $tablet-width) {
   .upload__wrapper {
     display: flex;
     align-items: flex-start;
-    flex-wrap: wrap;
+    // flex-wrap: wrap;
   }
 
   .upload__photo {
@@ -152,7 +219,12 @@
   }
 
   .upload_filter-button-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
     order: 2;
+
+    margin: 20px;
   }
 
   .upload__filter-list {
@@ -160,6 +232,7 @@
     align-items: center;
     // justify-content: space-between;
     margin: 0;
+    margin-bottom: 60px;
     padding-top: 10px;
     padding-right: 30px;
     padding-left: 20px;
@@ -167,18 +240,106 @@
   }
 
   .list-filter__item {
+    display: flex;
+    flex-direction: row;
     margin-bottom: 15px;
-    padding-right: 200px;
+    padding-right: 20px;
     padding-bottom: 15px;
+    width: 250px;
+
+    border-bottom: 1px solid transparentize(#000000, 0.9);
+
+    &:nth-child(1) .filter__icon {
+      width: 22px;
+      height: 22px;
+    }
+
+    &:nth-child(2) .filter__icon {
+      width: 24px;
+      height: 22px;
+    }
+
+    &:nth-child(3) .filter__icon {
+      width: 16px;
+      height: 16px;
+    }
+  }
+
+  .list-filter__item-button {
+    margin-right: 20px;
+  }
+
+  .filter__slider-wrapper {
+    width: 210px;
+  }
+
+  .slider {
+    width: 100%;
   }
 
   // .upload__button-wrapper {
   //   order: 3;
   // }
-}
 
+//   .range-controls--fill,
+//   .range-controls--contrast {
+//     display: block;
+// }
+
+  .slider--fill,
+  .slider--contrast {
+    display: block;
+  }
+
+}
 @media (min-width: $desktop-width) {
+  // .range-controls--fill,
+  // .range-controls--contrast {
+  //   display: block;
+  // }
+
+  .upload__photo {
+    margin: 50px 80px;
+
+    content: url("../img/photo-road-desktop@1x.jpg");
+    width: 300px;
+    height: 400px;
+  }
+
+  .list-filter__item {
+    &:nth-child(1) .filter__icon {
+      width: 44px;
+      height: 44px;
+    }
+
+    &:nth-child(2) .filter__icon {
+      width: 48px;
+      height: 43px;
+    }
+
+    &:nth-child(3) .filter__icon {
+      width: 32px;
+      height: 32px;
+    }
+  }
+
+  .slider--fill,
+  .slider--contrast {
+    display: block;
+  }
+
+
+
+  .upload_filter-button-wrapper {
+
+  }
+
+
   .upload__button-wrapper {
     flex-direction: row;
+  }
+
+  .upload__button {
+    padding: 20px 40px;
   }
 }

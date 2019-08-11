@@ -143,14 +143,22 @@
   }
 
   .panorama-of-day {
+    position: relative;
     margin-right: 0;
     width: $tablet-width - 40px;
+
+
   }
 
   .panorama-image {
     content: url("../img/panorama-tablet@1x.jpg");
     width: 700px;
     min-height: 509px;
+  }
+
+  .panorama--ribbon {
+    position: absolute;
+    top: 40px;
   }
 
   .photos-list__item-card {
@@ -165,7 +173,7 @@
 
   .photos-list__item-card--panorama {
     flex-direction: row;
-    justify-content: flex-start;
+    // justify-content: flex-start;
     width: 620px;
     min-height: 121px;
   }
@@ -192,6 +200,29 @@
 
   .photos-list__item-likes {
     order: 3;
+  }
+
+  .photos-list__item-likes {
+    padding-right: 50px;
+    padding-bottom: 28px;
+    padding-left: 20px;
+
+    &::before {
+      content: "";
+    }
+
+    &::after {
+      position: absolute;
+      right: -110px;
+
+      content: url("../img/icon-heart.svg");
+    }
+  }
+
+  .photos-list__item-likes--panorama {
+    &::after {
+      right: 25px;
+    }
   }
 
   .photos-list__item:nth-child(2) .photos-list__image {
