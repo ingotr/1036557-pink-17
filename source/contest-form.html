@@ -122,13 +122,19 @@
           <legend class="contest-form__fields-legend contacts-mobile">Контактная информация</legend>
           <div class="contest-form__input-wrapper contest-form__input-wrapper--contacts">
             <label for="contest-form__telephone" class="contest-form__label">Номер телефона</label>
-            <input id="contest-form__telephone" class="contest-form__input-text contest-form__input-text--phone"
-              type="tel" name="telehpone" placeholder="Номер, пожалуйста">
+            <div class="contest-form__text-input-wrapper">
+              <input id="contest-form__telephone" class="contest-form__input-text contest-form__input-text--phone"
+                type="tel" name="telehpone" placeholder="Номер, пожалуйста">
+              <span class="input-icon input-icon--phone"></span>
+            </div>
           </div>
           <div class="contest-form__input-wrapper contest-form__input-wrapper--contacts">
             <label for="contest-form__email" class="contest-form__label">Адрес почты</label>
-            <input id="contest-form__email" class="contest-form__input-text contest-form__input-text--email"
-              type="email" name="email" placeholder="Введите почту *">
+            <div class="contest-form__text-input-wrapper">
+              <input id="contest-form__email" class="contest-form__input-text contest-form__input-text--email"
+                type="email" name="email" placeholder="Введите почту *">
+              <span class="input-icon input-icon--email"></span>
+            </div>
           </div>
         </fieldset>
         <fieldset class="contest-form__fields-app-version fieldset-none container-flex">
@@ -160,7 +166,7 @@
           </div>
         </fieldset>
         <div class="contest-form__button-wrapper">
-          <button class="contest-form__button button" type="submit">Отправить форму</button>
+          <button class="contest-form__button contest-form__button--submit" type="submit">Отправить форму</button>
           <p class="contest-form__note"><span>*</span> — обязательные поля</p>
         </div>
       </form>
@@ -216,6 +222,27 @@
       <!-- </div> -->
     </div>
   </footer>
+  <div class="modal modal--failure">
+    <div class="container container-flex">
+      <h2 class="modal__header">Что-то пошло не так!</h2>
+      <p class="modal__description">Проверьте поля, выделенные красным,
+        скорее всего вы забыли их заполнить
+      </p>
+      <button class="contest-form__button" type="button">Ок</button>
+    </div>
+  </div>
+  <div class="modal modal--success">
+    <div class="container container-flex">
+      <h2 class="modal__header">Ваша заявка отправлена</h2>
+      <p class="modal__description">Спасибо за ваше участие, ваша заявка
+        уже поступила к нам. В ближайшее время мы рассмотрим ее и
+        оповестим вас.
+      </p>
+      <div class="button-wrapper">
+        <button class="contest-form__button" type="button">Закрыть окно</button>
+      </div>
+    </div>
+  </div>
   <script src="js/script.js"></script>
 </body>
 

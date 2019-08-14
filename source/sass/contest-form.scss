@@ -55,10 +55,14 @@
   text-transform: uppercase;
 }
 
+.contest-form__text-input-wrapper {
+  display: flex;
+}
+
 .contest-form__input-text {
-  margin-bottom: 20px;
-  padding-top: 20px;
-  padding-bottom: 20px;
+  // margin-bottom: 20px;
+  padding-top: 13px;
+  padding-bottom: 13px;
   padding-left: 18px;
 
   color: $top-menu-bg-color;
@@ -75,6 +79,11 @@
   &:focus {
     border: 2px solid $contacts__link-color;
   }
+}
+
+.contest-form__input-text--phone,
+.contest-form__input-text--email {
+  flex-grow: 1;
 }
 
 .contest-form__fields-legend {
@@ -274,11 +283,14 @@
 }
 
 .contest-form__button {
+  box-sizing: border-box;
+  width: 276px;
+  height: 59px;
   margin-bottom: 10px;
-  padding-top: 23px;
-  padding-right: 45px;
-  padding-bottom: 22px;
-  padding-left: 45px;
+  // padding-top: 23px;
+  // padding-right: 45px;
+  // padding-bottom: 22px;
+  // padding-left: 45px;
 
   background-color: $contest-form__button-bg-color;
   color: $top-menu-text-color;
@@ -352,6 +364,7 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: baseline;
+    margin-bottom: 20px;
   }
 
   .contest-form__input-wrapper--contacts {
@@ -365,6 +378,8 @@
   // }
 
   .contest-form__label {
+    display: flex;
+    flex-direction: row;
     margin-right: 22px;
   }
 
@@ -401,6 +416,8 @@
 
   .contest-form__button-wrapper {
     flex-direction: row;
+    flex-grow: 1;
+    width: 100%;
 
     order: 6;
   }
@@ -417,24 +434,47 @@
     background-color: $top-menu-text-color;
   }
 
+  .contest-form__text-input-wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+
   .contest-form__input-text--phone {
-    position: relative;
+    // position: relative;
 
-    &::after {
-      content: url("../img/icon-phone.svg");
-      display: block;
-      position: absolute;
-      top: 10px;
-      right: 10px;
-      width: 60px;
-      height: 60px;
+    // &::after {
+    //   content: url("../img/icon-phone.svg");
+    //   display: block;
+    //   position: absolute;
+    //   top: 10px;
+    //   right: 10px;
+    //   width: 60px;
+    //   height: 60px;
 
-      background-image: url("../img/icon-phone.svg");
-      background-repeat: no-repeat;
-      background-size: 20px 19px;
-      background-position: center;
-      background-color: #e5e5e5;;
-    }
+    //   background-image: url("../img/icon-phone.svg");
+    //   background-repeat: no-repeat;
+    //   background-size: 20px 19px;
+    //   background-position: center;
+    //   background-color: #e5e5e5;;
+    // }
+  }
+
+  .input-icon {
+    padding: 20px;
+    background-repeat: no-repeat;
+    background-color: #e5e5e5;
+    background-size: 20px 19px;
+  }
+
+  .input-icon--phone {
+    content: url("../img/icon-phone.svg");
+  }
+
+  .input-icon--email {
+    content: url("../img/icon-mail.svg");
+    padding: 23px 20px;
   }
 
   .contest-form__input-text--email {
@@ -514,7 +554,6 @@
     flex-direction: column;
     flex-wrap: wrap;
     width: $desktop-width;
-    max-height: 228px;
 
     order: 4;
   }
