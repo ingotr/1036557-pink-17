@@ -34,6 +34,8 @@
 }
 
 .contacts_list__item {
+  margin-bottom: 8px;
+
   text-align: center;
 }
 
@@ -50,6 +52,10 @@
 }
 
 .contacts__title {
+  @include zero-margin-padding;
+  padding-top: 47px;
+  padding-bottom: 20px;
+
   color: $top-menu-bg-color;
   font-size: 24px;
   font-weight: 300;
@@ -58,6 +64,10 @@
 }
 
 .contacts_list__item-title {
+  @include zero-margin-padding;
+  padding-top: 18px;
+  padding-bottom: 4px;
+
   color: $top-menu-bg-color;
   font-size: 18px;
   font-weight: 700;

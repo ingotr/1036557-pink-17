@@ -7,11 +7,20 @@
 }
 
 .upload__wrapper {
+  padding-bottom: 30px;
+
   background-color: $features-list-bg-color;
 }
 
 .upload__photo {
-  margin: 20px;
+  margin-top: 20px;
+  margin-right: 19px;
+  margin-bottom: 20px;
+  margin-left: 19px;
+}
+
+.upload_filter-button-wrapper {
+  padding-top: 17px;
 }
 
 .list-filter {
@@ -25,14 +34,24 @@
   align-items: center;
   // width: 200px;
   margin-right: 56px;
-  margin-bottom: 20px;
+  margin-bottom: 69px;
   margin-left: 56px;
+}
+
+.current-item {
+  // padding-bottom: 30px;
+  // border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
 
 .upload__filter-scale {
   margin-bottom: 38px;
   padding-bottom: 34px;
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.list-filter__item-button {
+  display: block;
+  margin-bottom: 20px;
 }
 
 .filter-path {
@@ -60,7 +79,7 @@
   margin-bottom: 12px;
   margin-left: 20px;
   padding-top: 15px;
-  padding-right: 80px;
+  padding-right: 82px;
   padding-bottom: 15px;
   padding-left: 81px;
 

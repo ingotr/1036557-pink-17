@@ -1,6 +1,10 @@
 /*
   $Раздел загрузки
 */
+.app-download {
+  margin-bottom: 40px;
+}
+
 .container-app {
   align-items: flex-start;
 }
@@ -31,13 +35,13 @@
   margin-right: 15px;
   margin-bottom: 20px;
   margin-left: 15px;
-  padding-top: 20px;
-  padding-right: 20px;
-  padding-bottom: 17px;
-  padding-left: 20px;
+  padding-top: 16px;
+  padding-right: 35px;
+  padding-bottom: 16px;
+  padding-left: 35px;
 
   color: $top-menu-text-color;
-  font-size: 21px;
+  font-size: 18px;
   font-weight: 700;
   line-height: 18px;
 
@@ -64,13 +68,13 @@
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
-
-  min-width: 205px;
+  min-width: 240px;
+  margin-bottom: 5px;
+  padding-top: 12px;
 }
 
 .app-download__description {
-  margin-top: 28px;
-  margin-bottom: 35px;
+  margin-bottom: 32px;
   padding-right: 20px;
   padding-left: 20px;
 

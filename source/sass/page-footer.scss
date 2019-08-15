@@ -35,7 +35,7 @@
 
 .social-list {
   @include list-style-none;
-  margin-bottom: 40px;
+  margin-bottom: 37px;
 
   display: flex;
   flex-direction: row;
@@ -67,7 +67,6 @@
   @include link-decoration-none;
   display: flex;
   align-items: center;
-  padding-right: 15px;
 
   color: $top-menu-bg-color;
   font-size: 14px;
@@ -89,7 +88,7 @@
 }
 
 .page-footer__made-in svg {
-  margin-left: 14px;
+  margin-left: 12px;
 }
 
 @media (min-width: $tablet-width) {
