@@ -90,16 +90,40 @@
 }
 
 @media (min-width: $tablet-width) {
+  .features {
+    margin-bottom: 80px;
+  }
+
   .features__wrapper {
     flex-direction: row;
+    margin-bottom: 40px;
 
-    background: linear-gradient(176deg, transparent 20%, $features-list-bg-color 0%);
+    background: linear-gradient(176deg, transparent 16%, $features-list-bg-color 0%);
   }
 
   .features__slogan {
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+    padding-top: 12px;
+
     font-size: 40px;
     font-weight: 300;
     text-align: center;
+  }
+
+  .features__slogan--second-part {
+    padding-top: 4px;
+    padding-left: 100px;
+    padding-right: 100px;
+  }
+
+  .third-iphone-screen {
+    content: url("../img/iphone-screen-3-tablet@1x.png");
+    width: 268px;
+    height: 483px;
+    margin-top: 60px;
+    margin-left: 21px;
   }
 
   .features__iphones-screen-list {
@@ -111,7 +135,25 @@
   .features-list {
     order: 2;
 
-    padding-top: 20px;
+    padding-top: 120px;
+  }
+
+  .features-list__item {
+    margin-bottom: 35px;
+
+    text-align: left;
+  }
+
+  .features-title {
+    margin-left: 27px;
+    padding-bottom: 10px;
+  }
+
+  .features-description {
+    padding-top: 2px;
+    margin-left: 15px;
+
+    text-align: left;
   }
 
   .features__facts {
@@ -119,42 +161,67 @@
     flex-direction: row;
     justify-content: space-around;
   }
-}
 
-// Циферблат часов
-.timer {
-  position: relative;
+  // Циферблат часов
+  .timer {
+    position: relative;
+    margin-left: 21px;
 
-  &:before {
-    position: absolute;
-    content: "";
-    width: 175px;
-    height: 175px;
-    top: 54px;
-    left: 16px;
+    &:before {
+      position: absolute;
+      content: "";
+      width: 175px;
+      height: 175px;
+      top: 54px;
+      left: 16px;
 
-    border: 15px solid #d22856;
-    border-radius: 50%;
+      border: 15px solid #d22856;
+      border-radius: 50%;
+    }
+
+    &:after {
+      position: absolute;
+      content: "24";
+      top: 76px;
+      left: 63px;
+
+      color: #d22856;
+      font-family: "Open Sans";
+      font-size: 96px;
+      font-weight: 700;
+      line-height: 149.47px;
+    }
   }
 
-  &:after {
-    position: absolute;
-    content: "24";
-    top: 70px;
-    left: 63px;
+  .features__facts-title {
+    margin-top: 53px;
+    margin-left: 30px;
+    margin-bottom: 10px;
+    padding-right: 150px;
 
-    color: #d22856;
-    font-family: "Open Sans";
-    font-size: 96px;
+    font-size: 30px;
     font-weight: 700;
-    line-height: 149.47px;
+    line-height: 36px;
   }
-}
 
-.features__facts-link {
-  color: #d22856;
+  .features__facts-link {
+    margin-top: 0;
+    margin-left: 30px;
+    color: #d22856;
 
-  text-decoration: underline;
+    text-decoration: underline;
+  }
+
+  .features__facts-description {
+    margin-top: 5px;
+    margin-left: 30px;
+    margin-bottom: 13px;
+    padding-right: 35px;
+
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+  }
 }
 
 @media (min-width: $desktop-width) {

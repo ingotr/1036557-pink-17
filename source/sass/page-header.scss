@@ -89,7 +89,6 @@
   .container {
     width: $tablet-width;
     margin: 0 auto;
-    padding: 0 20px;
   }
 
   .container--hand-iphone {
@@ -145,8 +144,12 @@
   }
 
   .page-header__title--photo {
-    padding-top: 70px;
-    padding-bottom: 130px;
+    padding-top: 20px;
+    padding-bottom: 139px;
+
+    font-size: 50px;
+    font-weight: 300;
+    line-height: 60px;
   }
 
   .page-header__title--contest {

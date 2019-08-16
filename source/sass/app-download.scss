@@ -87,7 +87,6 @@
 
 @media (min-width: $tablet-width) {
   .app-download {
-    padding-top: 20px;
     padding-left: 20px;
     padding-right: 20px;
 
@@ -100,22 +99,30 @@
   }
 
   .container-app {
+    padding-top: 93px;
+    padding-bottom: 78px;
+
     background-image: url("../img/iphone-hand-tablet@1x.png");
     background-repeat: no-repeat;
-    background-size: contain;
-    background-position: bottom;
+    background-size: 700px 547px;
+    background-position: -20px 71px;
   }
 
   .app-download__wrapper {
     // margin-top: -530px;
     // margin-left: 20px;
     // margin-left: -260px;
-    width: $tablet-width / 2;
+    width: 340px;
 
     background-color: transparent;
   }
 
   .app-download__title {
+    @include zero-margin-padding;
+    margin-bottom: 34px;
+    padding-left: 64px;
+    padding-right: 63px;
+
     display: block;
     color: $top-menu-text-color;
     font-size: 40px;
@@ -123,14 +130,17 @@
   }
 
   .app-download__button {
-    margin-bottom: 42px;
-    padding-right: 49px;
-    padding-left: 49px;
+    @include zero-margin-padding;
+    margin-bottom: 35px;
+    padding-top: 15px;
+    padding-right: 46px;
+    padding-left: 46px;
+    padding-bottom: 16px;
   }
 
   .app-download__list {
     max-width: 205px;
-    margin-bottom: 40px;
+    margin-bottom: 14px;
   }
 
   .app-download__description {

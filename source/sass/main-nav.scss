@@ -193,13 +193,21 @@
     width: $tablet-width;
   }
 
-  .main-nav__logo-image {
-    content: url("../img/logo-pink-white-tablet.svg");
+  .main-nav__logo {
+    margin-top: 27px;
+    margin-left: 40px;
 
-    width: 147px;
-    min-height: 40px;
-    object-fit: contain;
+    // Временно для выравнивания
+    margin-bottom: 57px;
   }
+
+  // .main-nav__logo-image {
+  //   content: url("../img/logo-pink-white-tablet.svg");
+
+  //   width: 147px;
+  //   min-height: 40px;
+  //   object-fit: contain;
+  // }
 
   .site-list {
     display: flex;

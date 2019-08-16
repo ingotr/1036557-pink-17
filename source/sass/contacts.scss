@@ -106,17 +106,14 @@
 
 @media (min-width: $tablet-width) {
   .contacts {
-    margin-bottom: 30px;
-    min-height: 848px;
+    position: relative;
+    margin-bottom: 50px;
+    min-height: 750px;
 
     background-image: url("../img/bg-map-tablet@1x.jpg");
     background-repeat: no-repeat;
     background-position: center;
-    background-size: contain;
-  }
-
-  .contacts__container {
-    position: relative;
+    background-size: cover;
   }
 
   .contacts__wrapper {
@@ -124,6 +121,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+    padding-bottom: 46px;
 
     background-color: $top-menu-text-color;
     background:
@@ -136,8 +134,13 @@
   }
 
   .contacts__title {
+    margin-top: 8px;
+    margin-bottom: 0;
     margin-right: 120px;
     margin-left: 120px;
+    padding-top: 55px;
+    padding-bottom: 27px;
+
     font-size: 40px;
     font-weight: 300;
   }
@@ -150,14 +153,29 @@
   }
 
   .contacts_list__item-title {
-    margin-top: 0;
-    margin-bottom: 10px;
+    @include zero-margin-padding;
+    margin-top: 0px;
+    margin-bottom: 8px;
+    padding-top: 16px;
+    padding-bottom: 0px;
   }
 
   .contacts_list__item {
-    margin-left: 40px;
+    margin-top: 3px;
+    margin-left: 58px;
     margin-right: 40px;
-    padding-bottom: 20px;
+    margin-bottom: 16px;
+    padding-bottom: 18px;
+  }
+
+  .contacts_list__item:last-child {
+    margin-left: 40px;
+    margin-bottom: 23px;
+  }
+
+  .contacts_list__item-link {
+    @include zero-margin-padding;
+    display: block;
   }
 }
 

@@ -17,7 +17,7 @@
 }
 
 .page-footer__logo {
-  margin-bottom: 40px;
+  margin-bottom: 37px;
 }
 
 .page-footer__logo-icon {
@@ -35,13 +35,13 @@
 
 .social-list {
   @include list-style-none;
-  margin-bottom: 37px;
+  margin-bottom: 38px;
 
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  width: 171px;
+  width: 178px;
 }
 
 .social-list__item {
@@ -88,10 +88,19 @@
 }
 
 .page-footer__made-in svg {
-  margin-left: 12px;
+  margin-left: 17px;
 }
 
 @media (min-width: $tablet-width) {
+  .page-footer {
+    padding-top: 38px;
+    position: relative;
+
+    z-index: 10;
+
+    background-color: $top-menu-text-color;
+  }
+
   .page-footer--index-page {
     display: block;
   }
@@ -106,7 +115,7 @@
   .container--flex-row {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
   }
 
@@ -114,11 +123,32 @@
     margin-bottom: 0;
   }
 
+  .page-footer__logo {
+    margin-left: 0px;
+    margin-right: 38px;
+    padding-left: 5px;
+    padding-bottom: 13px;
+  }
+
   .social-list {
     flex-direction: row;
     margin-bottom: 0;
+    margin-right: 0px;
+    margin-left: 0;
+    padding-bottom: 39px;
+    padding-right: 2px;
+    width: 185px;
   }
 
+  .social-list__item {
+    padding: 1px;
+    margin: 0px 5px;
+  }
+
+  .page-footer__made-in {
+    margin-bottom: 35px;
+    padding-left: 62px;
+  }
 }
 
 @media (min-width: $desktop-width) {

@@ -113,12 +113,17 @@
 }
 
 @media (min-width: $tablet-width) {
+  .reviews {
+    margin-top: 0;
+  }
+
   .reviews__item {
     display: flex;
     flex-direction: column;
   }
 
   .reviews__author {
+    margin-bottom: 3px;
     order: 2;
 
     font-size: 20px;
@@ -135,13 +140,16 @@
   }
 
   .reviews__description {
+    margin-bottom: 34px;
     order: 1;
-  }
-}
 
-.slider__prev,
-.slider__next {
-  display: none;
+    font-size: 18px;
+  }
+
+  .slider__prev,
+  .slider__next {
+    display: none;
+  }
 }
 
 @media (min-width: $desktop-width) {
