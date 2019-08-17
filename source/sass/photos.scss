@@ -24,7 +24,7 @@
   padding-left: 38px;
 }
 
-.title-down {
+.photos__title-down {
   margin: 0;
   margin-bottom: 43px;
   padding: 0 27px;
@@ -155,6 +155,13 @@
     margin-right: 27px;
     margin-bottom: 55px;
     margin-left: 21px;
+  }
+
+  .photos__title-down {
+    margin-top: 40px;
+    margin-right: 90px;
+    margin-bottom: 68px;
+    margin-left: 85px;
   }
 
   .photos-list {
@@ -348,19 +355,62 @@
 }
 
 @media (min-width: $desktop-width) {
+  .page-header__title--photo {
+    padding-top: 10px;
+    padding-bottom: 100px;
+    padding-left: 133px;
+    padding-right: 136px;
+  }
+
+  .photos__title {
+    margin-top: 31px;
+    margin-right: 116px;
+    margin-bottom: 66px;
+    margin-left: 123px;
+  }
+
   .photos-list {
     width: $desktop-width;
   }
 
+  .photos-list__item {
+    margin-left: 0px;
+    margin-bottom: 54px;
+    margin-right: 20px;
+  }
+
   .panorama-of-day {
-    margin-right: 0;
-    width: $desktop-width - 40px;
+    @include zero-margin-padding;
+    margin-bottom: 50px;
+    width: $desktop-width;
+  }
+
+  .panorama--ribbon {
+    top: 54px;
+    right: 0px;
+    padding-top: 6px;
+    padding-right: 19px;
+    padding-bottom: 6px;
+  }
+
+  .panorama-of-day a {
+    display: flex;
+    justify-content: center;
   }
 
   .panorama-image {
+    @include zero-margin-padding;
     content: url("../img/panorama-desktop@1x.jpg");
     width: 1200px;
     min-height: 506px;
+  }
+
+  .photos-list__item-card--panorama {
+    width: auto;
+    padding-top: 13px;
+    padding-right: 32px;
+    padding-bottom: 9px;
+    padding-left: 28px;
   }
 
   .photos-list__item:nth-child(3n + 1) {
@@ -401,5 +451,12 @@
     content: url("../img/photo-wing-desktop@1x.jpg");
     width: 300px;
     min-height: 400px;
+  }
+
+  .photos__title-down {
+    @include zero-margin-padding;
+    margin-right: 119px;
+    margin-bottom: 66px;
+    margin-left: 108px;
   }
 }

@@ -152,7 +152,41 @@
 }
 
 @media (min-width: $desktop-width) {
+  .page-footer {
+    padding-top: 38px;
+  }
+
   .page-footer--index-page {
     display: block;
+  }
+
+  .container--flex-row {
+    padding: 0;
+    align-items: inherit;
+    justify-content: space-between;
+  }
+
+  .page-footer__logo {
+    @include zero-margin-padding;
+    margin-left: 0px;
+    margin-right: 15px;
+  }
+
+  .page-footer__list {
+    @include zero-margin-padding;
+  }
+
+  .page-footer__made-in {
+    @include zero-margin-padding;
+  }
+
+  .page-footer__text {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 18px;
+  }
+
+  .page-footer__made-in-logo {
+    padding-top: 8px;
   }
 }

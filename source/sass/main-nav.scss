@@ -257,6 +257,9 @@
   //   display: flex;
   //   align-items: center;
   // }
+  .main-nav__logo {
+    @include zero-margin-padding;
+  }
 
   .main-nav__logo-image {
     content: url("../img/logo-pink-white-desktop.svg");
@@ -278,28 +281,36 @@
   .main-nav__list {
     display: flex;
     flex-direction: row;
-    justify-content: flex-start;
-    width: 570px;
+    justify-content: space-between;
+    min-width: 620px;
 
-    // background-color: rgba(40, 54, 69, 0.3);
     background-color: transparent;
   }
 
   .site-list__item--active a[href] {
+    padding-top: 9px;
+    padding-bottom: 10px;
+
     border-bottom: 2px solid #ffffff;
+
     text-decoration: none;
   }
 
   .site-list__item {
     display: flex;
     align-items: center;
+    margin-right: 70px;
+  }
+
+  .site-list__item:last-child {
+    margin-right: 0;
   }
 
   .site-list__item a {
     // padding-top: 26px;
-    margin-right: 20px;
+    margin-right: 0;
     margin-bottom: 0;
-    margin-left: 20px;
+    margin-left: 0;
     padding: 0;
     padding-bottom: 8px;
     // padding-right: 20px;

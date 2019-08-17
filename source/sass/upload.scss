@@ -34,7 +34,7 @@
   align-items: center;
   width: 232px;
   margin-right: 56px;
-  margin-bottom: 88px;
+  margin-bottom: 49px;
   margin-left: 37px;
 }
 
@@ -72,6 +72,11 @@
 .list-filter__item-button:active .filter-path {
   fill:#283645;
   opacity: 0.1;
+}
+
+.mobile-divider {
+  opacity: 0.5;
+  margin-bottom: 37px;
 }
 
 .upload__button-wrapper {
@@ -329,6 +334,10 @@
     display: block;
   }
 
+  .mobile-divider {
+    display: none;
+  }
+
   .upload__button {
     margin-right: 0;
     margin-bottom: 24px;
@@ -349,34 +358,83 @@
 
 }
 @media (min-width: $desktop-width) {
-  // .range-controls--fill,
-  // .range-controls--contrast {
-  //   display: block;
-  // }
+  .upload {
+    margin-bottom: 62px;
+  }
+
+  .upload__wrapper {
+    padding-top: 57px;
+    padding-right: 80px;
+    padding-bottom: 20px;
+    padding-left: 80px;
+  }
 
   .upload__photo {
-    margin: 50px 80px;
-
+    @include zero-margin-padding;
     content: url("../img/photo-road-desktop@1x.jpg");
     width: 300px;
     height: 400px;
   }
 
+  .upload_filter-button-wrapper {
+    padding-left: 90px;
+    padding-right: 90px;
+    padding-bottom: 13px;
+  }
+
+  .upload__filter-list {
+    @include zero-margin-padding;
+    margin-bottom: 128px;
+  }
+
   .list-filter__item {
+    @include zero-margin-padding;
+
+    align-items: end;
+    margin-left: 185px;
+    margin-bottom: 16px;
+    padding-top: 0;
+    padding-right: 170px;
+    padding-bottom: 8px;
+
     &:nth-child(1) .filter__icon {
-      width: 44px;
-      height: 44px;
+      width: 45px;
+      height: 45px;
     }
 
     &:nth-child(2) .filter__icon {
       width: 48px;
-      height: 43px;
+      height: 45px;
     }
 
     &:nth-child(3) .filter__icon {
       width: 32px;
       height: 32px;
     }
+
+    &:nth-child(3) {
+      margin-left: 197px;
+    }
+
+    &:nth-child(3) .list-filter__item-button {
+      margin-right: 55px;
+    }
+  }
+
+  .list-filter__item-button {
+    margin-right: 47px;
+  }
+
+  .filter__slider-wrapper {
+    padding-top: 6px;
+    padding-bottom: 22px;
+  }
+
+  .filter__slider {
+    width: 288px;
+  }
+
+  .slider--fill {
   }
 
   .slider--fill,
@@ -384,18 +442,29 @@
     display: block;
   }
 
-
-
-  .upload_filter-button-wrapper {
-
+  .mobile-divider {
+    display: none;
   }
-
 
   .upload__button-wrapper {
     flex-direction: row;
   }
 
   .upload__button {
-    padding: 20px 40px;
+    margin-left: 0;
+    margin-bottom: 23px;
+    padding-top: 15px;
+    padding-right: 36px;
+    padding-bottom: 16px;
+    padding-left: 42px;
+  }
+
+  .upload__post {
+    margin-right: 43px;
+  }
+
+  .upload__cancel {
+    padding-left: 56px;
+    padding-right: 48px;
   }
 }

@@ -105,11 +105,11 @@
     border-radius: 50%;
     background: #ffffff;
   }
+}
 
-  .slider__prev,
-  .slider__next {
+.slider__prev,
+.slider__next {
     display: none;
-  }
 }
 
 @media (min-width: $tablet-width) {
