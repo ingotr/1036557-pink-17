@@ -10,26 +10,27 @@ var form = document.querySelector(".contest-form__fields");
 var formSubmitBtn = document.querySelector(".contest-form__button--submit");
 
 // Обязательные поля для формы
-var surname = form.querySelector("[name=surname]");
-var name = form.querySelector("[name=name]");
-var email = form.querySelector("[name=email]");
+// var surname = form.querySelector("[name=surname]");
+// var name = form.querySelector("[name=name]");
+// var email = form.querySelector("[name=email]");
 
 var isStorageSupport = true;
 
-console.log(surname.value);
-console.log(name.value);
-console.log(email.value);
+// Для отладки
+// console.log(surname.value);
+// console.log(name.value);
+// console.log(email.value);
+
+// Раздел открытия мобильного меню
+navMain.classList.remove("main-nav--nojs");
+// navMain.classList.remove("main-nav--opened");
+// navMain.classList.add("main-nav--closed");
 
 try {
   storage = localStorage.getItem("name");
 } catch (err) {
   isStorageSupport = false;
 }
-
-// Раздел открытия мобильного меню
-navMain.classList.remove("main-nav--nojs");
-// navMain.classList.remove("main-nav--opened");
-// navMain.classList.add("main-nav--closed");
 
 navBurger.addEventListener("click", function() {
   if (navMain.classList.contains("main-nav--closed")) {

@@ -153,8 +153,8 @@
 
 @media (min-width: $desktop-width) {
   .app-download {
-    padding-left: 20px;
-    padding-right: 20px;
+    @include zero-margin-padding;
+    margin-bottom: 56px;
 
     background-color: #2a3a4a;
 
@@ -165,10 +165,14 @@
   }
 
   .container-app {
+    padding-top: 105px;
+    padding-left: 0px;
+    padding-bottom: 90px;
+
     background-image: url("../img/iphone-hand-desktop@1x.png");
     background-repeat: no-repeat;
-    background-size: contain;
-    background-position: bottom;
+    background-size: auto;
+    background-position: 21px bottom;
   }
 
   .app-download__wrapper {
@@ -181,18 +185,44 @@
   }
 
   .app-download__title {
-    margin-bottom: 40px;
+    margin-bottom: 53px;
+    padding-left: 48px;
+    padding-right: 63px;
 
     font-size: 50px;
+    line-height: 59px;
   }
 
   .app-download__button {
-    margin-bottom: 52px;
-    padding-right: 30px;
-    padding-left: 30px;
+    @include zero-margin-padding;
+
+    align-self: flex-start;
+    margin-left: 5px;
+    margin-bottom: 55px;
+    padding-bottom: 17px;
+    padding-left: 29px;
+    padding-right: 29px;
+    padding-top: 14px;
+
+    font-size: 21px;
+    font-weight: 700;
+    line-height: 18px;
   }
 
   .app-download__list {
-    margin-bottom: 50px;
+    justify-content: space-between;
+    align-items: flex-end;
+    box-sizing: border-box;
+    min-width: 229px;
+    margin-bottom: 36px;
+    padding-left: 0px;
+    padding-top: 10px;
+    padding-right: 23px;
+    padding-bottom: 1px;
+  }
+
+  .app-download__description {
+    padding-left: 0px;
+    padding-right: 18px;
   }
 }

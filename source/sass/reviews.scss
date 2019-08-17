@@ -185,16 +185,28 @@
   }
 
   .slider__prev {
-    left: 50px;
+    background-image: url("../img/icon-review-arrow-left.svg");
+    background-repeat: no-repeat;
+
+    width: 22px;
+    height: 41px;
+    top: 140px;
+    left: 0px;
   }
 
   .slider__next {
-    right: 20px;
-    border-radius: 3px 0 0 3px;
+    background-image: url("../img/icon-review-arrow-right.svg");
+    background-repeat: no-repeat;
+
+    width: 22px;
+    height: 41px;
+    top: 141px;
+    right: -32px;
   }
 
   .reviews__quotes-image {
-    margin-bottom: 35px;
+    margin-left: 6px;
+    margin-bottom: 48px;
 
     background-image: url("../img/icon-quotes.svg");
     width: 79px;
@@ -205,7 +217,7 @@
   .reviews__description {
     padding-right: 127px;
     padding-left: 127px;
-    margin-bottom: 30px;
+    margin-bottom: 37px;
   }
 
   .reviews__author {

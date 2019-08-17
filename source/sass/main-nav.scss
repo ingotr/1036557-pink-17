@@ -191,6 +191,8 @@
 
   .main-nav__top-menu {
     width: $tablet-width;
+
+    background-color: rgba(40, 54, 69, 0.7);
   }
 
   .main-nav__logo {
@@ -239,7 +241,6 @@
     margin: 0;
     min-height: 115px;
 
-    background-color: transparentize(#000000, 0.7);
     z-index: 20;
   }
 
