@@ -4,15 +4,15 @@
 
 .features {
   margin-bottom: 57px;
+
+  background: #f2f2f2;
+  background: linear-gradient(175deg, transparent 20%, $features-list-bg-color 0%);
 }
 
 .features__wrapper {
   display: flex;
   flex-direction: column;
   align-items: center;
-
-  background: #f2f2f2;
-  background: linear-gradient(175deg, transparent 4%, $features-list-bg-color 0%);
 }
 
 .features-list {
@@ -122,21 +122,22 @@
 
   margin-top: -126px;
   background-color: #ffffff;
-  width: 320px;
+  width: 100%;
   min-height: 87px;
 }
 
 @media (min-width: $tablet-width) {
   .features {
     margin-bottom: 80px;
+
+    background: #f2f2f2;
+    background: linear-gradient(176deg, transparent 23%, #f2f2f2 0%);
   }
 
   .features__wrapper {
     position: relative;
     flex-direction: row;
     margin-bottom: 40px;
-
-    background: linear-gradient(176deg, transparent 16%, $features-list-bg-color 0%);
   }
 
   .features__slogan {
@@ -284,14 +285,15 @@
 @media (min-width: $desktop-width) {
   .features {
     margin-bottom: 72px;
+
+    background-color: #f2f2f2;
+    background: linear-gradient(175deg, transparent 26%, #f2f2f2 0%);
   }
 
   .features__wrapper {
     flex-direction: column;
     align-items: inherit;
     margin-bottom: 0;
-
-    background: linear-gradient(176deg, transparent 19%, #f2f2f2 0%);
   }
 
   .features__slogan {

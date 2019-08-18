@@ -1,13 +1,16 @@
 /*
   $Раздел подписки
 */
+.price {
+  background: #f2f2f2;
+  background: linear-gradient(176deg, transparent 6%, $features-list-bg-color 0%);
+}
+
+
 .price__wrapper {
   position: relative;
   padding-top: 90px;
   padding-bottom: 20px;
-
-  background: #f2f2f2;
-  background: linear-gradient(175deg, transparent 5%, $features-list-bg-color 0%);
 
   overflow: hidden;
 }
@@ -159,6 +162,9 @@
 @media (min-width: $tablet-width) {
   .price {
     margin-top: -45px;
+
+    background: #f2f2f2;
+    background: linear-gradient(176deg, transparent 18%, $features-list-bg-color 0%);
   }
 
   .table__wrapper {
@@ -176,7 +182,6 @@
   .price__wrapper {
     padding-bottom: 43px;
 
-    background: linear-gradient(176deg, transparent 16%, $features-list-bg-color 0%);
   }
 
   .price__features-table {
@@ -269,14 +274,17 @@
 }
 
 @media (min-width: $desktop-width) {
+  .price {
+    background-color: #f2f2f2;
+    background: linear-gradient(176deg, transparent 15%, #f2f2f2 0%);
+  }
+
   .price__wrapper {
     display: flex;
     flex-direction: column;
     align-items: center;
     padding-top: 163px;
     padding-bottom: 95px;
-
-    background: linear-gradient(176deg, transparent 15%, #f2f2f2 0%);
   }
 
   .price__features-table {
