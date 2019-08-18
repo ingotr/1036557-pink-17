@@ -14,9 +14,9 @@
     <div class="container">
       <nav class="main-nav main-nav--opened main-nav--nojs">
         <div class="main-nav__top-menu">
-          <a class="main-nav__logo">
+          <a class="main-nav__logo" href="index.html">
             <svg width="74" height="23" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
-              xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="74.426px" height="22.859px"
+              xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
               viewBox="0 0 74.426 22.859" enable-background="new 0 0 74.426 22.859" xml:space="preserve">
               <g>
                 <path class="main-nav__logo-image" fill="#FFFFFF"
@@ -55,9 +55,9 @@
   <section class="contest-form">
     <h2 class="visually-hidden">Раздел формы:</h2>
     <div class="container container-flex">
-      <p class="contest-form__title title-up">Поделитесь своей историей и получите шанс
-        выиграть ценный приз — 1000 миль на вашу бонусную карту!
-        Пожалуйста, заполните форму ниже:
+      <p class="contest-form__title">Поделитесь своей историей и получите шанс
+         выиграть ценный приз — 1000 миль на вашу бонусную карту!
+         Пожалуйста, заполните форму ниже:
       </p>
       <form class="contest-form__fields" action="https://echo.htmlacademy.ru" method="get">
         <fieldset class="contest-form__fields-name fieldset-none">
@@ -78,9 +78,9 @@
           </div>
         </fieldset>
         <fieldset class="contest-form__fields-achievments fieldset-none container-flex">
-          <p class="contest-form__fields-legend">
+          <legend class="contest-form__fields-legend">
             Ваши безбашенные достижения в путешествии
-          </p>
+          </legend>
           <label for="contest-form__selfie-with-shark" class="contest-form__label contest-form__label--checkbox">
             <input id="contest-form__selfie-with-shark" class="contest-form__input-checkbox" type="checkbox"
               name="achievments" value="Сделал селфи с акулой" checked>
@@ -119,9 +119,11 @@
           </label>
         </fieldset>
         <fieldset class="contest-form__fields-contacts fieldset-none">
-          <legend class="contest-form__fields-legend contacts-mobile">Контактная информация</legend>
+          <legend class="contest-form__fields-legend contacts-mobile">
+            Контактная информация
+          </legend>
           <div class="contest-form__input-wrapper contest-form__input-wrapper--contacts">
-            <label for="contest-form__telephone" class="contest-form__label">Номер телефона</label>
+            <label for="contest-form__telephone" class="contest-form__label contest-form__label--phone">Номер телефона</label>
             <div class="contest-form__text-input-wrapper">
               <input id="contest-form__telephone" class="contest-form__input-text contest-form__input-text--phone"
                 type="tel" name="telehpone" placeholder="Номер, пожалуйста">
@@ -129,7 +131,7 @@
             </div>
           </div>
           <div class="contest-form__input-wrapper contest-form__input-wrapper--contacts">
-            <label for="contest-form__email" class="contest-form__label">Адрес почты</label>
+            <label for="contest-form__email" class="contest-form__label contest-form__label--email">Адрес почты</label>
             <div class="contest-form__text-input-wrapper">
               <input id="contest-form__email" class="contest-form__input-text contest-form__input-text--email"
                 type="email" name="email" placeholder="Введите почту *">
@@ -138,7 +140,9 @@
           </div>
         </fieldset>
         <fieldset class="contest-form__fields-app-version fieldset-none container-flex">
-          <p class="contest-form__fields-legend">С каким приложением путешествовали?</p>
+          <legend class="contest-form__fields-legend">
+            С каким приложением путешествовали?
+          </legend>
           <label for="contest-form__pink-ios" class="contest-form__label contest-form__label--radio">
             <input id="contest-form__pink-ios" class="contest-form__input-radio" type="radio" name="app-version"
               value="Pink для iOS" checked>
@@ -159,17 +163,18 @@
           </label>
         </fieldset>
         <fieldset class="contest-form__fields-emotions fieldset-none">
-          <p class="contest-form__fields-legend contest-form__fields-legend--emotions">Опишите свои эмоции</p>
-          <div class="contest-form__input-wrapper">
+          <legend class="contest-form__fields-legend contest-form__fields-legend--emotions">Опишите свои эмоции</legend>
+          <div class="contest-form__input-wrapper contest-form__input-wrapper--emotions">
             <!-- <input class="contest-form__input-text contest-form__input-text--emotions" type="text" name="emotions"
               placeholder="Можно прям в красках, не стесняясь в выражениях"> -->
-            <textarea class="contest-form__input-text--emotions" name="emotions" placeholder="Можно прям в красках, не стесняясь в выражениях">
+            <textarea class="contest-form__input-text--emotions" name="emotions"
+            placeholder="Можно прям в красках, не стесняясь в выражениях">
             </textarea>
           </div>
         </fieldset>
         <div class="contest-form__button-wrapper">
           <button class="contest-form__button contest-form__button--submit" type="submit">Отправить форму</button>
-          <p class="contest-form__note"><span>*</span> — обязательные поля</p>
+          <p class="contest-form__note"><span class="note-star">*</span> — обязательные <span class="note--desktop"> для заполнения </span>поля</p>
         </div>
       </form>
 
@@ -181,7 +186,7 @@
     <div class="container container--flex-row">
       <!-- <div class="page-footer__wrapper"> -->
       <div class="page-footer__logo">
-        <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+        <svg version="1.1" id="Layer_2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
           x="0px" y="0px" width="146.3px" height="40.375px" viewBox="0 0 146.3 40.375"
           enable-background="new 0 0 146.3 40.375" xml:space="preserve">
           <g>
@@ -213,7 +218,7 @@
       </ul>
       <a class="page-footer__made-in" href="https://htmlacademy.ru/intensive/adaptive">
         <span class="page-footer__text">Разработано</span>
-        <svg class="page-footer__made-in-logo" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+        <svg class="page-footer__made-in-logo" version="1.0" id="Layer_3" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
           x="0px" y="0px" width="26.943px" height="34.09px" viewBox="0 0 26.943 34.09"
           enable-background="new 0 0 26.943 34.09" xml:space="preserve">
           <path
@@ -225,8 +230,8 @@
     </div>
   </footer>
   <div class="modal modal--failure">
-    <div class="container container-flex">
-      <h2 class="modal__header">Что-то пошло не так!</h2>
+    <div class="container container--modal">
+      <h2 class="modal__header modal__header--failure">Что-то пошло не так!</h2>
       <p class="modal__description">Проверьте поля, выделенные красным,
         скорее всего вы забыли их заполнить
       </p>
@@ -234,7 +239,7 @@
     </div>
   </div>
   <div class="modal modal--success">
-    <div class="container container-flex">
+    <div class="container container--modal">
       <h2 class="modal__header">Ваша заявка отправлена</h2>
       <p class="modal__description modal__description-success">Спасибо за ваше участие, ваша заявка
         уже поступила к нам. В ближайшее время мы рассмотрим ее и

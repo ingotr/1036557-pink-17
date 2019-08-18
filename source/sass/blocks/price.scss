@@ -13,9 +13,13 @@
 }
 
 .table__wrapper {
-  // position: absolute;
-  // margin-left: -170px;
-  overflow-x: auto;
+  min-height: 311px;
+}
+
+.price__features-table {
+  position: absolute;
+  top: 91px;
+  left: -258px;
 }
 
 // .price__features-list {
@@ -159,6 +163,14 @@
 
   .table__wrapper {
     margin: 0;
+
+    min-height: 227px;
+  }
+
+  .price__features-table {
+    position: static;
+    top: 0;
+    left: 0;
   }
 
   .price__wrapper {

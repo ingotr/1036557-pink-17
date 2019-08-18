@@ -40,7 +40,7 @@
 
 .main-nav--closed .main-nav__burger {
   top: 20px;
-  right: 10px;
+  right: 18px;
 
   &::before {
     content: "";
@@ -72,12 +72,11 @@
 }
 
 .main-nav--opened {
-  // position: absolute;
-  // top: -10px;
-
   z-index: 10;
 
   min-height: 20vh;
+
+  background-color: $top-menu-bg-color;
 }
 
 .main-nav--nojs .main-nav__burger {
@@ -249,6 +248,14 @@
     margin: 0;
     align-self: center;
 
+    background-color: transparent;
+  }
+
+  .main-nav--closed .main-nav__list {
+    display: flex;
+  }
+
+  .main-nav--opened {
     background-color: transparent;
   }
 
