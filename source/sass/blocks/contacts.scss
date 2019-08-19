@@ -18,13 +18,14 @@
 
 .contacts__wrapper {
   position: relative;
+  width: 100%;
   min-height: 447px;
 
   background-color: gray;
   background:
       linear-gradient(-10deg, transparent 55px, white 0)bottom right,
       linear-gradient(10deg, transparent 55px,white 0)bottom left;
-  background-size: 50% 100%;
+  background-size: 51% 100%;
   background-repeat: no-repeat;
 
   z-index: 10;
@@ -84,10 +85,11 @@
 
 .contacts__map {
   position: absolute;
-  z-index: -1;
+  z-index: 1;
+  top: 0;
 
   width: 100%;
-  min-height: 600px;
+  min-height: 583px;
   margin: 0;
   padding: 0;
 
@@ -95,20 +97,13 @@
   background-position: 50%;
   background-repeat: no-repeat;
   background-size: cover;
-}
-
-.contacts__map iframe {
   border: none;
-  width: 100%;
-  min-height: 600px;
-
-  z-index: 1;
 }
 
 @media (min-width: $tablet-width) {
   .contacts {
     position: relative;
-    margin-bottom: 50px;
+    margin-bottom: 45px;
     min-height: 750px;
 
     background-image: url("../img/bg-map-tablet@1x.jpg");
@@ -119,15 +114,16 @@
 
   .contacts__wrapper {
     position: relative;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    // display: flex;
+    // flex-direction: column;
+    // justify-content: center;
     padding-bottom: 46px;
+    width: 100%;
 
     background-color: $top-menu-text-color;
     background:
-        linear-gradient(-10deg, transparent 55px, white 0)bottom right,
-        linear-gradient(10deg, transparent 55px,white 0)bottom left;
+        linear-gradient(-12deg, transparent 72px, white 0)bottom right,
+        linear-gradient(12deg, transparent 72px,white 0)bottom left;
     background-size: 51% 100%;
     background-repeat: no-repeat;
 
@@ -178,30 +174,17 @@
     @include zero-margin-padding;
     display: block;
   }
-}
 
-.contacts__map {
-  position: absolute;
-  z-index: -1;
+  .contacts__map {
+    position: absolute;
+    z-index: 1;
 
-  width: 100%;
-  min-height: 729px;
-  margin: 0;
-  padding: 0;
+    width: 100%;
+    min-height: 795px;
+    margin: 0;
+    padding: 0;
+  }
 
-  // background-image: url("../img/bg-map-tablet@1x.png");
-  // background-position: 50%;
-  // background-repeat: no-repeat;
-  // background-size: cover;
-}
-
-.contacts__map {
-  min-height: 848px;
-  width: 100%;
-  z-index: 1;
-  border: none;
-  position: absolute;
-  top: 0;
 }
 
 @media (min-width: $desktop-width) {
@@ -256,7 +239,8 @@
   }
 
   .contacts__wrapper {
-    padding-bottom: 38px;
+    padding-top: 67px;
+    padding-bottom: 0;
 
     background-color: $top-menu-text-color;
     background:
@@ -266,5 +250,15 @@
     background-repeat: no-repeat;
 
     z-index: 10;
+  }
+
+  .contacts__map {
+    position: absolute;
+    z-index: 1;
+
+    width: 100%;
+    min-height: 869px;
+    margin: 0;
+    padding: 0;
   }
 }

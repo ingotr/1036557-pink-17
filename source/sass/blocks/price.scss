@@ -2,34 +2,18 @@
   $Раздел подписки
 */
 .price {
+  padding-top: 94px;
+  padding-bottom: 20px;
+
   background: #f2f2f2;
   background: linear-gradient(176deg, transparent 6%, $features-list-bg-color 0%);
 }
 
-
-.price__wrapper {
-  position: relative;
-  padding-top: 90px;
-  padding-bottom: 20px;
-
-  overflow: hidden;
-}
-
-.table__wrapper {
-  min-height: 311px;
-}
-
 .price__features-table {
-  position: absolute;
-  top: 91px;
-  left: -258px;
+  margin-left: -81%;
+  padding-bottom: 19px;
+  width: 241%;
 }
-
-// .price__features-list {
-//   border: 2px solid $price__features-list-bg-color;
-//   border-collapse: none;
-//   border-collapse: collapse;
-// }
 
 .price__toggles {
   display: flex;
@@ -61,11 +45,13 @@
 
 .title-hit {
   position: relative;
+  overflow: hidden;
+
 
   &::before {
     position: absolute;
-    top: 0;
-    left: 0;
+    top: 0px;
+    left: -6px;
     content: url("../img/bg-hit.svg");
     width: 74px;
     height: 73px;
@@ -73,8 +59,8 @@
 
   &::after {
     position: absolute;
-    top: 18px;
-    left: 13px;
+    top: 17px;
+    left: 7px;
     content: "Хит";
     width: 24px;
     height: 26px;
@@ -161,16 +147,12 @@
 
 @media (min-width: $tablet-width) {
   .price {
-    margin-top: -45px;
+    margin-top: -15px;
+    padding-top: 85px;
+    padding-bottom: 31px;
 
     background: #f2f2f2;
-    background: linear-gradient(176deg, transparent 18%, $features-list-bg-color 0%);
-  }
-
-  .table__wrapper {
-    margin: 0;
-
-    min-height: 227px;
+    background: linear-gradient(176deg, transparent 12%, #f2f2f2 0%);
   }
 
   .price__features-table {
@@ -179,16 +161,12 @@
     left: 0;
   }
 
-  .price__wrapper {
-    padding-bottom: 43px;
-
-  }
-
   .price__features-table {
-    margin-top: 20px;
-    margin-right: 20px;
-    margin-bottom: 0;
-    margin-left: 20px;
+    margin: auto;
+    padding-left: 46px;
+    padding-right: 45px;
+    padding-bottom: 18px;
+    width: auto;
   }
 
   .price__features-item {
@@ -275,24 +253,19 @@
 
 @media (min-width: $desktop-width) {
   .price {
-    background-color: #f2f2f2;
-    background: linear-gradient(176deg, transparent 15%, #f2f2f2 0%);
-  }
+    margin-top: -42px;
+    padding-top: 181px;
+    padding-left: 128px;
+    padding-right: 9px;
+    padding-bottom: 77px;
 
-  .price__wrapper {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding-top: 163px;
-    padding-bottom: 95px;
+    background-color: #f2f2f2;
+    background: linear-gradient(176deg, transparent 18%, #f2f2f2 0%);
   }
 
   .price__features-table {
-    margin-top: 0;
-    margin-right: 0;
-    margin-bottom: 0;
-    margin-left: 0;
-}
+    @include zero-margin-padding;
+  }
 
   .price__features-item {
     max-width: 240px;

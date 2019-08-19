@@ -4,7 +4,7 @@
 
 .main-nav {
   // display: none;
-  width: 320px;
+  width: auto;
   margin: 0 auto;
 }
 
@@ -17,7 +17,7 @@
   align-self: flex-start;
   align-items: center;
   justify-content: space-between;
-  width: $mobile-width;
+  width: auto;
 
   z-index: 10;
 }
@@ -189,7 +189,7 @@
   }
 
   .main-nav__top-menu {
-    width: $tablet-width;
+    width: auto;
 
     background-color: rgba(40, 54, 69, 0.7);
   }
@@ -244,8 +244,9 @@
   }
 
   .main-nav__top-menu {
-    width: auto;
     margin: 0;
+    padding-left: 192px;
+    width: auto;
     align-self: center;
 
     background-color: transparent;

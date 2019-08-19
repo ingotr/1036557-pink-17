@@ -87,6 +87,8 @@
 
 @media (min-width: $tablet-width) {
   .app-download {
+    margin-top: -16%;
+    padding-top: 16%;
     padding-left: 20px;
     padding-right: 20px;
 
@@ -154,7 +156,10 @@
 @media (min-width: $desktop-width) {
   .app-download {
     @include zero-margin-padding;
+    margin-top: -12%;
     margin-bottom: 56px;
+    padding-top: 12%;
+    padding-left: 125px;
 
     background-color: #2a3a4a;
 

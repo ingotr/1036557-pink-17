@@ -8,7 +8,7 @@
 }
 
 .container {
-  width: $mobile-width;
+  width: auto;
   margin: 0 auto;
 }
 
@@ -37,10 +37,6 @@
 }
 
 .page-header {
-  position: relative;
-  padding-left: 20px;
-  padding-right: 20px;
-
   background-color: #2a3a4a;
   background-image: url("../img/bg-back-mobile@1x.jpg");
   background-repeat: no-repeat;
@@ -99,8 +95,8 @@
   }
 
   .container {
-    width: $tablet-width;
-    margin: 0 auto;
+    width: auto;
+    // margin: 0 auto;
   }
 
   .container--modal {
@@ -124,9 +120,6 @@
   }
 
   .page-header {
-    padding-left: 20px;
-    padding-right: 20px;
-
     // background-color: #2a3a4a;
 
     background-color: transparent;
@@ -185,7 +178,7 @@
 
 @media (min-width: $desktop-width) {
   .container {
-    width: $desktop-width;
+    width: auto;
     margin: 0 auto;
     padding: 0 10px;
   }
