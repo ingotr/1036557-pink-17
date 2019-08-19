@@ -1,0 +1,802 @@
+/*
+  $Раздел конкурса
+*/
+
+.contest-form {
+  margin-bottom: 55px;
+}
+
+.fieldset-none {
+  @include fieldset-style-none;
+}
+
+.contest-form__title {
+  margin-right: 27px;
+  margin-bottom: 40px;
+  margin-left: 13px;
+  height: 82px;
+
+  color: $top-menu-bg-color;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 30px;
+  text-align: center;
+  overflow: hidden;
+
+}
+
+.contest-form__input-wrapper {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.contest-form__fields {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contest-form__fields-name {
+  display: flex;
+  flex-direction: column;
+  // align-items: center;
+  width: $mobile-width - 40px;
+  margin-bottom: 20px;
+
+  order: 1;
+}
+
+.contest-form__label {
+  margin-bottom: 3px;
+  padding-left: 21px;
+
+  color: $contacts__link-color;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+
+.contest-form__text-input-wrapper {
+  display: flex;
+}
+
+.contest-form__input-text {
+  // margin-bottom: 20px;
+  padding-top: 13px;
+  padding-bottom: 16px;
+  padding-left: 21px;
+
+  color: $top-menu-bg-color;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 30px;
+
+  border: 2px solid $price__features-list-bg-color;
+
+  &:hover {
+    border: 2px solid $top-menu-bg-color;
+  }
+
+  &:focus {
+    border: 2px solid $contacts__link-color;
+  }
+}
+
+.contest-form__input-text--phone,
+.contest-form__input-text--email {
+  flex-grow: 1;
+}
+
+.contest-form__fields-legend {
+  margin: 0;
+  margin-top: 40px;
+  margin-bottom: 32px;
+  padding-top: 40px;
+  padding-right: 46px;
+  padding-bottom: 5px;
+  padding-left: 46px;
+
+  background-color: #f2f2f2;
+  color: $contacts__link-color;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+  text-transform: uppercase;
+
+  text-align: center;
+}
+
+.contest-form__label--radio,
+.contest-form__label--checkbox {
+  color: $top-menu-bg-color;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 30px;
+  text-transform: none;
+}
+
+.contest-form__fields-achievments {
+  order: 2;
+}
+
+.contest-form__fields-achievments,
+.contest-form__fields-app-version {
+  align-items: flex-start;
+  margin-bottom: 33px;
+
+  background-color: $features-list-bg-color;
+}
+
+.contest-form__input-checkbox,
+.contest-form__input-radio {
+  color: $top-menu-bg-color;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 30px;
+}
+
+.contest-form__label--checkbox {
+  display: flex;
+  position: relative;
+  margin-left: 14px;
+  margin-bottom: 27px;
+  padding-top: 5px;
+  padding-right: 20px;
+  padding-bottom: 20px;
+  padding-left: 50px;
+
+  cursor: pointer;
+
+  &:hover input ~ .checkbox__checkmark {
+    border: 2px solid #283645;
+  }
+
+  input:active ~ .checkbox__checkmark {
+    border: 2px solid #d22856;
+  }
+
+  input:checked ~ .checkbox__checkmark::after {
+    display: block;
+  }
+
+  text-align: center;
+}
+
+.checkbox__text {
+  margin-left: 26px;
+}
+
+.contest-form__input-checkbox {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+
+  margin-bottom: 50px;
+}
+
+.checkbox__checkmark {
+  position: absolute;
+  top: 0;
+  left: 5px;
+
+  width: 35px;
+  height: 35px;
+  border: 2px solid #e5e5e5;
+  background-color: #ffffff;
+
+  &::after {
+    content: "";
+    position: absolute;
+    display: none;
+
+    left: 13px;
+    top: 4px;
+    width: 8px;
+    height: 20px;
+    border: solid $contacts__link-color;
+    border-width: 0 3px 3px 0;
+    transform: rotate(45deg);
+  }
+}
+
+.contest-form__label--radio {
+  position: relative;
+  margin-left: 20px;
+  margin-bottom: 23px;
+  padding-top: 2px;
+  padding-right: 20px;
+  padding-bottom: 20px;
+  padding-left: 45px;
+
+  cursor: pointer;
+
+  &:hover input ~ .radio__checkmark {
+    border: 2px solid #283645;
+  }
+
+  input:active ~ .radio__checkmark {
+    border: 2px solid #d22856;
+  }
+
+  input:checked ~ .radio__checkmark::after {
+    display: block;
+  }
+}
+
+.contest-form__input-radio {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+.radio__checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 35px;
+  width: 35px;
+  background-color: #ffffff;
+  border: 2px solid #e5e5e5;
+  border-radius: 50%;
+
+  &::after {
+    content: "";
+    position: absolute;
+    display: none;
+
+    left: 11px;
+    top: 9px;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background: $contacts__link-color;
+  }
+}
+
+.contest-form__fields-contacts {
+  width: $mobile-width - 40px;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 22px;
+
+  order: 3;
+}
+
+.contacts-mobile {
+  display: none;
+}
+
+.contest-form__fields-app-version {
+  margin-bottom: 0;
+
+  order: 4;
+}
+
+.contest-form__fields-emotions {
+  width: $mobile-width - 40px;
+  margin-bottom: 2px;
+
+  order: 5;
+}
+
+.contest-form__fields-legend--emotions {
+  margin-bottom: 12px;
+
+  background-color: transparent;
+}
+
+.contest-form__input-wrapper--emotions {
+  margin-bottom: 48px;
+}
+
+.contest-form__input-text--emotions {
+  padding-top: 19px;
+  padding-bottom: 118px;
+  padding-left: 21px;
+
+  color: #283645;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 30px;
+
+  resize: none;
+  overflow: hidden;
+}
+
+.contest-form__button-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+
+  order: 6;
+}
+
+.contest-form__button {
+  box-sizing: border-box;
+  width: 280px;
+  height: 62px;
+  margin-bottom: 10px;
+  // padding-top: 23px;
+  // padding-right: 45px;
+  // padding-bottom: 22px;
+  // padding-left: 45px;
+
+  background-color: $contest-form__button-bg-color;
+  color: $top-menu-text-color;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 30px;
+  text-transform: uppercase;
+
+  border: none;
+  border-radius: 4px;
+
+  &:hover {
+    background-color: $contest-form__button-hover;
+  }
+
+  &:active {
+    color: opacify($top-menu-text-color, 0.3)
+  }
+}
+
+.contest-form__button--submit {
+  margin-bottom: 35px;
+}
+
+.contest-form__button--disabled {
+  background-color: #e5e5e5;
+}
+
+.contest-form__note {
+  margin: 0;
+
+  color: $top-menu-bg-color;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+
+.contest-form__note .note-star {
+  color: $contacts__link-color;
+}
+
+.note--desktop {
+  display: none;
+}
+
+// .logotype-pink {
+//   margin-bottom: 43px;
+// }
+
+// .page-footer__list {
+//   margin-bottom: 43px;
+// }
+
+@media (min-width: $tablet-width) {
+  .contest-form {
+    margin-bottom: 13px;
+
+    background-color: $top-menu-text-color;
+  }
+
+  .fieldset-none {
+    padding-top: 30px;
+    padding-right: 40px;
+    padding-bottom: 30px;
+    padding-left: 40px;
+
+    border: 2px solid #e5e5e5;
+  }
+
+  .contest-form__fields {
+    width: $tablet-width;
+  }
+
+  .contest-form__title {
+    margin-bottom: 33px;
+    padding-top: 26px;
+    padding-right: 30px;
+    padding-bottom: 16px;
+    padding-left: 48px;
+
+    font-size: 18px;
+  }
+
+  .contest-form__input-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-bottom: 53px;
+  }
+
+  .contest-form__input-wrapper--contacts {
+    flex-direction: column-reverse;
+    align-items: stretch;
+    margin-right: 20px;
+    margin-bottom: 7px;
+    padding-top: 7px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    width: 536px;
+  }
+
+  // .contest-form__input-wrapper--contacts:nth-child(1) {
+  //   margin-right: 20px;
+  // }
+
+  .contest-form__label {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 3px;
+    margin-right: 0px;
+    padding-left: 10px;
+  }
+
+  .contest-form__input-text {
+    margin-left: 22px;
+    margin-right: 10px;
+    padding-top: 13px;
+    padding-bottom: 15px;
+    padding-left: 18px;
+
+    flex-grow: 1;
+  }
+
+  .contest-form__fields-name {
+    margin-bottom: 0px;
+    padding-top: 30px;
+    padding-right: 40px;
+    padding-bottom: 5px;
+    padding-left: 40px;
+    width: $tablet-width - 20px;
+    order: 1;
+
+    border: none;
+  }
+
+  .contest-form__fields-app-version {
+    margin-bottom: 57px;
+    padding-top: 45px;
+    padding-right: 40px;
+    padding-bottom: 17px;
+    padding-left: 34px;
+    width: 536px;
+
+    order: 2;
+
+    background-color: $top-menu-text-color;
+  }
+
+  .contest-form__fields-contacts {
+    margin-bottom: 57px;
+    padding-top: 30px;
+    padding-right: 20px;
+    padding-bottom: 4px;
+    padding-left: 20px;
+    width: 536px;
+
+    order: 3;
+  }
+
+  .contest-form__label--phone {
+    margin-bottom: 3px;
+    margin-right: 0px;
+    padding-top: 12px;
+    padding-left: 49px;
+  }
+
+  .contest-form__label--email {
+    margin-bottom: 3px;
+    margin-right: 0px;
+    padding-top: 12px;
+    padding-left: 49px;
+  }
+
+  .contest-form__input-text--phone {
+    margin-left: 28px;
+    margin-right: 0px;
+    padding-top: 13px;
+    padding-bottom: 16px;
+    padding-left: 19px;
+  }
+
+  .contest-form__input-text--email {
+    margin-left: 28px;
+    margin-right: 0px;
+    padding-top: 13px;
+    padding-bottom: 16px;
+    padding-left: 19px;
+  }
+
+  .input-icon {
+    margin-right: 8px;
+    width: 60px;
+    height: 63px;
+
+    background-repeat: no-repeat;
+    background-color: #e5e5e5;
+    background-size: 20px 19px;
+    background-position: center;
+  }
+
+  .input-icon--phone {
+    background-image: url("../img/icon-phone.svg");
+  }
+
+  .input-icon--email {
+    background-image: url("../img/icon-mail.svg");
+  }
+
+  .contest-form__label--radio {
+    margin-left: 20px;
+    margin-bottom: 23px;
+    padding-top: 2px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+  }
+
+  .checkbox__text {
+    margin-left: 50px;
+  }
+
+  .contest-form__fields-achievments {
+    margin-bottom: 57px;
+    padding-top: 43px;
+    padding-right: 40px;
+    padding-bottom: 6px;
+    padding-left: 40px;
+    width: 536px;
+    order: 4;
+
+    background-color: $top-menu-text-color;
+  }
+
+  .contest-form__label--checkbox {
+    margin-left: 14px;
+    margin-bottom: 27px;
+    padding-top: 5px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+  }
+
+  .contest-form__fields-emotions {
+    margin-bottom: 67px;
+    padding-top: 30px;
+    padding-right: 40px;
+    padding-bottom: 0px;
+    padding-left: 40px;
+    width: 536px;
+
+    order: 5;
+  }
+
+  .contest-form__input-wrapper--emotions {
+    justify-content: center;
+    margin-bottom: 50px;
+    padding-top: 8px;
+  }
+
+  .contest-form__input-text--emotions {
+    padding-bottom: 112px;
+    min-width: 474px;
+  }
+
+  .contest-form__button-wrapper {
+    flex-direction: row;
+    flex-grow: 1;
+    align-items: baseline;
+    width: 620px;
+
+    order: 6;
+  }
+
+  .contest-form__button {
+    width: 300px;
+    height: 63px;
+  }
+
+  .contest-form__fields-legend {
+    margin: 0 auto;
+    padding: 0px 35px;
+
+    text-align: center;
+    background-color: transparent;
+  }
+
+  .contest-form__text-input-wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .contacts-mobile {
+    display: block;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .contest-form__fields {
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+
+    width: $desktop-width;
+  }
+
+  .contest-form__title {
+    margin-bottom: 17px;
+    padding-top: 25px;
+    padding-right: 62px;
+    padding-bottom: 16px;
+    padding-left: 60px;
+
+    font-size: 18px;
+  }
+
+  .contest-form__fields-legend {
+    margin: 0 auto;
+    padding: 0px 30px;
+    text-align: center;
+  }
+
+  .contest-form__label {
+    margin-bottom: 3px;
+    margin-right: 0px;
+    padding-left: 0;
+  }
+
+  .contest-form__fields-name {
+    width: 445px;
+    margin-right: 40px;
+    padding-top: 30px;
+    padding-right: 20px;
+    padding-left: 0;
+    padding-bottom: 5px;
+
+    order: 1;
+  }
+
+  .contest-form__fields-app-version {
+    box-sizing: border-box;
+    width: 435px;
+    margin-bottom: 42px;
+    padding-top: 50px;
+    padding-right: 6px;
+    padding-bottom: 18px;
+    padding-left: 56px;
+
+    order: 2;
+  }
+
+  .contest-form__label--radio {
+    margin-left: 20px;
+    margin-right: 0px;
+    margin-bottom: 22px;
+    padding-top: 2px;
+    padding-left: 0;
+    padding-right: 20px;
+    padding-bottom: 21px;
+  }
+
+  .radio__checkmark {
+    &::after {
+      left: 8px;
+      top: 9px;
+      width: 15px;
+      height: 15px;
+    }
+  }
+
+  .checkbox__text {
+    margin-left: 57px;
+  }
+
+  .contest-form__fields-contacts {
+    width: $desktop-width;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: unset;
+    align-items: unset;
+    align-content: center;
+
+    order: 3;
+  }
+
+  .contest-form__input-wrapper--contacts {
+    align-items: baseline;
+    margin-right: 15px;
+    margin-bottom: 7px;
+    padding-top: 7px;
+    padding-left: 10px;
+    padding-right: 9px;
+    padding-bottom: 10px;
+    width: 414px;
+  }
+
+  .contest-form__input-text {
+    margin-left: 22px;
+    margin-right: 10px;
+    padding-top: 13px;
+    padding-bottom: 15px;
+    padding-left: 20px;
+    // width: auto;
+  }
+
+  .contest-form__text-input-wrapper {
+    width: 410px;
+  }
+
+  .contest-form__input-text--phone,
+  .contest-form__input-text--email {
+    margin-left: 28px;
+    margin-right: 0;
+    padding-top: 14px;
+    padding-bottom: 14px;
+    padding-left: 20px;
+    width: auto;
+  }
+
+  .input-icon {
+    margin-right: 7px;
+    width: 60px;
+    height: 62px;
+  }
+
+  .contest-form__label--phone,
+  .contest-form__label--email {
+    margin-left: 47px;
+    margin-right: 0px;
+    margin-bottom: 3px;
+    padding-top: 9px;
+    padding-left: 0;
+  }
+
+  .contest-form__fields-achievments {
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: $desktop-width;
+
+    order: 4;
+  }
+
+  .contest-form__fields-emotions {
+    margin-bottom: 57px;
+    width: $desktop-width;
+
+    order: 5;
+  }
+
+  .contest-form__input-wrapper--emotions {
+    margin-bottom: 50px;
+    padding-top: 8px;
+  }
+
+  .contest-form__input-text--emotions {
+    padding-bottom: 45px;
+    min-width: 795px;
+  }
+
+  .note--desktop {
+    display: inline;
+
+    color: #000000;
+  }
+
+  .contest-form__button-wrapper {
+    justify-content: space-between;
+    flex-direction: row;
+    flex-grow: 1;
+  }
+}

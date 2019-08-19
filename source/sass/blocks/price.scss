@@ -1,0 +1,362 @@
+/*
+  $Раздел подписки
+*/
+.price {
+  background: #f2f2f2;
+  background: linear-gradient(176deg, transparent 6%, $features-list-bg-color 0%);
+}
+
+
+.price__wrapper {
+  position: relative;
+  padding-top: 90px;
+  padding-bottom: 20px;
+
+  overflow: hidden;
+}
+
+.table__wrapper {
+  min-height: 311px;
+}
+
+.price__features-table {
+  position: absolute;
+  top: 91px;
+  left: -258px;
+}
+
+// .price__features-list {
+//   border: 2px solid $price__features-list-bg-color;
+//   border-collapse: none;
+//   border-collapse: collapse;
+// }
+
+.price__toggles {
+  display: flex;
+  justify-content: center;
+}
+
+.price__item-title,
+.price__item-value {
+  width: 230px;
+
+  border: 2px solid $top-menu-bg-color;
+  background-color: $top-menu-bg-color;
+  border-style: none;
+  border-collapse: collapse;
+}
+
+.price__item-title {
+  padding-top: 18px;
+  padding-right: 23px;
+  padding-bottom: 21px;
+  padding-left: 23px;
+
+  color: $top-menu-text-color;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+
+.title-hit {
+  position: relative;
+
+  &::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: url("../img/bg-hit.svg");
+    width: 74px;
+    height: 73px;
+  }
+
+  &::after {
+    position: absolute;
+    top: 18px;
+    left: 13px;
+    content: "Хит";
+    width: 24px;
+    height: 26px;
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 21.21px;
+    text-transform: uppercase;
+    transform: rotate(-45deg);
+  }
+}
+
+.price__item-value {
+  display: block;
+  // padding-top: 22px;
+  // padding-right: 22px;
+  // padding-bottom: 22px;
+  // padding-left: 22px;
+
+  color: $top-menu-text-color;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 30px;
+  text-transform: uppercase;
+
+  text-align: center;
+}
+
+.price__features-item {
+  // width: 280px;
+  padding-top: 12px;
+  padding-right: 17px;
+  padding-bottom: 14px;
+  padding-left: 22px;
+
+  background-color: $top-menu-text-color;
+  color: $top-menu-bg-color;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+
+.price__features-item-wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  // width: 220px;
+}
+
+.price__features-item-yes {
+  background-image: url("../img/icon-yes.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 31px;
+  height: 23px;
+}
+
+.price__features-item-no {
+  position: relative;
+
+  &::after {
+    content: url("../img/icon-no.svg");
+  }
+}
+
+.price__features-item--desktop {
+  display: none;
+}
+
+.price__empty-cell {
+  background-color: transparent;
+}
+
+// .price__toggles {
+//   #price__toggle-2:checked ~ .price__features-table { margin-left: -70px; }
+// }
+
+#price__toggle-1:checked ~ .table__wrapper { margin-left: 0px; }
+#price__toggle-2:checked ~ .table__wrapper { margin-left: -70px; }
+#price__toggle-3:checked ~ .table__wrapper { margin-left: -140px; }
+
+@media (min-width: $tablet-width) {
+  .price {
+    margin-top: -45px;
+
+    background: #f2f2f2;
+    background: linear-gradient(176deg, transparent 18%, $features-list-bg-color 0%);
+  }
+
+  .table__wrapper {
+    margin: 0;
+
+    min-height: 227px;
+  }
+
+  .price__features-table {
+    position: static;
+    top: 0;
+    left: 0;
+  }
+
+  .price__wrapper {
+    padding-bottom: 43px;
+
+  }
+
+  .price__features-table {
+    margin-top: 20px;
+    margin-right: 20px;
+    margin-bottom: 0;
+    margin-left: 20px;
+  }
+
+  .price__features-item {
+    max-width: 150px;
+    margin: 0;
+    padding: 3px;
+
+    color: #ffffff;
+  }
+
+  .price__item-title {
+    width: 108px;
+    padding-top: 12px;
+    padding-bottom: 8px;
+    padding-left: 21px;
+
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 30px;
+    text-transform: uppercase;
+  }
+
+  .price__item-value {
+    width: 108px;
+
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 30px;
+    text-transform: uppercase;
+  }
+
+  .title-hit {
+    overflow: hidden;
+
+    &::before {
+      position: absolute;
+      top: -12px;
+    }
+
+    &::after {
+      position: absolute;
+      top: 9px;
+      left: 8px;
+      content: "Хит";
+      width: 24px;
+      height: 26px;
+      color: #ffffff;
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 21.21px;
+      text-transform: uppercase;
+      transform: rotate(-45deg);
+    }
+  }
+
+  .price__features-item--desktop {
+    display: table-cell;
+    width: 160px;
+    padding-top: 5px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    padding-left: 16px;
+
+    color: $top-menu-bg-color;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 30px;
+    text-transform: none;
+  }
+
+  .price__toggles {
+    display: none;
+  }
+
+  .price__features-item-wrapper {
+    justify-content: center;
+  }
+
+  .price__features-item-description {
+    display: none;
+  }
+
+}
+
+@media (min-width: $desktop-width) {
+  .price {
+    background-color: #f2f2f2;
+    background: linear-gradient(176deg, transparent 15%, #f2f2f2 0%);
+  }
+
+  .price__wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 163px;
+    padding-bottom: 95px;
+  }
+
+  .price__features-table {
+    margin-top: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+    margin-left: 0;
+}
+
+  .price__features-item {
+    max-width: 240px;
+    margin: 0;
+    padding-top: 3px;
+    padding-left: 21px;
+    padding-right: 14px;
+    padding-bottom: 14px;
+    padding-bottom: 2px;
+  }
+
+  .price__item-title,
+  .price__item-value {
+    width: 190px;
+  }
+
+  .price__item-title {
+    min-width: 190px;
+    padding-top: 18px;
+    padding-left: 20px;
+    padding-bottom: 23px;
+  }
+
+  .price__item-value {
+    font-size: 24px;
+    font-weight: 300;
+    line-height: 30px;
+    text-transform: uppercase;
+  }
+
+  .price__features-item--desktop {
+    display: table-cell;
+    width: 240px;
+    padding-top: 12px;
+    padding-bottom: 15px;
+
+    color: $top-menu-bg-color;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 30px;
+    text-transform: none;
+  }
+
+  .title-hit {
+    overflow: hidden;
+
+    &::before {
+      position: absolute;
+      top: 0;
+    }
+
+    &::after {
+      position: absolute;
+      top: 16px;
+      left: 14px;
+      content: "Хит";
+      width: 24px;
+      height: 26px;
+      color: #ffffff;
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 21.21px;
+      text-transform: uppercase;
+      transform: rotate(-45deg);
+    }
+  }
+}
