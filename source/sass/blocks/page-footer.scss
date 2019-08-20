@@ -74,21 +74,19 @@
   line-height: 18px;
 
   svg {
+    margin-left: 17px;
+
     fill: $contacts__link-color;
   }
 
-  &:hover svg{
+  &:hover svg {
     fill: $features-title-text-color;
   }
 
-  &:active svg{
+  &:active svg {
     fill: $features-title-text-color;
     opacity: 0.3;
   }
-}
-
-.page-footer__made-in svg {
-  margin-left: 17px;
 }
 
 @media (min-width: $tablet-width) {
@@ -126,7 +124,7 @@
   }
 
   .page-footer__logo {
-    margin-left: 0px;
+    margin-left: 0;
     margin-right: 38px;
     padding-left: 5px;
     padding-bottom: 13px;
@@ -135,7 +133,7 @@
   .social-list {
     flex-direction: row;
     margin-bottom: 0;
-    margin-right: 0px;
+    margin-right: 0;
     margin-left: 0;
     padding-bottom: 39px;
     padding-right: 2px;
@@ -144,7 +142,7 @@
 
   .social-list__item {
     padding: 1px;
-    margin: 0px 5px;
+    margin: 0 5px;
   }
 
   .page-footer__made-in {
@@ -170,7 +168,7 @@
 
   .page-footer__logo {
     @include zero-margin-padding;
-    margin-left: 0px;
+    margin-left: 0;
     margin-right: 15px;
   }
 
