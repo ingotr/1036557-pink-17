@@ -704,12 +704,17 @@
   }
 
   .contest-form__fields-contacts {
-    width: $desktop-width;
+    @include zero-margin-padding;
+    // width: $desktop-width;
     display: flex;
-    flex-direction: row-reverse;
-    justify-content: unset;
-    align-items: unset;
-    align-content: center;
+    flex-direction: row;
+    padding-top: 44px;
+    padding-left: 60px;
+    padding-right: 60px;
+    padding-bottom: 55px;
+    // justify-content: unset;
+    // align-items: unset;
+    // align-content: center;
 
     order: 3;
   }
@@ -766,7 +771,7 @@
   .contest-form__fields-achievments {
     flex-direction: row;
     flex-wrap: wrap;
-    width: $desktop-width;
+    // width: $desktop-width;
 
     order: 4;
   }

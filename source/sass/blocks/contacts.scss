@@ -15,11 +15,10 @@
   width: 100%;
   min-height: 447px;
 
-
+  background-color: gray;
   background:
     linear-gradient(-10deg, transparent 55px, white 0) bottom right,
     linear-gradient(10deg, transparent 55px, white 0) bottom left;
-  background-color: gray;
   background-size: 51% 100%;
   background-repeat: no-repeat;
 
@@ -88,7 +87,7 @@
   margin: 0;
   padding: 0;
 
-  background-image: url("../../img/bg-map-mobile@2x.jpg");
+  background-image: url("../../img/bg-map-mobile@1x.jpg");
   background-position: 50%;
   background-repeat: no-repeat;
   background-size: cover;
@@ -105,7 +104,7 @@
     margin-bottom: 45px;
     min-height: 750px;
 
-    background-image: url("../../img/bg-map-tablet@2x.jpg");
+    background-image: url("../../img/bg-map-tablet@1x.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -120,13 +119,13 @@
     // display: flex;
     // flex-direction: column;
     // justify-content: center;
-    padding-bottom: 46px;
+    padding-bottom: 26px;
     width: 100%;
 
+    background-color: $top-menu-text-color;
     background:
       linear-gradient(-12deg, transparent 72px, white 0) bottom right,
       linear-gradient(12deg, transparent 72px, white 0) bottom left;
-    background-color: $top-menu-text-color;
     background-size: 51% 100%;
     background-repeat: no-repeat;
 
@@ -138,7 +137,7 @@
     margin-bottom: 0;
     margin-right: 120px;
     margin-left: 120px;
-    padding-top: 55px;
+    padding-top: 40px;
     padding-bottom: 27px;
 
     font-size: 40px;
@@ -194,7 +193,7 @@
     margin-bottom: 34px;
     min-height: 868px;
 
-    background-image: url("../../img/bg-map-desktop@2x.jpg");
+    background-image: url("../../img/bg-map-desktop@1x.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
@@ -216,19 +215,22 @@
   }
 
   .contacts_list {
+    width: 100%;
     justify-content: space-around;
     padding-top: 7px;
     padding-left: 9px;
   }
 
+  .contacts_list__item:last-child {
+    @include zero-margin-padding;
+  }
+
   .contacts_list__item {
+    @include zero-margin-padding;
     // margin-right: 40px;
     // margin-bottom: 16px;
     // margin-left: 45px;
     // margin-top: 6px;
-
-    margin: 0;
-
     padding-bottom: 18px;
   }
 
@@ -248,11 +250,10 @@
     padding-top: 67px;
     padding-bottom: 0;
 
-
+    background-color: $top-menu-text-color;
     background:
       linear-gradient(-10deg, transparent 95px, white 0) bottom right,
       linear-gradient(10deg, transparent 95px, white 0) bottom left;
-    background-color: $top-menu-text-color;
     background-size: 51% 100%;
     background-repeat: no-repeat;
 

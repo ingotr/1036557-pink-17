@@ -5,8 +5,9 @@
 .features {
   margin-bottom: 42px;
 
-  background: linear-gradient(175deg, transparent 21%, $features-list-bg-color 0%);
   background-color: #f2f2f2;
+  background:
+    linear-gradient(175deg, transparent 21%, $features-list-bg-color 0%);
 }
 
 .features__wrapper {
@@ -59,7 +60,7 @@
   display: block;
   order: 2;
 
-  background-image: url("../../img/iphone-screen-mobile@2x.png");
+  background-image: url("../../img/iphone-screen-mobile@1x.png");
   background-repeat: no-repeat;
   background-size: cover;
   width: 157px;
@@ -128,14 +129,17 @@
   .features {
     margin-bottom: 80px;
 
-    background: linear-gradient(176deg, transparent 23%, #f2f2f2 0%);
     background-color: #f2f2f2;
+    background:
+      linear-gradient(176deg, transparent 34%, #f2f2f2 0%);
+    background-size: 100% 63%;
+    background-repeat: no-repeat;
   }
 
   .features__wrapper {
     position: relative;
     flex-direction: row;
-    margin-bottom: 60px;
+    margin-bottom: 36px;
 
     overflow: unset;
   }
@@ -167,7 +171,7 @@
 
     order: 1;
 
-    background-image: url("../../img/iphone-screen-3-tablet@2x.png");
+    background-image: url("../../img/iphone-screen-3-tablet@1x.png");
     background-repeat: no-repeat;
     background-size: cover;
 
@@ -209,6 +213,7 @@
 
   .features-description {
     padding-top: 2px;
+    padding-right: 30px;
     margin-left: 15px;
 
     text-align: left;
@@ -220,6 +225,8 @@
     justify-content: space-around;
     padding-left: 20px;
     padding-top: 6px;
+
+    background-color: #ffffff;
   }
 
   // Циферблат часов
@@ -287,8 +294,8 @@
   .features {
     margin-bottom: 72px;
 
-    background: linear-gradient(175deg, transparent 26%, #f2f2f2 0%);
     background-color: #f2f2f2;
+    background: linear-gradient(175deg, transparent 26%, #f2f2f2 0%);
   }
 
   .features__wrapper {
@@ -345,7 +352,7 @@
     margin-bottom: 5px;
 
     &:nth-child(1) .features-list__item-phone {
-      background-image: url("../../img/iphone-screen-1-desktop@2x.png");
+      background-image: url("../../img/iphone-screen-1-desktop@1x.png");
 
       @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
         background-image: url("../../img/iphone-screen-1-desktop@2x.png");
