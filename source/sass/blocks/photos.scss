@@ -43,6 +43,13 @@
 }
 
 .panorama--ribbon {
+  position: absolute;
+  align-self: flex-end;
+  padding-top: 7px;
+  padding-right: 20px;
+  padding-bottom: 6px;
+  padding-left: 20px;
+
   background-color: $contacts__link-color;
   color: #ffffff;
   font-size: 12px;
@@ -129,15 +136,6 @@
   }
 }
 
-.panorama--ribbon {
-  position: absolute;
-  align-self: flex-end;
-  padding-top: 7px;
-  padding-right: 20px;
-  padding-bottom: 6px;
-  padding-left: 20px;
-}
-
 .upload-photo {
   width: 280px;
   height: 374px;
@@ -210,7 +208,7 @@
 
     & .photos-list__item-author {
       margin-top: 10px;
-      margin-left: 27px
+      margin-left: 27px;
     }
 
     & .photos-list__item-description {
@@ -253,7 +251,7 @@
     order: 3;
 
     margin-bottom: 4px;
-    margin-left: 0px;
+    margin-left: 0;
   }
 
   .photos-list__item-author {
@@ -263,7 +261,7 @@
     // margin-left: 28px;
     // margin-right: 0;
     // margin-bottom: 0px;
-    margin:0
+    margin: 0;
   }
 
   .photos-list__item-description {
@@ -348,7 +346,6 @@
     padding-right: 19px;
     padding-bottom: 7px;
   }
-
 }
 
 @media (min-width: $desktop-width) {
@@ -371,7 +368,7 @@
   }
 
   .photos-list__item {
-    margin-left: 0px;
+    margin-left: 0;
     margin-bottom: 54px;
     margin-right: 20px;
   }
@@ -398,7 +395,7 @@
 
   .panorama--ribbon {
     top: 54px;
-    right: 0px;
+    right: 0;
     padding-top: 6px;
     padding-right: 19px;
     padding-bottom: 6px;

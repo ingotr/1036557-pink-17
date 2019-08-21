@@ -87,5 +87,4 @@ var showModalWindow = new function () {
       }
     }
   });
-}
-
+};

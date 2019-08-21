@@ -12,24 +12,23 @@
 
 .main-nav__top-menu {
   position: relative;
-  background-color: transparentize($top-menu-bg-color, 0.3);
-
   display: flex;
   flex-direction: row;
   align-self: flex-start;
   align-items: center;
   justify-content: space-between;
+  padding-top: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 20px;
   width: auto;
 
   z-index: 10;
+
+  background-color: transparentize($top-menu-bg-color, 0.3);
 }
 
 .main-nav__logo {
-  margin-top: 22px;
-  // margin-right: 155px;
-  margin-bottom: 22px;
-  margin-left: 20px;
-
   &:hover .main-nav__logo-image {
     fill: #d22856;
   }
@@ -41,14 +40,13 @@
 }
 
 .main-nav--closed .main-nav__burger {
-  top: 20px;
-  right: 18px;
+  display: relative;
 
   &::before {
     content: "";
 
     position: absolute;
-    top: 5px;
+    top: 0;
     left: 10px;
 
     width: 50px;
@@ -58,7 +56,7 @@
     box-shadow: 0 8px 0 0 #ffffff, 0 16px 0 0 #ffffff;
   }
 
-  &:hover::before{
+  &:hover::before {
     background-color: #d22856;
     box-shadow: 0 8px 0 0 #d22856, 0 16px 0 0 #d22856;
   }
@@ -86,15 +84,14 @@
 }
 
 .main-nav--opened .main-nav__burger {
-  top: 20px;
-  right: 10px;
+  display: relative;
 
   &::before,
   &::after {
     content: "";
 
     position: absolute;
-    top: 14px;
+    top: 9px;
     left: 18px;
 
     width: 30px;
@@ -124,9 +121,7 @@
 }
 
 .main-nav__burger {
-  position: absolute;
-  top: 20px;
-  right: 10px;
+  position: relative;
   z-index: 2;
 
   display: block;
@@ -140,6 +135,8 @@
 
 .main-nav__list {
   @include list-style-none;
+
+  background-color: #283645;
 }
 
 .main-nav__wrapper {
@@ -176,12 +173,8 @@
   }
 
   &:active {
-    color: transparentize($contacts__link-color, 0.7)
+    color: transparentize($contacts__link-color, 0.7);
   }
-}
-
-.main-nav__list {
-  background-color: #283645;
 }
 
 @media (min-width: $tablet-width) {
@@ -191,18 +184,17 @@
   }
 
   .main-nav__top-menu {
+    padding-top: 27px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 40px;
+    align-items: flex-end;
     width: auto;
 
     background-color: rgba(40, 54, 69, 0.7);
   }
 
   .main-nav__logo {
-    margin-top: 27px;
-    margin-left: 40px;
-
-    // Временно для выравнивания
-    margin-bottom: 57px;
-
     width: 147px;
     height: 40px;
   }
@@ -222,7 +214,7 @@
     background-color: #283645;
   }
 
-  .site-list__item  {
+  .site-list__item {
     text-align: center;
   }
 }

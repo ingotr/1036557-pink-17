@@ -65,12 +65,12 @@
 }
 
 .list-filter__item-button:hover .filter-path {
-  fill:#283645;
+  fill: #283645;
   opacity: 0.5;
 }
 
 .list-filter__item-button:active .filter-path {
-  fill:#283645;
+  fill: #283645;
   opacity: 0.1;
 }
 
@@ -191,21 +191,18 @@
 }
 
 .filter__slider {
-  -webkit-appearance: none;
   width: 240px;
   height: 2px;
   background: #000000;
   outline: none;
-  opacity: 1.0;
-  -webkit-transition: .2s;
-  transition: opacity .2s;
+  opacity: 1;
+  transition: opacity 0.2s;
 
   &:hover {
     opacity: 0.8;
   }
 
   &::-webkit-slider-thumb {
-    -webkit-appearance: none;
     appearance: none;
     width: 16px;
     height: 16px;
@@ -355,8 +352,8 @@
 
     // border-radius: 50px;
   }
-
 }
+
 @media (min-width: $desktop-width) {
   .upload {
     margin-bottom: 62px;
@@ -432,9 +429,6 @@
 
   .filter__slider {
     width: 288px;
-  }
-
-  .slider--fill {
   }
 
   .slider--fill,
