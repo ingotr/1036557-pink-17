@@ -254,8 +254,6 @@
   .price {
     margin-top: -42px;
     padding-top: 181px;
-    // padding-left: 128px;
-    // padding-right: 9px;
     padding-left: 5%;
     padding-right: 5%;
     padding-bottom: 77px;
@@ -266,6 +264,7 @@
 
   .price__features-table {
     @include zero-margin-padding;
+    margin: 0 auto;
   }
 
   .price__features-item {
