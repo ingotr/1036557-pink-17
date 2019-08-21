@@ -22,7 +22,6 @@
   line-height: 30px;
   text-align: center;
   overflow: hidden;
-
 }
 
 .contest-form__input-wrapper {
@@ -343,7 +342,7 @@
   }
 
   &:active {
-    color: opacify($top-menu-text-color, 0.3)
+    color: opacify($top-menu-text-color, 0.3);
   }
 }
 
@@ -439,7 +438,7 @@
     display: flex;
     flex-direction: row;
     margin-bottom: 3px;
-    margin-right: 0px;
+    margin-right: 0;
     padding-left: 10px;
   }
 
@@ -454,7 +453,7 @@
   }
 
   .contest-form__fields-name {
-    margin-bottom: 0px;
+    margin-bottom: 0;
     padding-top: 30px;
     padding-right: 40px;
     padding-bottom: 5px;
@@ -491,21 +490,21 @@
 
   .contest-form__label--phone {
     margin-bottom: 3px;
-    margin-right: 0px;
+    margin-right: 0;
     padding-top: 12px;
     padding-left: 49px;
   }
 
   .contest-form__label--email {
     margin-bottom: 3px;
-    margin-right: 0px;
+    margin-right: 0;
     padding-top: 12px;
     padding-left: 49px;
   }
 
   .contest-form__input-text--phone {
     margin-left: 28px;
-    margin-right: 0px;
+    margin-right: 0;
     padding-top: 13px;
     padding-bottom: 16px;
     padding-left: 19px;
@@ -513,7 +512,7 @@
 
   .contest-form__input-text--email {
     margin-left: 28px;
-    margin-right: 0px;
+    margin-right: 0;
     padding-top: 13px;
     padding-bottom: 16px;
     padding-left: 19px;
@@ -574,7 +573,7 @@
     margin-bottom: 67px;
     padding-top: 30px;
     padding-right: 40px;
-    padding-bottom: 0px;
+    padding-bottom: 0;
     padding-left: 40px;
     width: 536px;
 
@@ -608,7 +607,7 @@
 
   .contest-form__fields-legend {
     margin: 0 auto;
-    padding: 0px 35px;
+    padding: 0 35px;
 
     text-align: center;
     background-color: transparent;
@@ -647,13 +646,13 @@
 
   .contest-form__fields-legend {
     margin: 0 auto;
-    padding: 0px 30px;
+    padding: 0 30px;
     text-align: center;
   }
 
   .contest-form__label {
     margin-bottom: 3px;
-    margin-right: 0px;
+    margin-right: 0;
     padding-left: 0;
   }
 
@@ -682,7 +681,7 @@
 
   .contest-form__label--radio {
     margin-left: 20px;
-    margin-right: 0px;
+    margin-right: 0;
     margin-bottom: 22px;
     padding-top: 2px;
     padding-left: 0;
@@ -704,12 +703,17 @@
   }
 
   .contest-form__fields-contacts {
-    width: $desktop-width;
+    @include zero-margin-padding;
+    // width: $desktop-width;
     display: flex;
-    flex-direction: row-reverse;
-    justify-content: unset;
-    align-items: unset;
-    align-content: center;
+    flex-direction: row;
+    padding-top: 44px;
+    padding-left: 60px;
+    padding-right: 60px;
+    padding-bottom: 55px;
+    // justify-content: unset;
+    // align-items: unset;
+    // align-content: center;
 
     order: 3;
   }
@@ -757,7 +761,7 @@
   .contest-form__label--phone,
   .contest-form__label--email {
     margin-left: 47px;
-    margin-right: 0px;
+    margin-right: 0;
     margin-bottom: 3px;
     padding-top: 9px;
     padding-left: 0;
@@ -766,7 +770,7 @@
   .contest-form__fields-achievments {
     flex-direction: row;
     flex-wrap: wrap;
-    width: $desktop-width;
+    // width: $desktop-width;
 
     order: 4;
   }

@@ -3,9 +3,6 @@
 */
 
 .reviews {
-  margin-top: -60px;
-  margin-bottom: 20px;
-
   background-color: $top-menu-text-color;
 }
 
@@ -60,7 +57,6 @@
 
   &:hover input ~ .slide__toggle-checkmark {
     background-color: transparentize(#283645, 0.4);
-
   }
 
   input:active ~ .slide__toggle-checkmark {
@@ -109,7 +105,7 @@
 
 .slider__prev,
 .slider__next {
-    display: none;
+  display: none;
 }
 
 @media (min-width: $tablet-width) {
@@ -192,8 +188,8 @@
 
     width: 22px;
     height: 41px;
-    top: 140px;
-    left: 0px;
+    top: 138px;
+    left: 121px;
   }
 
   .slider__next {
@@ -202,8 +198,8 @@
 
     width: 22px;
     height: 41px;
-    top: 141px;
-    right: -32px;
+    top: 138px;
+    right: 27px;
   }
 
   .reviews__quotes-image {
@@ -219,7 +215,7 @@
   .reviews__description {
     padding-right: 127px;
     padding-left: 127px;
-    margin-bottom: 37px;
+    margin-bottom: 34px;
   }
 
   .reviews__author {
