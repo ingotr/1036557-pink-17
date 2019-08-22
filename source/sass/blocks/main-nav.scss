@@ -44,14 +44,14 @@
   height: 23px;
 }
 
-.main-nav__logo:hover .main-hav__logo-mobile-path {
-  fill: #d22856;
-}
+// .main-nav__logo:hover .mobile-logo {
+//   fill: #d22856;
+// }
 
-.main-nav__logo:active .main-hav__logo-mobile-path {
-  fill: #ffffff;
-  opacity: 0.3;
-}
+// .main-nav__logo:active .main-hav__logo-mobile-path {
+//   fill: #ffffff;
+//   opacity: 0.3;
+// }
 
 .main-hav__logo-tablet {
   display: none;
@@ -225,16 +225,6 @@
     height: 40px;
   }
 
-  .main-hav__logo-mobile {
-    display: none;
-  }
-
-  .main-hav__logo-tablet {
-    display: block;
-    width: 147px;
-    height: auto;
-  }
-
   .main-nav__logo:hover .main-hav__logo-tablet-path {
     fill: #d22856;
   }
@@ -324,11 +314,11 @@
     height: auto;
   }
 
-  .main-nav__logo:hover .main-hav__logo-tablet-path {
+  .main-nav__logo:hover .main-hav__logo-desktop-path {
     fill: #d22856;
   }
 
-  .main-nav__logo:active .main-hav__logo-tablet-path {
+  .main-nav__logo:active .main-hav__logo-desktop-path {
     fill: #ffffff;
     opacity: 0.3;
   }
