@@ -27,16 +27,6 @@
   @include list-style-none;
 }
 
-.list-filter-item svg {
-  color: #283645;
-  opacity: 0.3;
-}
-
-.list-filter-item:hover svg {
-  color: #283645;
-  opacity: 0.5;
-}
-
 .upload__filter-list {
   display: flex;
   flex-direction: row;
@@ -50,8 +40,6 @@
 
 .current-item {
   position: relative;
-  // padding-bottom: 30px;
-  // border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
 
 .upload__filter-scale {
@@ -65,24 +53,22 @@
   margin-bottom: 20px;
 }
 
-.filter-slice {
-
+.list-filter__item-button svg {
+  fill: #283645;
+  opacity: 0.3;
 }
 
-.filter-path {
-  fill: transparentize(#283645, 0.7);
+.current-item svg {
+  color: #d22856;
+  opacity: 1.0;
 }
 
-.current-item .filter-path {
-  fill: #d22856;
-}
-
-.list-filter__item-button:hover .filter-path {
+.list-filter__item-button:hover svg {
   fill: #283645;
   opacity: 0.5;
 }
 
-.list-filter__item-button:active .filter-path {
+.list-filter__item-button:active svg {
   fill: #283645;
   opacity: 0.1;
 }
@@ -95,7 +81,6 @@
 .upload__button-wrapper {
   display: flex;
   flex-direction: column;
-  // margin-bottom: 40px;
 }
 
 .upload__button {
@@ -155,10 +140,11 @@
 
   height: 20px;
   margin-right: 40px;
-  margin-left: 40px;
+  margin-left: 20px;
 }
 
 .range-controls__bar {
+  width: 200px;
   height: 2px;
 
   background-color: #000000;
@@ -168,7 +154,7 @@
   position: absolute;
 
   top: -8px;
-  left: 190px;
+  left: 150px;
 
   width: 12px;
   height: 12px;
@@ -256,7 +242,6 @@
   .upload__wrapper {
     display: flex;
     align-items: flex-start;
-    // flex-wrap: wrap;
     padding-top: 37px;
     padding-bottom: 25px;
   }
@@ -285,7 +270,6 @@
   .upload__filter-list {
     flex-direction: column;
     align-items: center;
-    // justify-content: space-between;
     margin: 0;
     margin-bottom: 40px;
     padding-top: 6px;
@@ -322,6 +306,11 @@
     }
   }
 
+  .current-item--no-mobile svg {
+    color: $contacts__link-color;
+    opacity: 1.0;
+  }
+
   .list-filter__item-button {
     @include zero-margin-padding;
     margin-right: 29px;
@@ -337,6 +326,11 @@
 
   .slider {
     width: 100%;
+  }
+
+  .range-controls--fill,
+  .range-controls--contrast {
+    display: block;
   }
 
   .slider--fill,
@@ -440,13 +434,29 @@
     padding-bottom: 22px;
   }
 
-  .filter__slider {
+  .range-controls__bar {
     width: 288px;
   }
 
   .slider--fill,
   .slider--contrast {
     display: block;
+  }
+
+  .current-item--no-mobile .filter-icon {
+    color: $contacts__link-color;
+  }
+
+  .range-controls__toggle {
+    left: 60px;
+  }
+
+  .range-controls__toggle--fill {
+    left: 240px;
+  }
+
+  .range-controls__toggle--contrast {
+    left: 160px;
   }
 
   .mobile-divider {

@@ -3,7 +3,6 @@
 */
 
 .main-nav {
-  // display: none;
   width: auto;
   margin: 0 auto;
 
@@ -26,17 +25,6 @@
   z-index: 10;
 
   background-color: transparentize($top-menu-bg-color, 0.3);
-}
-
-.main-nav__logo {
-  // &:hover .main-nav__logo-image {
-  //   fill: #d22856;
-  // }
-
-  // &:active .main-nav__logo-image {
-  //   fill: #ffffff;
-  //   opacity: 0.3;
-  // }
 }
 
 .main-hav__logo-mobile {
@@ -64,10 +52,6 @@
 .main-hav__logo-desktop {
   display: none;
 }
-
-// .main-nav__logo-image {
-//   fill: navy;
-// }
 
 .main-nav--closed .main-nav__burger {
   display: relative;
@@ -245,15 +229,12 @@
   .site-list {
     display: flex;
     flex-direction: column;
-    // width: 570px;
 
     /* Временно для сетки */
     min-height: 70px;
   }
 
   .main-nav__list {
-    // display: none;
-
     background-color: #283645;
   }
 
@@ -266,7 +247,7 @@
   .main-nav {
     display: flex;
     flex-direction: row;
-    // width: auto;
+
     align-items: center;
     justify-content: space-between;
     margin: 0;
@@ -292,12 +273,6 @@
     background-color: transparent;
   }
 
-  // .main-nav__logo {
-  //   margin: 0;
-  //   padding: 0;
-  //   display: flex;
-  //   align-items: center;
-  // }
   .main-nav__logo {
     @include zero-margin-padding;
     width: 147px;
@@ -360,15 +335,11 @@
   }
 
   .site-list__item a {
-    // padding-top: 26px;
     margin-right: 0;
     margin-bottom: 0;
     margin-left: 0;
     padding: 0;
     padding-bottom: 8px;
-    // padding-right: 20px;
-    // padding-bottom: 35px;
-    // padding-left: 20px;
 
     font-size: 18px;
     font-weight: 400;

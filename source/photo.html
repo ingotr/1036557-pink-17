@@ -141,6 +141,7 @@
       <path d="M-19.462,16.331c4.706,0,8.52-3.813,8.52-8.52c0-4.705-3.813-8.519-8.52-8.519" fill="currentColor" />
     </symbol>
     <symbol viewbox="0 0 147 40" id="logo-pink-footer-adaptive">
+
       <style>
         .logo-pink-blue-desktop {
           display: none;
@@ -514,27 +515,39 @@
                 </svg>
               </a>
               <div class="filter__slider-wrapper slider--slice">
-                <input class="filter__slider" type="range" min="10" max="100" value="87" id="myRange-1">
+                <!-- <input class="filter__slider" type="range" min="10" max="100" value="87" id="myRange-1"> -->
+                <div class="range-controls range-controls--slice">
+                  <div class=range-controls__bar></div>
+                  <div class="range-controls__toggle"></div>
+                </div>
               </div>
             </li>
-            <li class="list-filter__item">
+            <li class="list-filter__item current-item--no-mobile">
               <a class="list-filter__item-button filter-fill" alt="Инструмент: заливка">
                 <svg class="filter__icon" width="48" height="43" viewbox="0 0 48 43">
                   <use xlink:href="#upload-filter-fill"></use>
                 </svg>
               </a>
               <div class="filter__slider-wrapper slider--fill">
-                <input class="filter__slider" type="range" min="10" max="100" value="20" id="myRange-2">
+                <!-- <input class="filter__slider" type="range" min="10" max="100" value="20" id="myRange-2"> -->
+                <div class="range-controls range-controls--fill">
+                  <div class=range-controls__bar></div>
+                  <div class="range-controls__toggle range-controls__toggle--fill"></div>
+                </div>
               </div>
             </li>
-            <li class="list-filter__item">
+            <li class="list-filter__item current-item--no-mobile">
               <a class="list-filter__item-button filter-contrast" alt="Инструмент: контраст">
                 <svg class="filter__icon" width="32" height="32" viewbox="0 0 32 32">
                   <use xlink:href="#upload-filter-contrast"></use>
                 </svg>
               </a>
               <div class="filter__slider-wrapper slider--contrast">
-                <input class="filter__slider" type="range" min="10" max="100" value="50" id="myRange-3">
+                <!-- <input class="filter__slider" type="range" min="10" max="100" value="50" id="myRange-3"> -->
+                <div class="range-controls range-controls--contrast">
+                  <div class=range-controls__bar></div>
+                  <div class="range-controls__toggle range-controls__toggle--contrast"></div>
+                </div>
               </div>
             </li>
           </ul>
