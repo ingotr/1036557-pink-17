@@ -44,14 +44,18 @@
   height: 23px;
 }
 
-// .main-nav__logo:hover .mobile-logo {
-//   fill: #d22856;
-// }
+.main-nav__logo svg {
+  color: #ffffff;
+}
 
-// .main-nav__logo:active .main-hav__logo-mobile-path {
-//   fill: #ffffff;
-//   opacity: 0.3;
-// }
+.main-nav__logo:hover svg {
+  color: #d22856;
+}
+
+.main-nav__logo:active svg {
+  color: #ffffff;
+  opacity: 0.3;
+}
 
 .main-hav__logo-tablet {
   display: none;
