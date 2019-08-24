@@ -60,7 +60,7 @@
 
 .current-item svg {
   color: #d22856;
-  opacity: 1.0;
+  opacity: 1;
 }
 
 .list-filter__item-button:hover svg {
@@ -153,7 +153,7 @@
 .range-controls__toggle {
   position: absolute;
 
-  top: -8px;
+  top: -6px;
   left: 150px;
 
   width: 12px;
@@ -308,7 +308,7 @@
 
   .current-item--no-mobile svg {
     color: $contacts__link-color;
-    opacity: 1.0;
+    opacity: 1;
   }
 
   .list-filter__item-button {
@@ -394,7 +394,7 @@
   .list-filter__item {
     @include zero-margin-padding;
 
-    align-items: end;
+    align-items: flex-start;
     margin-left: 185px;
     margin-bottom: 16px;
     padding-top: 0;
