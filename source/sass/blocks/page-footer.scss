@@ -24,12 +24,16 @@
   fill: #283645;
 }
 
-.page-footer__logo:hover .page-footer__logo-icon {
-  fill: #d22856;
+.page-footer__logo svg {
+  color: #283645;
 }
 
-.page-footer__logo:active .page-footer__logo-icon {
-  fill: #283645;
+.page-footer__logo:hover svg {
+  color: #d22856;
+}
+
+.page-footer__logo:active svg {
+  color: #283645;
   opacity: 0.3;
 }
 
@@ -104,13 +108,6 @@
   .page-footer--index-page {
     display: block;
   }
-
-  // .page-footer__wrapper {
-  //   display: flex;
-  //   flex-direction: row;
-  //   justify-content: space-between;
-  //   align-items: center;
-  // }
 
   .container--flex-row {
     display: flex;

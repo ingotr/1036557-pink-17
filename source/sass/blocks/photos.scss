@@ -185,13 +185,10 @@
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    // justify-content: center;
-    // justify-content: space-between;
     padding-top: 24px;
     padding-right: 32px;
     padding-bottom: 22px;
     padding-left: 27px;
-
     min-height: 155px;
     box-sizing: border-box;
     justify-content: space-between;
@@ -200,7 +197,6 @@
   .photos-list__item-card--panorama {
     flex-direction: row;
     justify-content: space-between;
-    // justify-content: flex-start;
     width: 620px;
     min-height: 71px;
     padding-top: 14px;
@@ -227,9 +223,6 @@
     order: 1;
 
     margin-top: 10px;
-    // margin-left: 28px;
-    // margin-right: 0;
-    // margin-bottom: 0px;
   }
 
   .panorama-of-day .photos-list__item-likes {
@@ -257,10 +250,6 @@
   .photos-list__item-author {
     order: 1;
 
-    // margin-top: 8px;
-    // margin-left: 28px;
-    // margin-right: 0;
-    // margin-bottom: 0px;
     margin: 0;
   }
 

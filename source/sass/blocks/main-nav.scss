@@ -3,7 +3,6 @@
 */
 
 .main-nav {
-  // display: none;
   width: auto;
   margin: 0 auto;
 
@@ -28,15 +27,30 @@
   background-color: transparentize($top-menu-bg-color, 0.3);
 }
 
-.main-nav__logo {
-  &:hover .main-nav__logo-image {
-    fill: #d22856;
-  }
+.main-hav__logo-mobile {
+  width: 74px;
+  height: 23px;
+}
 
-  &:active .main-nav__logo-image {
-    fill: #ffffff;
-    opacity: 0.3;
-  }
+.main-nav__logo svg {
+  color: #ffffff;
+}
+
+.main-nav__logo:hover svg {
+  color: #d22856;
+}
+
+.main-nav__logo:active svg {
+  color: #ffffff;
+  opacity: 0.3;
+}
+
+.main-hav__logo-tablet {
+  display: none;
+}
+
+.main-hav__logo-desktop {
+  display: none;
 }
 
 .main-nav--closed .main-nav__burger {
@@ -199,18 +213,28 @@
     height: 40px;
   }
 
+  .main-nav__logo:hover .main-hav__logo-tablet-path {
+    fill: #d22856;
+  }
+
+  .main-nav__logo:active .main-hav__logo-tablet-path {
+    fill: #ffffff;
+    opacity: 0.3;
+  }
+
+  .main-hav__logo-desktop {
+    display: none;
+  }
+
   .site-list {
     display: flex;
     flex-direction: column;
-    // width: 570px;
 
     /* Временно для сетки */
     min-height: 70px;
   }
 
   .main-nav__list {
-    // display: none;
-
     background-color: #283645;
   }
 
@@ -223,7 +247,7 @@
   .main-nav {
     display: flex;
     flex-direction: row;
-    // width: auto;
+
     align-items: center;
     justify-content: space-between;
     margin: 0;
@@ -249,16 +273,33 @@
     background-color: transparent;
   }
 
-  // .main-nav__logo {
-  //   margin: 0;
-  //   padding: 0;
-  //   display: flex;
-  //   align-items: center;
-  // }
   .main-nav__logo {
     @include zero-margin-padding;
     width: 147px;
     min-height: 40px;
+  }
+
+  .main-hav__logo-mobile {
+    display: none;
+  }
+
+  .main-hav__logo-tablet {
+    display: none;
+  }
+
+  .main-hav__logo-desktop {
+    display: block;
+    width: 147px;
+    height: auto;
+  }
+
+  .main-nav__logo:hover .main-hav__logo-desktop-path {
+    fill: #d22856;
+  }
+
+  .main-nav__logo:active .main-hav__logo-desktop-path {
+    fill: #ffffff;
+    opacity: 0.3;
   }
 
   .main-nav__burger {
@@ -294,15 +335,11 @@
   }
 
   .site-list__item a {
-    // padding-top: 26px;
     margin-right: 0;
     margin-bottom: 0;
     margin-left: 0;
     padding: 0;
     padding-bottom: 8px;
-    // padding-right: 20px;
-    // padding-bottom: 35px;
-    // padding-left: 20px;
 
     font-size: 18px;
     font-weight: 400;
