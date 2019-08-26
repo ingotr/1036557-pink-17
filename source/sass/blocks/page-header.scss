@@ -1,46 +1,6 @@
 /*
   $Раздел хедера
 */
-
-*,
-::after,
-::before {
-  box-sizing: inherit;
-}
-
-.container {
-  width: auto;
-  margin: 0 auto;
-}
-
-.container-flex {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.container--modal {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-
-  width: auto;
-}
-
-.container--hand-iphone {
-  min-height: 462px;
-
-  background-color: transparent;
-  background-image: url("../img/iphone-hand-mobile@1x.png");
-  background-repeat: no-repeat;
-  background-size: 260px 286px;
-  background-position: -1px bottom;
-
-  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-    background-image: url("../img/iphone-hand-mobile@2x.png");
-  }
-}
-
 .page-header {
   background-color: #2a3a4a;
   background-image: url("../img/bg-back-mobile@1x.jpg");
@@ -55,11 +15,6 @@
 
 .page-header--no-main-bg {
   margin-bottom: 32px;
-}
-
-.app-wrapper {
-  display: flex;
-  flex-direction: column;
 }
 
 .page-header__title {
@@ -92,24 +47,6 @@
     background-image: none;
   }
 
-  .container {
-    width: $tablet-width;
-  }
-
-  .container--modal {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
-    width: auto;
-  }
-
-  .container--hand-iphone {
-    min-height: 0;
-
-    background-image: none;
-  }
-
   .page-header--no-main-bg {
     background-color: #2a3a4a;
 
@@ -121,10 +58,6 @@
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: url("../img/bg-back-tablet@2x.jpg");
     }
-  }
-
-  .app-wrapper {
-    flex-direction: row;
   }
 
   .page-header__wrapper-photo,
@@ -161,24 +94,6 @@
 }
 
 @media (min-width: $desktop-width) {
-  .container {
-    width: $desktop-width;
-    margin: 0 auto;
-    padding: 0 10px;
-  }
-
-  .container--modal {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
-    width: auto;
-  }
-
-  .container--hand-iphone {
-    background-image: none;
-  }
-
   .page-header {
     @include zero-margin-padding;
 
@@ -197,11 +112,6 @@
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: url("../img/bg-back-desktop@2x.jpg");
     }
-  }
-
-  .app-wrapper {
-    flex-direction: row;
-    justify-content: space-between;
   }
 
   .page-header__wrapper-photo {

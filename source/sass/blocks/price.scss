@@ -5,7 +5,6 @@
   padding-top: 94px;
   padding-bottom: 20px;
 
-  background-color: #f2f2f2;
   background: linear-gradient(176deg, transparent 6%, $features-list-bg-color 0%);
 
   overflow: hidden;
@@ -45,7 +44,7 @@
   text-transform: uppercase;
 }
 
-.title-hit {
+.price__item-title--hit {
   position: relative;
   overflow: hidden;
 
@@ -139,7 +138,6 @@
     padding-top: 85px;
     padding-bottom: 48px;
 
-    background-color: #f2f2f2;
     background: linear-gradient(176deg, transparent 12%, #f2f2f2 0%);
   }
 
@@ -184,7 +182,7 @@
     text-transform: uppercase;
   }
 
-  .title-hit {
+  .price__item-title--hit {
     overflow: hidden;
 
     &::before {
@@ -244,7 +242,6 @@
     padding-right: 5%;
     padding-bottom: 77px;
 
-    background-color: #f2f2f2;
     background: linear-gradient(176deg, transparent 18%, #f2f2f2 0%);
   }
 
@@ -294,7 +291,7 @@
     text-transform: none;
   }
 
-  .title-hit {
+  .price__item-title--hit {
     overflow: hidden;
 
     &::before {

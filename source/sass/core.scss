@@ -1,0 +1,16 @@
+*,
+::after,
+::before {
+  box-sizing: inherit;
+}
+
+
+body {
+  font-family: $main-font-family, $secondary-font-family, $web-safe-font-family;
+}
+
+.button {
+  text-decoration: none;
+  text-align: center;
+}
+

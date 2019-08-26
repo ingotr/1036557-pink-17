@@ -10,12 +10,6 @@
   display: none;
 }
 
-.container--flex-row {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
 .page-footer__logo {
   margin-bottom: 37px;
 }
@@ -109,17 +103,6 @@
     display: block;
   }
 
-  .container--flex-row {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-  }
-
-  .logotype-pink {
-    margin-bottom: 0;
-  }
-
   .page-footer__logo {
     margin-left: 0;
     margin-right: 38px;
@@ -155,12 +138,6 @@
 
   .page-footer--index-page {
     display: block;
-  }
-
-  .container--flex-row {
-    padding: 0;
-    align-items: inherit;
-    justify-content: space-between;
   }
 
   .page-footer__logo {

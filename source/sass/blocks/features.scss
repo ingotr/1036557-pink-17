@@ -5,7 +5,6 @@
 .features {
   margin-bottom: 42px;
 
-  background-color: #f2f2f2;
   background: linear-gradient(175deg, transparent 21%, $features-list-bg-color 0%);
 }
 
@@ -18,7 +17,7 @@
   overflow: hidden;
 }
 
-.features-list {
+.features__list {
   @include list-style-none;
 
   margin-bottom: 9px;
@@ -44,18 +43,18 @@
   text-align: center;
 }
 
-.features-list__item {
+.features__list-item {
   display: flex;
   flex-direction: column;
   align-items: center;
   margin-bottom: 31px;
 }
 
-.features-list__item-phone {
+.features__list-item-phone {
   display: none;
 }
 
-.features-list__item:last-child .features-list__item-phone {
+.features__list-item:last-child .features__list-item-phone {
   display: block;
   order: 2;
 
@@ -70,17 +69,17 @@
   }
 }
 
-.features-list__item-card {
+.features__list-item-card {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-.features-list__item:last-child .features-list__item-card {
+.features__list-item:last-child .features__list-item-card {
   padding-bottom: 40px;
 }
 
-.features-title {
+.features__list-item-title {
   @include zero-margin-padding;
   padding-bottom: 12px;
 
@@ -90,7 +89,7 @@
   line-height: 24px;
 }
 
-.features-description {
+.features__list-item-description {
   @include zero-margin-padding;
   padding-right: 11px;
   padding-left: 11px;
@@ -128,7 +127,6 @@
   .features {
     margin-bottom: 80px;
 
-    background-color: #f2f2f2;
     background: linear-gradient(176deg, transparent 34%, #f2f2f2 0%);
     background-size: 100% 63%;
     background-repeat: no-repeat;
@@ -159,7 +157,7 @@
     padding-right: 100px;
   }
 
-  .features-list__item:last-child .features-list__item-phone {
+  .features__list-item:last-child .features__list-item-phone {
     display: block;
     position: absolute;
     top: 52px;
@@ -178,19 +176,19 @@
     }
   }
 
-  .features-list__item-card {
+  .features__list-item-card {
     display: flex;
     flex-direction: column;
     align-items: baseline;
   }
 
-  .features-list__item:last-child .features-list__item-card {
+  .features__list-item:last-child .features__list-item-card {
     order: 2;
     margin-bottom: 0;
     padding-bottom: 0;
   }
 
-  .features-list {
+  .features__list {
     order: 2;
 
     margin-left: 191px;
@@ -198,18 +196,18 @@
     padding-top: 120px;
   }
 
-  .features-list__item {
+  .features__list-item {
     margin-bottom: 35px;
 
     text-align: left;
   }
 
-  .features-title {
+  .features__title {
     margin-left: 27px;
     padding-bottom: 10px;
   }
 
-  .features-description {
+  .features__list-item-description {
     padding-top: 2px;
     padding-right: 30px;
     margin-left: 15px;
@@ -228,7 +226,7 @@
   }
 
   // Циферблат часов
-  .timer {
+  .features__timer {
     position: relative;
     margin-left: 21px;
 
@@ -257,7 +255,7 @@
     }
   }
 
-  .features__facts-title {
+  .features__list-item-title {
     margin-top: 53px;
     margin-left: 30px;
     margin-bottom: 10px;
@@ -292,7 +290,6 @@
   .features {
     margin-bottom: 72px;
 
-    background-color: #f2f2f2;
     background: linear-gradient(175deg, transparent 26%, #f2f2f2 0%);
   }
 
@@ -322,7 +319,7 @@
     padding-right: 114px;
   }
 
-  .features-list {
+  .features__list {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -333,7 +330,7 @@
     padding-right: 0;
   }
 
-  .features-list__item-phone {
+  .features__list-item-phone {
     margin-left: -35px;
     margin-bottom: 55px;
     display: block;
@@ -345,10 +342,10 @@
     background-size: cover;
   }
 
-  .features-list__item {
+  .features__list-item {
     margin-bottom: 5px;
 
-    &:nth-child(1) .features-list__item-phone {
+    &:nth-child(1) .features__list-item-phone {
       background-image: url("../img/iphone-screen-1-desktop@1x.png");
 
       @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
@@ -356,7 +353,7 @@
       }
     }
 
-    &:nth-child(2) .features-list__item-phone {
+    &:nth-child(2) .features__list-item-phone {
       background-image: url("../img/iphone-screen-2-desktop@1x.png");
 
       @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
@@ -364,7 +361,7 @@
       }
     }
 
-    &:nth-child(3) .features-list__item-phone {
+    &:nth-child(3) .features__list-item-phone {
       position: static;
       margin-left: 0;
       width: 292px;
@@ -376,16 +373,16 @@
       }
     }
 
-    &:nth-child(3) .features-list__item-card {
+    &:nth-child(3) .features__list-item-card {
       margin-left: -46px;
     }
 
-    &:nth-child(3) .features-title {
+    &:nth-child(3) .features__title {
       padding-left: 42px;
     }
   }
 
-  .features-list__item-card {
+  .features__list-item-card {
     order: 2;
 
     margin-left: -30px;
@@ -394,7 +391,7 @@
     padding-bottom: 5px;
   }
 
-  .features-title {
+  .features__title {
     @include zero-margin-padding;
     margin-bottom: 28px;
     padding-left: 1px;
@@ -406,7 +403,7 @@
     text-align: center;
   }
 
-  .features-description {
+  .features__list-item-description {
     @include zero-margin-padding;
     padding-left: 37px;
     padding-right: 27px;
@@ -417,7 +414,7 @@
     text-align: center;
   }
 
-  .timer {
+  .features__timer {
     margin-top: 0;
     margin-left: 0;
     margin-bottom: 0;
@@ -451,7 +448,7 @@
     background-color: #f2f2f2;
   }
 
-  .features__facts-title {
+  .features__list-item-title {
     margin-top: 94px;
     margin-bottom: 23px;
     padding-right: 0;

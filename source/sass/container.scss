@@ -1,0 +1,128 @@
+.container {
+  width: auto;
+  margin: 0 auto;
+}
+
+.container--flex {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.container--modal {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  width: auto;
+}
+
+.container--app {
+  align-items: flex-start;
+}
+
+.container--hand-iphone {
+  min-height: 462px;
+
+  background-color: transparent;
+  background-image: url("../img/iphone-hand-mobile@1x.png");
+  background-repeat: no-repeat;
+  background-size: 260px 286px;
+  background-position: -1px bottom;
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../img/iphone-hand-mobile@2x.png");
+  }
+}
+
+.container__contacts {
+  position: relative;
+}
+
+.container--flex-row {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@media (min-width: $tablet-width) {
+  .container {
+    width: $tablet-width;
+  }
+
+  .container--modal {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    width: auto;
+  }
+
+  .container--hand-iphone {
+    min-height: 0;
+
+    background-image: none;
+  }
+
+  .container--app {
+    padding-top: 93px;
+    padding-bottom: 78px;
+
+    background-image: url("../img/iphone-hand-tablet@1x.png");
+    background-repeat: no-repeat;
+    background-size: 700px 547px;
+    background-position: -20px 71px;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/iphone-hand-tablet@2x.png");
+    }
+  }
+
+  .container--flex-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .container {
+    width: $desktop-width;
+    margin: 0 auto;
+    padding: 0 10px;
+  }
+
+  .container--modal {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    width: auto;
+  }
+
+  .container--hand-iphone {
+    background-image: none;
+  }
+
+  .container--app {
+    padding-top: 105px;
+    padding-left: 0;
+    padding-bottom: 90px;
+
+    background-image: url("../img/iphone-hand-desktop@1x.png");
+    background-repeat: no-repeat;
+    background-size: 1050px 645px;
+    background-position: 21px bottom;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/iphone-hand-desktop@2x.png");
+    }
+  }
+
+  .container--flex-row {
+    padding: 0;
+    align-items: inherit;
+    justify-content: space-between;
+  }
+}

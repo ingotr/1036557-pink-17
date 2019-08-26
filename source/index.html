@@ -235,7 +235,7 @@
     <div class="container container--hand-iphone">
       <nav class="main-nav main-nav--opened main-nav--nojs">
         <div class="main-nav__top-menu">
-          <a class="main-nav__logo" href="#">
+          <a class="main-nav__logo">
             <svg width="147" height="40" viewbox="0 0 147 40">
               <use xlink:href="#logo-pink-header-adaptive"></use>
             </svg>
@@ -244,7 +244,7 @@
         </div>
         <ul class="main-nav__list site-list">
           <li class="site-list__item">
-            <a href="#">Главная</a>
+            <a>Главная</a>
           </li>
           <li class="site-list__item">
             <a href="photo.html">Фотографии</a>
@@ -265,11 +265,11 @@
     </h1>
     <section class="app-download">
       <h2 class="visually-hidden">Раздел загрузки приложения:</h2>
-      <div class="container container-flex container-app">
+      <div class="container container--flex container--app">
         <div class="app-download__wrapper">
           <p class="app-download__title">Взгляните на жизнь иначе!</p>
           <a class="app-download__button button" href="https://www.apple.com/ru/itunes/">Скачать приложение</a>
-          <ul class="app-download__list app-list">
+          <ul class="app-download__list">
             <li class="app-list__item">
               <a href="https://www.apple.com/ru/itunes/"><img src="img/logo-apple.svg" width="47" height="56"
                   alt="#"></a>
@@ -298,30 +298,30 @@
           Нам есть, что вам предложить!
         </p>
         <div class="features__wrapper">
-          <ul class="features-list site-list">
-            <li class="features-list__item">
-              <div class="features-list__item-phone"></div>
-              <div class="features-list__item-card">
-                <h3 class="features-title">Поднимает настроение</h3>
-                <p class="features-description">
+          <ul class="features__list site-list">
+            <li class="features__list-item">
+              <div class="features__list-item-phone"></div>
+              <div class="features__list-item-card">
+                <h3 class="features__list-item-title">Поднимает настроение</h3>
+                <p class="features__list-item-description">
                   Приложение позволит вам победить осеннюю хандру и депрессию
                   буквально в несколько кликов!</p>
               </div>
             </li>
-            <li class="features-list__item">
-              <div class="features-list__item-phone"></div>
-              <div class="features-list__item-card">
-                <h3 class="features-title">Меняет мир вокруг</h3>
-                <p class="features-description">
+            <li class="features__list-item">
+              <div class="features__list-item-phone"></div>
+              <div class="features__list-item-card">
+                <h3 class="features__list-item-title">Меняет мир вокруг</h3>
+                <p class="features__list-item-description">
                   Сделайте снимок и украсьте его смайликом или текстовой
                   подписью, чтобы усилить эффект</p>
               </div>
             </li>
-            <li class="features-list__item">
-              <div class="features-list__item-phone"></div>
-              <div class="features-list__item-card">
-                <h3 class="features-title">Заводит новых друзей</h3>
-                <p class="features-description">
+            <li class="features__list-item">
+              <div class="features__list-item-phone"></div>
+              <div class="features__list-item-card">
+                <h3 class="features__list-item-title">Заводит новых друзей</h3>
+                <p class="features__list-item-description">
                   Ставьте лайки, комментируйте, делитесь фотографиями
                   с друзьями и заводите новых</p>
               </div>
@@ -329,7 +329,7 @@
           </ul>
         </div>
         <div class="features__facts">
-          <figure class="timer">
+          <figure class="features__timer">
             <img src="img/icon-timer.svg" width="238" height="276" alt="">
           </figure>
           <div class="features__facts-wrapper">
@@ -340,7 +340,7 @@
               и доказали, что положительный эффект
               от использования приложения длится
               целые сутки!</p>
-            <p class="features__facts-link">Узнать больше об исследовании</p>
+            <a class="features__facts-link" href="#">Узнать больше об исследовании</a>
           </div>
         </div>
       </div>
@@ -348,13 +348,13 @@
     <section class="reviews">
       <h2 class="visually-hidden">Раздел отзывов</h2>
       <div class="container">
-        <div class="reviews__wrapper slider">
+        <div class="reviews__wrapper">
           <div class="reviews__quotes-image"></div>
-          <ul class="reviews__list slider__list">
-            <li class="reviews__item slider__item">
-              <h3 class="reviews__author">Николай Петров</h3>
-              <p class="reviews__author-job">25 лет, водитель трамвая</p>
-              <p class="reviews__description">
+          <ul class="reviews__list">
+            <li class="reviews__list-item">
+              <h3 class="reviews__list-item-author">Николай Петров</h3>
+              <p class="reviews__list-item-author-job">25 лет, водитель трамвая</p>
+              <p class="reviews__list-item-description">
                 «Это приложение перевернуло мой мир и позволило по-новому
                 взглянуть на привычные серые вещи! А еще я познакомился
                 со своей будущей женой в комментариях к выложенной фотографии!»
@@ -364,20 +364,20 @@
           <p class="reviews__toggles slider__toggles">
             <label for="review__toggle-1" class="slider__toggle-container">
               <input type="radio" class="slider__toggle" id="review__toggle-1" name="review-control" checked>
-              <span class="slide__toggle-checkmark"></span>
+              <span class="slider__toggle-checkmark"></span>
             </label>
             <label for="review__toggle-2" class="slider__toggle-container">
               <input type="radio" class="slider__toggle" id="review__toggle-2" name="review-control">
-              <span class="slide__toggle-checkmark"></span>
+              <span class="slider__toggle-checkmark"></span>
             </label>
             <label for="review__toggle-3" class="slider__toggle-container">
               <input type="radio" class="slider__toggle" id="review__toggle-3" name="review-control">
-              <span class="slide__toggle-checkmark"></span>
+              <span class="slider__toggle-checkmark"></span>
             </label>
           </p>
 
-          <a class="slider__prev"></a>
-          <a class="slider__next"></a>
+          <a class="reviews__arrow-prev" href="#"></a>
+          <a class="reviews__arrow-prev" href="#"></a>
         </div>
       </div>
     </section>
@@ -389,7 +389,7 @@
           <tr>
             <td class="price__empty-cell price__features-item--desktop"></td>
             <th class="price__item-title">База<span class="price__item-value">1,99 USD</span></th>
-            <th class="price__item-title title-hit">Стандарт<span class="price__item-value">3,99 USD</span></th>
+            <th class="price__item-title price__item-title--hit">Стандарт<span class="price__item-value">3,99 USD</span></th>
             <th class="price__item-title">Анлим<span class="price__item-value">9,99 USD</span></th>
           </tr>
           <tr>
@@ -460,15 +460,15 @@
       <p class="price__toggles slider__toggles">
         <label for="price__toggle-1" class="slider__toggle-container">
           <input type="radio" class="slider__toggle" id="price__toggle-1" name="price-control">
-          <span class="slide__toggle-checkmark"></span>
+          <span class="slider__toggle-checkmark"></span>
         </label>
         <label for="price__toggle-2" class="slider__toggle-container">
           <input type="radio" class="slider__toggle" id="price__toggle-2" name="price-control" checked>
-          <span class="slide__toggle-checkmark"></span>
+          <span class="slider__toggle-checkmark"></span>
         </label>
         <label for="price__toggle-3" class="slider__toggle-container">
           <input type="radio" class="slider__toggle" id="price__toggle-3" name="price-control">
-          <span class="slide__toggle-checkmark"></span>
+          <span class="slider__toggle-checkmark"></span>
         </label>
       </p>
     </section>
@@ -476,21 +476,21 @@
     <section class="contacts">
       <h2 class="visually-hidden">Раздел контактов:</h2>
       <div class="contacts__wrapper">
-        <div class="container container-flex contacts__container">
+        <div class="container container--flex container--contacts">
           <p class="contacts__title">Остались вопросы?
             Свяжитесь с нами!</p>
-          <ul class="contacts_list site-list">
-            <li class="contacts_list__item contacts_list__item--phone">
-              <h3 class="contacts_list__item-title">Звоните:</h3>
-              <a class="contacts_list__item-link" href="tel:+7(812)555-66-66">+7 (812) 555-66-66</a>
+          <ul class="contacts__list site-list">
+            <li class="contacts__list-item contacts__list-item--phone">
+              <h3 class="contacts__list-item-title">Звоните:</h3>
+              <a class="contacts__list-item-link" href="tel:+7(812)555-66-66">+7 (812) 555-66-66</a>
             </li>
-            <li class="contacts_list__item contacts_list__item--mail">
-              <h3 class="contacts_list__item-title">Пишите:</h3>
-              <a class="contacts_list__item-link contacts_list__item-link--mail" href="#">mail@htmlacademy.ru</a>
+            <li class="contacts__list-item contacts__list-item--mail">
+              <h3 class="contacts__list-item-title">Пишите:</h3>
+              <a class="contacts__list-item-link contacts__list-item-link--mail" href="#">mail@htmlacademy.ru</a>
             </li>
-            <li class="contacts_list__item contacts_list__item--adress">
-              <h3 class="contacts_list__item-title">Приезжайте в гости:</h3>
-              <a class="contacts_list__item-link" href="#">ул. Большая<br> Конюшенная, 19/8</a>
+            <li class="contacts__list-item contacts__list-item--adress">
+              <h3 class="contacts__list-item-title">Приезжайте в гости:</h3>
+              <a class="contacts__list-item-link" href="#">ул. Большая<br> Конюшенная, 19/8</a>
             </li>
           </ul>
         </div>
