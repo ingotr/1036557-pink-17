@@ -1,18 +1,6 @@
 /*
   $Раздел хедера
 */
-.page-header {
-  background-color: #2a3a4a;
-  background-image: url("../img/bg-back-mobile@1x.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-
-  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-    background-image: url("../img/bg-back-mobile@2x.jpg");
-  }
-}
-
 .page-header--no-main-bg {
   margin-bottom: 32px;
 }
@@ -138,13 +126,6 @@
   .page-header__title {
     font-size: 50px;
     font-weight: 300;
-  }
-
-  .page-header__title--photo {
-    padding-top: 10px;
-    padding-bottom: 100px;
-    padding-left: 113px;
-    padding-right: 0;
   }
 
   .page-header__title--contest {
