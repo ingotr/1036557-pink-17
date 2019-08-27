@@ -1,8 +1,22 @@
 /*
   $Раздел хедера
 */
+.page-header {
+  position: relative;
+}
+
 .page-header--no-main-bg {
   margin-bottom: 32px;
+
+  background-color: #2a3a4a;
+  background-image: url("../img/bg-back-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 0 4%;
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../img/bg-back-mobile@2x.jpg");
+  }
 }
 
 .page-header__title {
@@ -26,12 +40,12 @@
   margin-top: 30px;
   margin-right: 44px;
   margin-left: 44px;
-  padding-bottom: 56px;
+  padding-bottom: 58px;
 }
 
 @media (min-width: $tablet-width) {
   .page-header {
-    background-color: transparent;
+    background-color: rgba(0,0,0,.3);
     background-image: none;
   }
 
@@ -86,7 +100,7 @@
     @include zero-margin-padding;
 
     background-image: none;
-    background-color: #00000030;
+    background-color: rgba(0,0,0,0.4);
   }
 
   .page-header--no-main-bg {

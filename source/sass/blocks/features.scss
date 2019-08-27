@@ -125,17 +125,17 @@
 
 @media (min-width: $tablet-width) {
   .features {
-    margin-bottom: 80px;
+    margin-bottom: 95px;
 
     background: linear-gradient(176deg, transparent 34%, #f2f2f2 0%);
-    background-size: 100% 63%;
+    background-size: 100% 67%;
     background-repeat: no-repeat;
   }
 
   .features__wrapper {
     position: relative;
     flex-direction: row;
-    margin-bottom: 36px;
+    margin-bottom: 2px;
 
     overflow: unset;
   }
@@ -193,8 +193,9 @@
     order: 2;
 
     margin-left: 191px;
-    padding-left: 112px;
     padding-top: 117px;
+    padding-left: 112px;
+    padding-right: 0;
     padding-bottom: 63px;
   }
 
@@ -271,13 +272,16 @@
 
   .features__facts-wrapper {
     margin-left: 70px;
+    padding-top: 32px;
   }
 
   .features__facts-title {
     margin-top: 5px;
+    margin-bottom: 13px;
     padding-right: 158px;
 
     font-size: 30px;
+    line-height: 35px;
   }
 
   .features__facts-link {
@@ -308,7 +312,7 @@
   .features__wrapper {
     flex-direction: column;
     align-items: inherit;
-    margin-bottom: 0;
+    margin-bottom: 64px;
   }
 
   .features__slogan {
@@ -316,7 +320,7 @@
     margin-right: 0;
     margin-bottom: 0;
     padding-top: 12px;
-    padding-left: 112px;
+    padding-left: 74px;
     padding-right: 71px;
 
     font-size: 50px;
@@ -325,26 +329,24 @@
   }
 
   .features__slogan--second-part {
-    margin-bottom: 0;
+    margin-bottom: 78px;
     padding-top: 4px;
-    padding-left: 181px;
+    padding-left: 117px;
     padding-right: 114px;
   }
 
   .features__list {
+    @include zero-margin-padding;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin-left: 0;
-    margin-bottom: 54px;
-    padding-top: 78px;
-    padding-left: 0;
-    padding-right: 0;
+    width: 100%;
   }
 
   .features__list-item-phone {
-    margin-left: -35px;
-    margin-bottom: 55px;
+    @include zero-margin-padding;
+    // margin-left: -35px;
+    margin-bottom: 57px;
     display: block;
     order: 1;
     width: 292px;
@@ -355,7 +357,8 @@
   }
 
   .features__list-item {
-    margin-bottom: 5px;
+    margin-bottom: 0;
+    width: 32%;
 
     &:nth-child(1) .features__list-item-phone {
       background-image: url("../img/iphone-screen-1-desktop@1x.png");
@@ -374,6 +377,7 @@
     }
 
     &:nth-child(3) .features__list-item-phone {
+      align-self: flex-end;
       position: static;
       margin-left: 0;
       width: 292px;
@@ -385,9 +389,9 @@
       }
     }
 
-    &:nth-child(3) .features__list-item-card {
-      margin-left: -46px;
-    }
+    // &:nth-child(3) .features__list-item-card {
+    //   margin-left: -46px;
+    // }
 
     &:nth-child(3) .features__title {
       padding-left: 42px;
@@ -395,12 +399,10 @@
   }
 
   .features__list-item-card {
+    @include zero-margin-padding;
     order: 2;
 
-    margin-left: -30px;
-    padding-left: 27px;
-    padding-right: 0;
-    padding-bottom: 5px;
+    text-align: center;
   }
 
   .features__title {
@@ -417,8 +419,8 @@
 
   .features__list-item-description {
     @include zero-margin-padding;
-    padding-left: 37px;
-    padding-right: 27px;
+    padding-left: 25px;
+    padding-right: 25px;
 
     font-size: 18px;
     font-weight: 400;
@@ -453,16 +455,26 @@
     }
   }
 
+  .features__facts-wrapper {
+    @include zero-margin-padding;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-left: 70px;
+    padding-top: 87px;
+    padding-bottom: 50px;
+  }
+
   .features__facts {
-    padding-top: 0;
+    @include zero-margin-padding;
     padding-bottom: 66px;
 
     background-color: #f2f2f2;
   }
 
   .features__list-item-title {
-    margin-top: 94px;
-    margin-bottom: 23px;
+    @include zero-margin-padding;
+    margin-bottom: 25px;
     padding-right: 0;
 
     color: #000000;

@@ -17,9 +17,9 @@
   align-items: flex-start;
   justify-content: space-between;
   padding-top: 20px;
-  padding-left: 20px;
   padding-right: 30px;
-  padding-bottom: 20px;
+  padding-bottom: 5px;
+  padding-left: 20px;
   width: auto;
 
   z-index: 10;
@@ -46,6 +46,10 @@
 
 .main-nav__logo-desktop {
   display: none;
+}
+
+.main-nav--closed {
+  margin-bottom: 13px;
 }
 
 .main-nav--closed .main-nav__burger {
@@ -78,12 +82,13 @@
 
 .main-nav--closed .main-nav__list {
   display: none;
+
 }
 
 .main-nav--opened {
   z-index: 10;
 
-  margin-bottom: 25%;
+  margin-bottom: 17px;
   min-height: 20vh;
 
   background-color: $top-menu-bg-color;
@@ -101,8 +106,8 @@
     content: "";
 
     position: absolute;
-    top: 9px;
-    left: 18px;
+    top: 8px;
+    left: 36px;
 
     width: 30px;
     height: 5px;
@@ -197,7 +202,7 @@
 
   .main-nav__top-menu {
     padding-top: 25px;
-    padding-left: 20px;
+    padding-left: 40px;
     padding-right: 10px;
     padding-bottom: 40px;
     align-items: flex-end;
@@ -207,7 +212,7 @@
   }
 
   .main-nav--opened {
-    margin-bottom: 21%;
+    margin-bottom: 4%;
   }
 
   .main-nav__logo {
@@ -226,6 +231,71 @@
 
   .main-nav__logo-desktop {
     display: none;
+  }
+
+  .main-nav--closed .main-nav__burger {
+    display: relative;
+
+    &::before {
+      content: "";
+
+      position: absolute;
+      top: 3px;
+      left: -4px;
+
+      width: 50px;
+      height: 4px;
+
+      background-color: #ffffff;
+      box-shadow: 0 10px 0 0 #ffffff, 0 20px 0 0 #ffffff;
+    }
+
+    &:hover::before {
+      background-color: #d22856;
+      box-shadow: 0 10px 0 0 #d22856, 0 20px 0 0 #d22856;
+    }
+
+    &:active::before {
+      background-color: transparentize(#d22856, 0.7);
+      box-shadow: 0 10px 0 0 transparentize(#d22856, 0.7), 0 20px 0 0 transparentize(#d22856, 0.7);
+    }
+  }
+
+  .main-nav--opened .main-nav__burger {
+    display: relative;
+
+    &::before,
+    &::after {
+      content: "";
+
+      position: absolute;
+      top: 9px;
+      left: -2px;
+
+      width: 30px;
+      height: 5px;
+
+      background-color: #ffffff;
+    }
+
+    &::before {
+      transform: rotate(45deg);
+      box-shadow: none;
+    }
+
+    &::after {
+      transform: rotate(-45deg);
+    }
+
+    &:hover::before,
+    &:hover::after {
+      background-color: #d22856;
+    }
+
+    &:active::before,
+    &:active::after {
+      background-color: transparentize(#d22856, 0.7);
+    }
   }
 
   .site-list {
@@ -256,11 +326,14 @@
     min-height: 115px;
 
     z-index: 20;
-    background-color: rgba(0, 0, 0, 0.3);
+
+    background-color: transparent;
   }
 
   .main-nav__top-menu {
     margin: 0;
+    padding: 0;
+    padding-bottom: 20px;
     width: auto;
     align-self: center;
 

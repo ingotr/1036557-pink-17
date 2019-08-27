@@ -147,14 +147,14 @@
     left: 0;
 
     margin: auto;
-    padding-left: 39px;
+    padding-left: 20px;
     padding-right: 38px;
     padding-bottom: 18px;
     width: auto;
   }
 
   .price__features-item {
-    max-width: 150px;
+    max-width: 130px;
     margin: 0;
     padding: 3px;
 
@@ -208,11 +208,11 @@
 
   .price__features-item--desktop {
     display: table-cell;
-    width: 160px;
     padding-top: 5px;
     padding-right: 10px;
     padding-bottom: 10px;
     padding-left: 16px;
+    min-width: 128px;
 
     color: $top-menu-bg-color;
     font-size: 14px;
@@ -240,7 +240,7 @@
     padding-top: 181px;
     padding-left: 5%;
     padding-right: 5%;
-    padding-bottom: 77px;
+    padding-bottom: 96px;
 
     background: linear-gradient(176deg, transparent 18%, #f2f2f2 0%);
   }
@@ -280,7 +280,7 @@
 
   .price__features-item--desktop {
     display: table-cell;
-    width: 240px;
+    width: 200px;
     padding-top: 12px;
     padding-bottom: 15px;
 
@@ -312,6 +312,17 @@
       line-height: 21.21px;
       text-transform: uppercase;
       transform: rotate(-45deg);
+    }
+  }
+
+  .price__features-item-no {
+    position: relative;
+
+    &::after {
+      content: url("../img/icon-no.svg");
+      position: absolute;
+      top: -10px;
+      left: -18px;
     }
   }
 }

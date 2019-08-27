@@ -1,5 +1,5 @@
 .container {
-  width: auto;
+  width: $mobile-width;
   margin: 0 auto;
 }
 
@@ -21,21 +21,6 @@
   align-items: flex-start;
 }
 
-// .container--hand-iphone {
-//   min-height: 462px;
-
-//   background-color: transparent, #2a3a4a;
-//   background-image: url("../img/iphone-hand-mobile@1x.png"), url("../img/bg-back-mobile@1x.jpg");
-//   background-repeat: no-repeat, no-repeat;
-//   background-size: 260px 286px, cover;
-//   background-position: -1px bottom, center;
-
-//   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-//     background-image: url("../img/iphone-hand-mobile@2x.png"),
-//       url("../img/bg-back-mobile@2x.jpg");
-//   }
-// }
-
 .container__contacts {
   position: relative;
 }
@@ -47,6 +32,10 @@
 }
 
 @media (min-width: $tablet-width) {
+  .container  {
+    width: $tablet-width;
+  }
+
   .container--modal {
     display: flex;
     flex-direction: column;
@@ -81,6 +70,10 @@
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
+  }
+
+  .container--space-between {
+    justify-content: space-between;
   }
 }
 

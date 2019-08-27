@@ -34,7 +34,7 @@
   align-items: center;
   width: 232px;
   margin-right: 56px;
-  margin-bottom: 49px;
+  margin-bottom: 53px;
   margin-left: 37px;
 }
 
@@ -144,7 +144,7 @@
 }
 
 .range-controls__bar {
-  width: 200px;
+  width: 240px;
   height: 2px;
 
   background-color: #000000;
@@ -154,11 +154,11 @@
   position: absolute;
 
   top: -6px;
-  left: 150px;
+  left: 193px;
 
-  width: 12px;
-  height: 12px;
   padding: 0;
+  width: 10px;
+  height: 10px;
 
   border: 2px solid $contacts__link-color;
   background-color: $features-list-bg-color;
@@ -185,8 +185,8 @@
 
 .filter__slider-wrapper {
   position: absolute;
-  top: 72px;
-  left: -16px;
+  top: 84px;
+  left: -36px;
 }
 
 .filter__slider {

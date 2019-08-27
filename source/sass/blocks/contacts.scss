@@ -25,7 +25,7 @@
 }
 
 .contacts__list-item {
-  margin-bottom: 5px;
+  margin-bottom: 7px;
 
   text-align: center;
 }
@@ -135,7 +135,7 @@
     font-weight: 300;
   }
 
-  .contacts_list {
+  .contacts__list {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -238,8 +238,8 @@
     padding-bottom: 0;
 
     background:
-      linear-gradient(-10deg, transparent 95px, white 0) bottom right,
-      linear-gradient(10deg, transparent 95px, white 0) bottom left;
+      linear-gradient(-10deg, transparent 146px, white 0) bottom right,
+      linear-gradient(10deg, transparent 146px, white 0) bottom left;
     background-size: 51% 100%;
     background-repeat: no-repeat;
 

@@ -3,8 +3,8 @@
 */
 .app-download {
   margin-top: -27%;
-  margin-bottom: 36px;
-  padding-top: 72%;
+  margin-bottom: 40px;
+  padding-top: 73%;
 
   min-height: 462px;
 
@@ -12,7 +12,7 @@
   background-image: url("../img/iphone-hand-mobile@1x.png"), url("../img/bg-back-mobile@1x.jpg");
   background-repeat: no-repeat, no-repeat;
   background-size: 260px 286px, contain;
-  background-position: -1px 30%, 0 2%;
+  background-position: -1px 40%, 0 4%;
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
     background-image: url("../img/iphone-hand-mobile@2x.png"),
@@ -24,7 +24,8 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 55%;
+  margin-top: 72%;
+  width: 100%;
 
   z-index: 1;
 
@@ -92,7 +93,7 @@
 @media (min-width: $tablet-width) {
   .app-download {
     margin-top: -21%;
-    padding-top: 4px;
+    padding-top: 112px;
     padding-left: 0px;
     padding-right: 20px;
 
