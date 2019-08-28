@@ -22,8 +22,7 @@
 
   margin-bottom: 9px;
   padding-top: 84px;
-  padding-right: 14px;
-  padding-left: 14px;
+  width: 100%;
 
   text-align: center;
 
@@ -73,6 +72,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 80%;
 }
 
 .features__list-item:last-child .features__list-item-card {
@@ -93,6 +93,7 @@
   @include zero-margin-padding;
   padding-right: 11px;
   padding-left: 11px;
+  width: 100%;
 
   color: $top-menu-bg-color;
   font-size: 14px;
@@ -192,15 +193,15 @@
     @include zero-margin-padding;
     order: 2;
 
-    margin-left: 191px;
+    margin-left: 150px;
     padding-top: 117px;
     padding-left: 112px;
     padding-right: 0;
-    padding-bottom: 63px;
+    padding-bottom: 44px;
   }
 
   .features__list-item {
-    margin-bottom: 32px;
+    margin-bottom: 30px;
 
     text-align: left;
   }
@@ -211,9 +212,10 @@
   }
 
   .features__list-item-description {
+    margin-left: 15px;
     padding-top: 2px;
     padding-right: 30px;
-    margin-left: 15px;
+    width: auto;
 
     text-align: left;
   }
@@ -277,11 +279,11 @@
 
   .features__facts-title {
     margin-top: 5px;
-    margin-bottom: 13px;
+    margin-bottom: 10px;
     padding-right: 158px;
 
     font-size: 30px;
-    line-height: 35px;
+    line-height: 37px;
   }
 
   .features__facts-link {
@@ -400,6 +402,7 @@
 
   .features__list-item-card {
     @include zero-margin-padding;
+    width: 83%;
     order: 2;
 
     text-align: center;
@@ -419,8 +422,7 @@
 
   .features__list-item-description {
     @include zero-margin-padding;
-    padding-left: 25px;
-    padding-right: 25px;
+    width: 100%;
 
     font-size: 18px;
     font-weight: 400;
@@ -463,6 +465,7 @@
     margin-left: 70px;
     padding-top: 87px;
     padding-bottom: 50px;
+    width: 100%;
   }
 
   .features__facts {
@@ -476,6 +479,7 @@
     @include zero-margin-padding;
     margin-bottom: 25px;
     padding-right: 0;
+    width: 95%;
 
     color: #000000;
     font-size: 30px;

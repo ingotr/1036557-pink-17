@@ -9,6 +9,10 @@
   background-color: #00000030;
 }
 
+.main-nav .container {
+  width: 100%;
+}
+
 .main-nav__top-menu {
   position: relative;
   display: flex;
@@ -17,7 +21,7 @@
   align-items: flex-start;
   justify-content: space-between;
   padding-top: 20px;
-  padding-right: 30px;
+  padding-right: 50px;
   padding-bottom: 0;
   padding-left: 20px;
   width: auto;
@@ -59,8 +63,8 @@
     content: "";
 
     position: absolute;
-    top: 0;
-    left: 10px;
+    top: 2px;
+    left: 5px;
 
     width: 50px;
     height: 4px;
@@ -140,7 +144,7 @@
 
   display: block;
   padding: 0;
-  width: 50px;
+  width: 24px;
   height: 24px;
 
   border: none;
@@ -199,6 +203,10 @@
     margin-bottom: 5%;
   }
 
+  .main-nav .container {
+    width: 100%;
+  }
+
   .main-nav__top-menu {
     padding-top: 23px;
     padding-left: 20px;
@@ -241,7 +249,7 @@
 
       position: absolute;
       top: 3px;
-      left: -4px;
+      left: -24px;
 
       width: 50px;
       height: 4px;
@@ -320,9 +328,10 @@
     display: flex;
     flex-direction: row;
 
-    align-items: center;
+    align-items: stretch;
     justify-content: space-between;
     margin: 0;
+    height: 115px;
     min-height: 115px;
 
     z-index: 20;

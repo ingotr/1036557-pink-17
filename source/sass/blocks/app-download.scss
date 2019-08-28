@@ -2,17 +2,17 @@
   $Раздел загрузки
 */
 .app-download {
-  margin-top: -29%;
+  margin-top: -79px;
   margin-bottom: 40px;
-  padding-top: 76%;
+  padding-top: 247px;
 
   min-height: 462px;
 
-  background-color: transparent, #2a3a4a;
+  background-color: #2a3a4a;
   background-image: url("../img/iphone-hand-mobile@1x.png"), url("../img/bg-back-mobile@1x.jpg");
   background-repeat: no-repeat, no-repeat;
-  background-size: 260px 286px, contain;
-  background-position: -1px 40%, 0 4%;
+  background-size: 260px 286px, 100% 455px;
+  background-position: -1px 180px, 0 4%;
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
     background-image: url("../img/iphone-hand-mobile@2x.png"),
@@ -29,7 +29,7 @@
 
   z-index: 1;
 
-  background-color: #2a3a4a;
+  // background-color: #2a3a4a;
 }
 
 .app-download__title {
@@ -39,7 +39,7 @@
 }
 
 .app-download__button {
-  margin-top: 28px;
+  margin-top: 17px;
   margin-right: 15px;
   margin-bottom: 20px;
   margin-left: 15px;
@@ -79,9 +79,10 @@
 }
 
 .app-download__description {
-  margin-bottom: 27px;
+  margin-bottom: 29px;
   padding-right: 20px;
   padding-left: 20px;
+  width: 90%;
 
   color: $top-menu-text-color;
   font-size: 14px;
@@ -93,7 +94,7 @@
 @media (min-width: $tablet-width) {
   .app-download {
     margin-top: -21%;
-    padding-top: 112px;
+    padding-top: 117px;
     padding-left: 0;
     padding-right: 20px;
 
@@ -121,6 +122,7 @@
     margin-bottom: 34px;
     padding-left: 64px;
     padding-right: 63px;
+    width: 60%;
 
     display: block;
     color: $top-menu-text-color;
@@ -153,9 +155,9 @@
 @media (min-width: $desktop-width) {
   .app-download {
     @include zero-margin-padding;
-    margin-top: -12%;
+    margin-top: -22%;
     margin-bottom: 56px;
-    padding-top: 12%;
+    padding-top: 17%;
 
     background-color: #2a3a4a;
 
@@ -170,6 +172,9 @@
   }
 
   .app-download__wrapper {
+    padding-top: 165px;
+    padding-left: 0;
+    padding-bottom: 93px;
     width: $tablet-width / 2;
 
     background-color: transparent;
@@ -177,8 +182,9 @@
 
   .app-download__title {
     margin-bottom: 53px;
-    padding-left: 48px;
+    padding-left: 39px;
     padding-right: 63px;
+    width: 90%;
 
     font-size: 50px;
     line-height: 59px;
@@ -188,11 +194,11 @@
     @include zero-margin-padding;
 
     align-self: flex-start;
-    margin-left: 5px;
+    margin-left: 0;
     margin-bottom: 55px;
     padding-bottom: 17px;
-    padding-left: 29px;
-    padding-right: 29px;
+    padding-left: 24px;
+    padding-right: 34px;
     padding-top: 14px;
 
     font-size: 21px;

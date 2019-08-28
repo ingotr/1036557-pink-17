@@ -32,10 +32,15 @@
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
-  width: 232px;
-  margin-right: 56px;
-  margin-bottom: 53px;
-  margin-left: 37px;
+  margin-left: 0;
+  margin-right: 0;
+  margin-bottom: 37px;
+  padding-left: 37px;
+  padding-right: 48px;
+  padding-bottom: 53px;
+  width: 73%;
+
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
 
 .current-item {
@@ -277,6 +282,8 @@
     padding-right: 30px;
     padding-left: 15px;
     padding-bottom: 17px;
+
+    border: none;
   }
 
   .list-filter__item {
@@ -392,7 +399,7 @@
 
   .upload__wrapper {
     box-sizing: border-box;
-    padding-top: 57px;
+    padding-top: 55px;
     padding-right: 80px;
     padding-bottom: 20px;
     padding-left: 80px;
@@ -407,7 +414,7 @@
   }
 
   .upload_filter-button-wrapper {
-    padding-left: 90px;
+    padding-left: 78px;
     padding-right: 90px;
     padding-bottom: 13px;
   }
@@ -415,11 +422,13 @@
   .upload__filter-list {
     @include zero-margin-padding;
     margin-bottom: 128px;
+    width: auto;
   }
 
   .list-filter__item {
     @include zero-margin-padding;
 
+    justify-content: space-between;
     align-items: flex-start;
     margin-left: 0;
     margin-bottom: 16px;
@@ -427,6 +436,7 @@
     padding-left: 7px;
     padding-right: 0;
     padding-bottom: 8px;
+    width: 420px;
 
     &:nth-child(1) .filter__icon {
       width: 45px;
@@ -459,6 +469,7 @@
   .filter__slider-wrapper {
     padding-top: 6px;
     padding-bottom: 22px;
+    width: 230px;
   }
 
   .range-controls__bar {
@@ -499,6 +510,7 @@
 
   .upload__button-wrapper {
     flex-direction: row;
+    padding-left: 12px;
   }
 
   .upload__button {

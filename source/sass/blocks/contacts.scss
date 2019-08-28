@@ -102,7 +102,7 @@
     background-image: url("../img/bg-map-tablet@1x.jpg");
     background-repeat: no-repeat;
     background-position: center;
-    background-size: cover;
+    background-size: 660px;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: url("../img/bg-map-tablet@2x.jpg");
@@ -115,8 +115,8 @@
     width: 100%;
 
     background:
-      linear-gradient(-12deg, transparent 72px, white 0) bottom right,
-      linear-gradient(12deg, transparent 72px, white 0) bottom left;
+      linear-gradient(-12deg, transparent 68px, white 0) bottom right,
+      linear-gradient(12deg, transparent 68px, white 0) bottom left;
     background-size: 51% 100%;
     background-repeat: no-repeat;
 
@@ -130,6 +130,7 @@
     margin-left: 120px;
     padding-top: 40px;
     padding-bottom: 27px;
+    width: 60%;
 
     font-size: 40px;
     font-weight: 300;
@@ -156,6 +157,7 @@
     margin-right: 40px;
     margin-bottom: 16px;
     padding-bottom: 18px;
+    width: 33%;
   }
 
   .contacts__list-item:last-child {
@@ -173,7 +175,7 @@
     z-index: 1;
 
     width: 100%;
-    min-height: 795px;
+    min-height: 780px;
     margin: 0;
     padding: 0;
   }
@@ -200,6 +202,7 @@
     padding-right: 70px;
     padding-left: 70px;
     padding-bottom: 40px;
+    width: 75%;
 
     font-size: 50px;
     font-weight: 300;

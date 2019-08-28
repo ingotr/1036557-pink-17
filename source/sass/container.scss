@@ -1,6 +1,10 @@
 .container {
-  width: 100%;
+  width: $mobile-width;
   margin: 0 auto;
+}
+
+.container--hand-iphone {
+  width: 100%;
 }
 
 .container--flex {
@@ -33,7 +37,7 @@
 
 @media (min-width: $tablet-width) {
   .container {
-    width: 100%;
+    width: $tablet-width;
   }
 
   .container--modal {
@@ -47,6 +51,7 @@
   .container--hand-iphone {
     margin-top: 0;
     min-height: 0;
+    width: 100%;
 
     background-image: none;
   }
@@ -54,7 +59,6 @@
   .container--app {
     padding-top: 93px;
     padding-bottom: 78px;
-
     background-image: url("../img/iphone-hand-tablet@1x.png");
     background-repeat: no-repeat;
     background-size: 700px 547px;
@@ -74,6 +78,7 @@
 
   .container--space-between {
     justify-content: space-between;
+    width: 100%;
   }
 }
 
@@ -98,14 +103,10 @@
   }
 
   .container--app {
-    padding-top: 105px;
-    padding-left: 0;
-    padding-bottom: 90px;
-
     background-image: url("../img/iphone-hand-desktop@1x.png");
     background-repeat: no-repeat;
     background-size: 1050px 645px;
-    background-position: 21px bottom;
+    background-position: 26px bottom;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: url("../img/iphone-hand-desktop@2x.png");
