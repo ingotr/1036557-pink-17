@@ -45,7 +45,7 @@
 
 @media (min-width: $tablet-width) {
   .page-header {
-    background-color: rgba(0,0,0,.3);
+    background-color: rgba(0, 0, 0, 0.3);
     background-image: none;
   }
 
@@ -100,7 +100,7 @@
     @include zero-margin-padding;
 
     background-image: none;
-    background-color: rgba(0,0,0,0.4);
+    background-color: rgba(0, 0, 0, 0.4);
   }
 
   .page-header--no-main-bg {

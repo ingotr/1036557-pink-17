@@ -1,5 +1,5 @@
 .container {
-  width: $mobile-width;
+  width: 100%;
   margin: 0 auto;
 }
 
@@ -32,8 +32,8 @@
 }
 
 @media (min-width: $tablet-width) {
-  .container  {
-    width: $tablet-width;
+  .container {
+    width: 100%;
   }
 
   .container--modal {
