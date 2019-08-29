@@ -59,6 +59,8 @@
   font-weight: 700;
   line-height: 24px;
   text-transform: uppercase;
+
+  z-index: 1;
 }
 
 .photos__list-item {
@@ -138,10 +140,11 @@
 
 .panorama-of-day {
   align-items: center;
+}
 
-  a {
-    position: relative;
-  }
+.panorama-of-day a {
+  position: relative;
+  align-self: center;
 }
 
 .upload-photo {
@@ -151,12 +154,13 @@
 
 @media (min-width: $tablet-width) {
   .photos__title {
+    @include zero-margin-padding;
     margin-top: 80px;
-    margin-right: 120px;
+    // margin-right: 120px;
     margin-bottom: 50px;
-    margin-left: 120px;
-    padding-left: 62px;
-    padding-right: 67px;
+    // margin-left: 120px;
+    // padding-left: 62px;
+    // padding-right: 67px;
 
     font-size: 18px;
     font-weight: 400;
@@ -164,10 +168,9 @@
   }
 
   .title-up {
-    margin-top: 31px;
-    margin-right: 27px;
-    margin-bottom: 55px;
-    margin-left: 21px;
+    margin-top: 40px;
+    margin-bottom: 75px;
+    width: 75%;
   }
 
   .photos__title-down {
@@ -204,6 +207,7 @@
     padding-bottom: 26px;
     padding-left: 27px;
     min-height: 155px;
+    width: 100%;
     box-sizing: border-box;
     justify-content: space-between;
   }
@@ -310,7 +314,6 @@
   .panorama-image {
     width: 660px;
     min-height: 509px;
-    margin-left: -20px;
     padding-bottom: 0;
   }
 
@@ -326,10 +329,10 @@
 
 @media (min-width: $desktop-width) {
   .photos__title {
-    margin-top: 31px;
-    margin-right: 116px;
-    margin-bottom: 66px;
-    margin-left: 123px;
+    @include zero-margin-padding;
+    margin-top: 40px;
+    margin-bottom: 90px;
+    width: 62%;
   }
 
   .photos__list {

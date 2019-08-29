@@ -7,6 +7,7 @@
 }
 
 .upload__wrapper {
+  box-sizing: border-box;
   padding-bottom: 30px;
 
   background-color: $features-list-bg-color;
@@ -38,7 +39,7 @@
   padding-left: 37px;
   padding-right: 48px;
   padding-bottom: 53px;
-  width: 73%;
+  width: 100%;
 
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
@@ -104,6 +105,7 @@
   text-decoration: none;
 
   border-radius: 50px;
+  background-color: transparent;
 }
 
 .upload__post {
@@ -162,8 +164,8 @@
   left: 193px;
 
   padding: 0;
-  width: 10px;
-  height: 10px;
+  width: 14px;
+  height: 14px;
 
   border: 2px solid $contacts__link-color;
   background-color: $features-list-bg-color;
@@ -254,10 +256,15 @@
 
   .upload__photo {
     content: url("../img/photo-road-tablet@1x.jpg");
+    margin-right: 42px;
     width: 300px;
     min-height: 400px;
 
     order: 1;
+  }
+
+  .upload__filter-button-wrapper {
+    @include zero-margin-padding;
   }
 
   .upload_filter-button-wrapper {
@@ -274,13 +281,12 @@
   }
 
   .upload__filter-list {
+    @include zero-margin-padding;
     flex-direction: column;
     align-items: center;
     margin: 0;
     margin-bottom: 40px;
     padding-top: 8px;
-    padding-right: 30px;
-    padding-left: 15px;
     padding-bottom: 17px;
 
     border: none;
@@ -345,9 +351,14 @@
     width: 100%;
   }
 
+  .range-controls {
+    margin-top: 4px;
+    min-height: 21px;
+  }
+
   .range-controls__bar {
     position: absolute;
-    top: 6px;
+    top: 5px;
     left: -159px;
     width: 202px;
   }
@@ -398,10 +409,11 @@
   }
 
   .upload__wrapper {
+    justify-content: space-between;
     box-sizing: border-box;
     padding-top: 55px;
-    padding-right: 80px;
-    padding-bottom: 20px;
+    padding-right: 55px;
+    padding-bottom: 34px;
     padding-left: 80px;
     width: 100%;
   }
@@ -421,7 +433,7 @@
 
   .upload__filter-list {
     @include zero-margin-padding;
-    margin-bottom: 128px;
+    margin-bottom: 131px;
     width: auto;
   }
 
@@ -431,11 +443,11 @@
     justify-content: space-between;
     align-items: flex-start;
     margin-left: 0;
-    margin-bottom: 16px;
+    margin-bottom: 14px;
     padding-top: 0;
     padding-left: 7px;
     padding-right: 0;
-    padding-bottom: 8px;
+    padding-bottom: 4px;
     width: 420px;
 
     &:nth-child(1) .filter__icon {

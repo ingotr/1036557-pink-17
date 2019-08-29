@@ -18,13 +18,13 @@
   display: flex;
   flex-direction: row;
   align-self: flex-start;
-  align-items: flex-start;
+  align-items: center;
   justify-content: space-between;
-  padding-top: 20px;
   padding-right: 20px;
-  padding-bottom: 0;
   padding-left: 20px;
   width: auto;
+  height: 63px;
+  min-height: 63px;
 
   z-index: 10;
 
@@ -63,7 +63,7 @@
     content: "";
 
     position: absolute;
-    top: 2px;
+    top: -5px;
     left: 5px;
 
     width: 50px;
@@ -109,8 +109,8 @@
     content: "";
 
     position: absolute;
-    top: 8px;
-    left: 36px;
+    top: 3px;
+    left: 27px;
 
     width: 30px;
     height: 5px;
@@ -208,13 +208,10 @@
   }
 
   .main-nav__top-menu {
-    padding-top: 23px;
-    padding-left: 20px;
-    padding-right: 16px;
-    padding-bottom: 40px;
-
     align-items: flex-end;
     width: auto;
+    height: 126px;
+    min-height: 126px;
 
     background-color: rgba(40, 54, 69, 0.7);
   }
@@ -277,8 +274,8 @@
       content: "";
 
       position: absolute;
-      top: 9px;
-      left: -2px;
+      top: 19px;
+      left: 24px;
 
       width: 30px;
       height: 5px;
@@ -339,6 +336,8 @@
     padding: 0;
     padding-bottom: 20px;
     width: auto;
+    height: 43px;
+    min-height: 43px;
     align-self: center;
 
     background-color: transparent;
