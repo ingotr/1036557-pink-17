@@ -165,7 +165,7 @@
   background-color: $top-menu-bg-color;
 }
 
-.site-list__item a {
+.main-nav__item a {
   display: block;
   padding-top: 15px;
   padding-right: 84px;
@@ -306,19 +306,14 @@
     }
   }
 
-  .site-list {
+  .main-nav__list {
     display: flex;
     flex-direction: column;
 
-    /* Временно для сетки */
-    min-height: 70px;
-  }
-
-  .main-nav__list {
     background-color: #283645;
   }
 
-  .site-list__item {
+  .main-nav__item {
     text-align: center;
   }
 }
@@ -399,7 +394,7 @@
     background-color: transparent;
   }
 
-  .site-list__item--active a[href] {
+  .main-nav__item--active a[href] {
     padding-top: 9px;
     padding-bottom: 10px;
 
@@ -408,17 +403,17 @@
     text-decoration: none;
   }
 
-  .site-list__item {
+  .main-nav__item {
     display: flex;
     align-items: center;
     margin-right: 70px;
   }
 
-  .site-list__item:last-child {
+  .main-nav__item:last-child {
     margin-right: 0;
   }
 
-  .site-list__item a {
+  .main-nav__item a {
     margin-right: 0;
     margin-bottom: 0;
     margin-left: 0;

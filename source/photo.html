@@ -5,8 +5,8 @@
   <meta charset="utf-8">
   <title>HTML Academy: Пинк</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <link href="css/normalize.css" rel="stylesheet">
   <link href="css/style.css" rel="stylesheet">
+  <script src="js/picturefill.js" async></script>
 </head>
 
 <body>
@@ -255,17 +255,17 @@
             </a>
             <button class="main-nav__burger" type="button"></button>
           </div>
-          <ul class="main-nav__list site-list">
-            <li class="site-list__item">
+          <ul class="main-nav__list">
+            <li class="main-nav__item">
               <a href="index.html">Главная</a>
             </li>
-            <li class="site-list__item site-list__item--active">
+            <li class="main-nav__item main-nav__item--active">
               <a href="photo.html">Фотографии</a>
             </li>
-            <li class="site-list__item">
+            <li class="main-nav__item">
               <a href="contest-form.html">Конкурс</a>
             </li>
-            <li class="site-list__item">
+            <li class="main-nav__item">
               <a href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
             </li>
           </ul>
@@ -518,7 +518,7 @@
           <img class="upload__photo" src="img/photo-road-mobile@1x.jpg" srcset="img/photo-road-mobile@2x.jpg 2x"
             alt="#">
         </picture>
-        <div class="upload_filter-button-wrapper">
+        <div class="upload__filter-button-wrapper">
           <ul class="upload__filter-list list-filter">
             <li class="list-filter__item current-item">
               <a class="list-filter__item-button filter-slice" tabindex="0"
@@ -564,7 +564,7 @@
           </ul>
           <div class="upload__button-wrapper">
             <button class="upload__post upload__button" type="submit">Запостить</button>
-            <button class="upload__cancel upload__button" type="button">Отмена</button>
+            <button class="upload__cancel upload__button" type="reset">Отмена</button>
           </div>
         </div>
       </div>
