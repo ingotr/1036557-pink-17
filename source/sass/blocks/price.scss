@@ -108,16 +108,19 @@
 }
 
 .price__features-item-yes {
+  flex-shrink: 0;
+  width: 31px;
+  height: 23px;
+
   background-image: url("../img/icon-yes.svg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  width: 31px;
-  height: 23px;
 }
 
 .price__features-item-no {
   position: relative;
+  flex-shrink: 0;
 
   &::after {
     content: url("../img/icon-no.svg");

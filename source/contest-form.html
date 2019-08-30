@@ -5,6 +5,9 @@
   <meta charset="utf-8">
   <title>HTML Academy: Пинк</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="preload" href="fonts/opensans.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/opensansbold.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/opensanslight.woff2" as="font" type="font/woff2" crossorigin>
   <link href="css/style.css" rel="stylesheet">
   <script src="js/picturefill.js" async></script>
 </head>
@@ -244,33 +247,33 @@
     </symbol>
   </svg>
   <header class="page-header page-header--no-main-bg">
-    <div class="container container--width-100">
-      <nav class="main-nav main-nav--opened main-nav--nojs">
-          <div class="main-nav__top-menu">
-            <a class="main-nav__logo" href="index.html">
-              <svg width="147" height="40" viewbox="0 0 147 40">
-                <use xlink:href="#logo-pink-header-adaptive"></use>
-              </svg>
-            </a>
-            <button class="main-nav__burger" type="button"></button>
-          </div>
-          <ul class="main-nav__list">
-            <li class="main-nav__item">
-              <a href="index.html">Главная</a>
-            </li>
-            <li class="main-nav__item">
-              <a href="photo.html">Фотографии</a>
-            </li>
-            <li class="main-nav__item main-nav__item--active">
-              <a href="contest-form.html">Конкурс</a>
-            </li>
-            <li class="main-nav__item">
-              <a href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
-            </li>
-          </ul>
-      </nav>
-      <p class="page-header__title page-header__title--contest">Конкурс на самое безбашенное путешествие с Пинк</p>
-    </div>
+    <nav class="main-nav main-nav--opened main-nav--nojs">
+      <div class="container container--width-100">
+        <div class="main-nav__top-menu">
+          <a class="main-nav__logo" href="index.html">
+            <svg width="147" height="40" viewbox="0 0 147 40">
+              <use xlink:href="#logo-pink-header-adaptive"></use>
+            </svg>
+          </a>
+          <button class="main-nav__burger" type="button"></button>
+        </div>
+        <ul class="main-nav__list">
+          <li class="main-nav__item">
+            <a href="index.html">Главная</a>
+          </li>
+          <li class="main-nav__item">
+            <a href="photo.html">Фотографии</a>
+          </li>
+          <li class="main-nav__item main-nav__item--active">
+            <a href="contest-form.html">Конкурс</a>
+          </li>
+          <li class="main-nav__item">
+            <a href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <p class="page-header__title page-header__title--contest">Конкурс на самое безбашенное путешествие с Пинк</p>
   </header>
 
   <section class="contest-form">

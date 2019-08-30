@@ -35,7 +35,7 @@
   margin-bottom: 32px;
   margin-left: 55px;
 
-  background-color: $top-menu-text-color;
+  background-color: transparent;
   color: $top-menu-bg-color;
   font-size: 24px;
   font-weight: 300;
@@ -53,7 +53,7 @@
   display: none;
 }
 
-.features__list-item:last-child .features__list-item-phone {
+.features__list-item:nth-child(3) .features__list-item-phone {
   display: block;
   order: 2;
 
@@ -75,7 +75,7 @@
   width: 80%;
 }
 
-.features__list-item:last-child .features__list-item-card {
+.features__list-item:nth-child(3) .features__list-item-card {
   padding-bottom: 40px;
 }
 
@@ -158,11 +158,11 @@
     padding-right: 100px;
   }
 
-  .features__list-item:last-child .features__list-item-phone {
+  .features__list-item:nth-child(3) .features__list-item-phone {
     display: block;
     position: absolute;
     top: 52px;
-    left: 21px;
+    left: -129px;
     width: 268px;
     min-height: 481px;
 
@@ -184,7 +184,7 @@
     width: 90%;
   }
 
-  .features__list-item:last-child .features__list-item-card {
+  .features__list-item:nth-child(3) .features__list-item-card {
     order: 2;
     margin-bottom: 0;
     padding-bottom: 0;
@@ -193,12 +193,14 @@
   .features__list {
     @include zero-margin-padding;
     order: 2;
+    position: relative;
 
     margin-left: 150px;
     padding-top: 119px;
     padding-left: 161px;
     padding-right: 0;
     padding-bottom: 44px;
+    width: auto;
   }
 
   .features__list-item {
@@ -342,7 +344,8 @@
     @include zero-margin-padding;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    flex-wrap: wrap;
+    justify-content: flex-start;
     width: 100%;
   }
 
@@ -363,7 +366,7 @@
     margin-bottom: 0;
     width: 32%;
 
-    &:nth-child(1) .features__list-item-phone {
+    &:nth-child(1n) .features__list-item-phone {
       background-image: url("../img/iphone-screen-1-desktop@1x.png");
 
       @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
@@ -371,7 +374,7 @@
       }
     }
 
-    &:nth-child(2) .features__list-item-phone {
+    &:nth-child(2n) .features__list-item-phone {
       background-image: url("../img/iphone-screen-2-desktop@1x.png");
 
       @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
@@ -379,7 +382,7 @@
       }
     }
 
-    &:nth-child(3) .features__list-item-phone {
+    &:nth-child(3n) .features__list-item-phone {
       align-self: flex-end;
       position: static;
       margin-left: 0;

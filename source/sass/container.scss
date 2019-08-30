@@ -99,7 +99,12 @@
   }
 
   .container--width-100 {
+    width: $desktop-width;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
     margin-top: 0;
+
     background-image: none;
   }
 
