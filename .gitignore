@@ -9,6 +9,7 @@
 build/
 node_modules/
 npm-debug.*
+source/js/picturefill.js
 source/css/*.css
 source/css/*.map
 Thumbs.db

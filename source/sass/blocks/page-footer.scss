@@ -14,10 +14,6 @@
   margin-bottom: 37px;
 }
 
-.page-footer__logo-icon {
-  fill: #283645;
-}
-
 .page-footer__logo svg {
   color: #283645;
 }
@@ -31,7 +27,7 @@
   opacity: 0.3;
 }
 
-.social-list {
+.page-footer__list {
   @include list-style-none;
   margin-bottom: 38px;
 
@@ -42,7 +38,7 @@
   width: 178px;
 }
 
-.social-list__item {
+.page-footer__item {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -110,7 +106,7 @@
     padding-bottom: 13px;
   }
 
-  .social-list {
+  .page-footer__list {
     flex-direction: row;
     margin-bottom: 0;
     margin-right: 0;
@@ -120,7 +116,7 @@
     width: 185px;
   }
 
-  .social-list__item {
+  .page-footer__item {
     padding: 1px;
     margin: 0 5px;
   }

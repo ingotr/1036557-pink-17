@@ -11,7 +11,7 @@
 }
 
 .contest-form__title {
-  margin-bottom: 40px;
+  margin-bottom: 32px;
   width: 89%;
   min-height: 82px;
 
@@ -21,6 +21,10 @@
   line-height: 30px;
   text-align: center;
   overflow: hidden;
+}
+
+.contest-form__title span {
+  display: none;
 }
 
 .contest-form__input-wrapper {
@@ -148,22 +152,22 @@
 
   cursor: pointer;
 
-  &:hover input ~ .checkbox__checkmark {
+  &:hover input ~ .contest-form__checkmark {
     border: 2px solid #283645;
   }
 
-  input:active ~ .checkbox__checkmark {
+  input:active ~ .contest-form__checkmark {
     border: 2px solid #d22856;
   }
 
-  input:checked ~ .checkbox__checkmark::after {
+  input:checked ~ .contest-form__checkmark::after {
     display: block;
   }
 
   text-align: center;
 }
 
-.checkbox__text {
+.contest-form__checkbox-text {
   margin-left: 26px;
 }
 
@@ -177,7 +181,7 @@
   margin-bottom: 50px;
 }
 
-.checkbox__checkmark {
+.contest-form__checkmark {
   position: absolute;
   top: 0;
   left: 5px;
@@ -213,15 +217,15 @@
 
   cursor: pointer;
 
-  &:hover input ~ .radio__checkmark {
+  &:hover input ~ .contest-form__radio-checkmark {
     border: 2px solid #283645;
   }
 
-  input:active ~ .radio__checkmark {
+  input:active ~ .contest-form__radio-checkmark {
     border: 2px solid #d22856;
   }
 
-  input:checked ~ .radio__checkmark::after {
+  input:checked ~ .contest-form__radio-checkmark::after {
     display: block;
   }
 }
@@ -234,7 +238,7 @@
   width: 0;
 }
 
-.radio__checkmark {
+.contest-form__radio-checkmark {
   position: absolute;
   top: 0;
   left: 0;
@@ -394,12 +398,16 @@
   }
 
   .contest-form__title {
-    margin-bottom: 33px;
+    margin-bottom: 24px;
     padding-top: 26px;
     padding-bottom: 16px;
     width: 83%;
 
     font-size: 18px;
+  }
+
+  .contest-form__title span {
+    display: inline;
   }
 
   .contest-form__input-wrapper {
@@ -522,7 +530,7 @@
     height: 64px;
   }
 
-  .input-icon {
+  .contest-form__input-icon {
     width: 60px;
     height: 63px;
 
@@ -532,11 +540,11 @@
     background-position: center;
   }
 
-  .input-icon--phone {
+  .contest-form__input-icon--phone {
     background-image: url("../img/icon-phone.svg");
   }
 
-  .input-icon--email {
+  .contest-form__input-icon--email {
     background-image: url("../img/icon-mail.svg");
   }
 
@@ -548,7 +556,7 @@
     padding-bottom: 20px;
   }
 
-  .checkbox__text {
+  .contest-form__checkbox-text {
     margin-left: 50px;
   }
 
@@ -667,9 +675,9 @@
   }
 
   .contest-form__label--checkbox {
-    margin-right: 62px;
-    margin-bottom: 50px;
-    width: 28%;
+    margin-bottom: 22px;
+    margin-right: 0;
+    width: 240px;
   }
 
   .contest-form__label--checkbox:nth-child(3n) {
@@ -678,10 +686,10 @@
 
   .contest-form__fields-name {
     box-sizing: border-box;
-    width: 435px;
-    margin-right: 70px;
+    width: 442px;
+    margin-right: 60px;
     padding-top: 30px;
-    padding-right: 20px;
+    padding-right: 0px;
     padding-left: 0;
     padding-bottom: 5px;
 
@@ -711,7 +719,7 @@
     padding-bottom: 21px;
   }
 
-  .radio__checkmark {
+  .contest-form__radio-checkmark {
     &::after {
       left: 9px;
       top: 8px;
@@ -720,7 +728,7 @@
     }
   }
 
-  .checkbox__text {
+  .contest-form__checkbox-text {
     margin-left: 57px;
   }
 
@@ -742,7 +750,7 @@
     flex-direction: row;
     align-items: baseline;
     justify-content: space-around;
-    padding-left: 60px;
+    padding-left: 55px;
     padding-right: 60px;
     width: 100%;
     justify-content: space-between;
@@ -761,7 +769,7 @@
   }
 
   .contest-form__input-text {
-    margin-left: 22px;
+    margin-left: 15px;
     margin-right: 10px;
     padding-top: 13px;
     padding-bottom: 15px;
@@ -776,13 +784,13 @@
   .contest-form__input-text--email {
     margin-left: 0;
     margin-right: 0;
-    padding-top: 16px;
+    padding-top: 5px;
     padding-bottom: 15px;
     padding-left: 18px;
     min-height: 65px;
   }
 
-  .input-icon {
+  .contest-form__input-icon {
     width: 60px;
     height: 65px;
   }
@@ -799,7 +807,7 @@
     margin-left: 22px;
     margin-right: 0;
     margin-bottom: 3px;
-    padding-top: 9px;
+    padding-top: 6px;
     padding-left: 0;
   }
 
@@ -807,11 +815,11 @@
     display: block;
     // flex-direction: row;
     // flex-wrap: wrap;
-    margin-bottom: 57px;
-    padding-top: 44px;
-    padding-right: 40px;
+    margin-bottom: 53px;
+    padding-top: 42px;
+    padding-right: 5px;
     padding-bottom: 14px;
-    padding-left: 51px;
+    padding-left: 18px;
     width: 100%;
 
     order: 4;
@@ -821,8 +829,10 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    justify-content: space-around;
     padding-left: 0;
     padding-right: 0;
+    padding-bottom: 32px;
     width: 100%;
     height: auto;
     max-height: unset;
@@ -838,12 +848,12 @@
   }
 
   .contest-form__input-wrapper--emotions {
-    margin-bottom: 41px;
-    padding-top: 8px;
+    margin-bottom: 45px;
+    padding-top: 0;
   }
 
   .contest-form__input-text--emotions {
-    padding-bottom: 45px;
+    padding-bottom: 50px;
     min-width: 795px;
   }
 

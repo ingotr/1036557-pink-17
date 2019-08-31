@@ -46,7 +46,7 @@
   padding-right: 15px;
 }
 
-.button-wrapper {
+.modal__button-wrapper {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -64,7 +64,7 @@
   height: 340px;
 }
 
-.modal-show {
+.modal--show {
   display: block;
 
   animation-name: appear;
@@ -72,7 +72,7 @@
   animation-timing-function: linear;
 }
 
-.modal-error {
+.modal--error {
   animation-name: shake;
   animation-duration: 500ms;
   animation-timing-function: linear;
@@ -175,7 +175,7 @@
     padding-right: 15px;
   }
 
-  .button-wrapper {
+  .modal__button-wrapper {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -252,7 +252,7 @@
     padding-right: 15px;
   }
 
-  .button-wrapper {
+  .modal__button-wrapper {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -263,7 +263,7 @@
     background-color: #f2f2f2;
   }
 
-  .success-close {
+  .modal__button-success-close {
     width: 460px;
   }
 

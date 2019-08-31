@@ -308,14 +308,14 @@
     </section>
     <section class="features">
       <h2 class="visually-hidden">Наши преимущества:</h2>
-      <div class="container">
+      <div class="container container--features-mobile">
         <p class="features__slogan">
           Устали от серости мегаполиса?
         </p>
         <p class="features__slogan features__slogan--second-part">
           Нам есть, что вам предложить!
         </p>
-        <ul class="features__list site-list">
+        <ul class="features__list">
           <li class="features__list-item">
             <div class="features__list-item-phone"></div>
             <div class="features__list-item-card">
@@ -344,8 +344,6 @@
             </div>
           </li>
         </ul>
-        <div class="features__wrapper">
-        </div>
         <div class="features__facts">
           <figure class="features__timer">
             <img src="img/icon-timer.svg" width="238" height="276" alt="">
@@ -369,28 +367,28 @@
         <div class="reviews__wrapper">
           <div class="reviews__quotes-image"></div>
           <ul class="reviews__list">
-            <li class="reviews__list-item">
-              <h3 class="reviews__list-item-author">Николай Петров</h3>
-              <p class="reviews__list-item-author-job">25 лет, водитель трамвая</p>
-              <p class="reviews__list-item-description">
+            <li class="reviews__item">
+              <h3 class="reviews__author">Николай Петров</h3>
+              <p class="reviews__author-job">25 лет, водитель трамвая</p>
+              <p class="reviews__description">
                 «Это приложение перевернуло мой мир и позволило по-новому
                 взглянуть на привычные серые вещи! А еще я познакомился
                 со своей будущей женой в комментариях к выложенной фотографии!»
               </p>
             </li>
           </ul>
-          <p class="reviews__toggles slider__toggles">
-            <label for="review__toggle-1" class="slider__toggle-container">
-              <input type="radio" class="slider__toggle" id="review__toggle-1" name="review-control" checked="">
-              <span class="slider__toggle-checkmark"></span>
+          <p class="reviews__toggles">
+            <label for="reviews__toggle-1" class="reviews__toggles-container">
+              <input type="radio" class="reviews__toggles-dot" id="reviews__toggle-1" name="reviews-control" checked="">
+              <span class="reviews__toggles-checkmark"></span>
             </label>
-            <label for="review__toggle-2" class="slider__toggle-container">
-              <input type="radio" class="slider__toggle" id="review__toggle-2" name="review-control">
-              <span class="slider__toggle-checkmark"></span>
+            <label for="reviews__toggle-2" class="reviews__toggles-container">
+              <input type="radio" class="reviews__toggles-dot" id="reviews__toggle-2" name="reviews-control">
+              <span class="reviews__toggles-checkmark"></span>
             </label>
-            <label for="review__toggle-3" class="slider__toggle-container">
-              <input type="radio" class="slider__toggle" id="review__toggle-3" name="review-control">
-              <span class="slider__toggle-checkmark"></span>
+            <label for="reviews__toggle-3" class="reviews__toggles-container">
+              <input type="radio" class="reviews__toggles-dot" id="reviews__toggle-3" name="reviews-control">
+              <span class="reviews__toggles-checkmark"></span>
             </label>
           </p>
 
@@ -402,92 +400,92 @@
 
     <section class="price">
       <h2 class="visually-hidden">Раздел подписки:</h2>
-      <table class="price__features-table">
+      <table class="price__table">
         <tbody>
           <tr>
-            <td class="price__empty-cell price__features-item--desktop"></td>
-            <th class="price__item-title">База<span class="price__item-value">1,99 USD</span></th>
-            <th class="price__item-title price__item-title--hit">Стандарт<span class="price__item-value">3,99 USD</span>
+            <td class="price__empty-cell price__item--desktop"></td>
+            <th class="price__title">База<span class="price__value">1,99 USD</span></th>
+            <th class="price__title price__title--hit">Стандарт<span class="price__value">3,99 USD</span>
             </th>
-            <th class="price__item-title">Анлим<span class="price__item-value">9,99 USD</span></th>
+            <th class="price__title">Анлим<span class="price__value">9,99 USD</span></th>
           </tr>
           <tr>
-            <td class="price__features-item price__features-item--desktop">Розовый фильтр</td>
-            <td class="price__features-item">
-              <div class="price__features-item-wrapper">
-                <span class="price__features-item-description">Розовый фильтр</span>
-                <span class="price__features-item-yes"></span>
+            <td class="price__item price__item--desktop">Розовый фильтр</td>
+            <td class="price__item">
+              <div class="price__wrapper">
+                <span class="price__description">Розовый фильтр</span>
+                <span class="price__item-yes"></span>
               </div>
             </td>
-            <td class="price__features-item">
-              <div class="price__features-item-wrapper">
-                <span class="price__features-item-description">Розовый фильтр</span>
-                <span class="price__features-item-yes"></span>
+            <td class="price__item">
+              <div class="price__wrapper">
+                <span class="price__description">Розовый фильтр</span>
+                <span class="price__item-yes"></span>
               </div>
             </td>
-            <td class="price__features-item">
-              <div class="price__features-item-wrapper">
-                <span class="price__features-item-description">Розовый фильтр</span>
-                <span class="price__features-item-yes"></span>
-              </div>
-            </td>
-          </tr>
-          <tr>
-            <td class="price__features-item price__features-item--desktop">Смайлики</td>
-            <td class="price__features-item">
-              <div class="price__features-item-wrapper">
-                <span class="price__features-item-description">Смайлики</span>
-                <span class="price__features-item-no"></span>
-              </div>
-            </td>
-            <td class="price__features-item">
-              <div class="price__features-item-wrapper">
-                <span class="price__features-item-description">Смайлики</span>
-                <span class="price__features-item-yes"></span>
-              </div>
-            </td>
-            <td class="price__features-item">
-              <div class="price__features-item-wrapper">
-                <span class="price__features-item-description">Смайлики</span>
-                <span class="price__features-item-yes"></span>
+            <td class="price__item">
+              <div class="price__wrapper">
+                <span class="price__description">Розовый фильтр</span>
+                <span class="price__item-yes"></span>
               </div>
             </td>
           </tr>
           <tr>
-            <td class="price__features-item price__features-item--desktop">Комментарии</td>
-            <td class="price__features-item">
-              <div class="price__features-item-wrapper">
-                <span class="price__features-item-description">Комментарии</span>
-                <span class="price__features-item-no"></span>
+            <td class="price__item price__item--desktop">Смайлики</td>
+            <td class="price__item">
+              <div class="price__wrapper">
+                <span class="price__description">Смайлики</span>
+                <span class="price__item-no"></span>
               </div>
             </td>
-            <td class="price__features-item">
-              <div class="price__features-item-wrapper">
-                <span class="price__features-item-description">Комментарии</span>
-                <span class="price__features-item-no"></span>
+            <td class="price__item">
+              <div class="price__wrapper">
+                <span class="price__description">Смайлики</span>
+                <span class="price__item-yes"></span>
               </div>
             </td>
-            <td class="price__features-item">
-              <div class="price__features-item-wrapper">
-                <span class="price__features-item-description">Комментарии</span>
-                <span class="price__features-item-yes"></span>
+            <td class="price__item">
+              <div class="price__wrapper">
+                <span class="price__description">Смайлики</span>
+                <span class="price__item-yes"></span>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td class="price__item price__item--desktop">Комментарии</td>
+            <td class="price__item">
+              <div class="price__wrapper">
+                <span class="price__description">Комментарии</span>
+                <span class="price__item-no"></span>
+              </div>
+            </td>
+            <td class="price__item">
+              <div class="price__wrapper">
+                <span class="price__description">Комментарии</span>
+                <span class="price__item-no"></span>
+              </div>
+            </td>
+            <td class="price__item">
+              <div class="price__wrapper">
+                <span class="price__description">Комментарии</span>
+                <span class="price__item-yes"></span>
               </div>
             </td>
           </tr>
         </tbody>
       </table>
-      <p class="price__toggles slider__toggles">
-        <label for="price__toggle-1" class="slider__toggle-container">
-          <input type="radio" class="slider__toggle" id="price__toggle-1" name="price-control">
-          <span class="slider__toggle-checkmark"></span>
+      <p class="price__toggles reviews__toggles">
+        <label for="price__toggle-1" class="reviews__toggles-container">
+          <input type="radio" class="reviews__toggles-dot" id="price__toggle-1" name="price-control">
+          <span class="reviews__toggles-checkmark"></span>
         </label>
-        <label for="price__toggle-2" class="slider__toggle-container">
-          <input type="radio" class="slider__toggle" id="price__toggle-2" name="price-control" checked="">
-          <span class="slider__toggle-checkmark"></span>
+        <label for="price__toggle-2" class="reviews__toggles-container">
+          <input type="radio" class="reviews__toggles-dot" id="price__toggle-2" name="price-control" checked="">
+          <span class="reviews__toggles-checkmark"></span>
         </label>
-        <label for="price__toggle-3" class="slider__toggle-container">
-          <input type="radio" class="slider__toggle" id="price__toggle-3" name="price-control">
-          <span class="slider__toggle-checkmark"></span>
+        <label for="price__toggle-3" class="reviews__toggles-container">
+          <input type="radio" class="reviews__toggles-dot" id="price__toggle-3" name="price-control">
+          <span class="reviews__toggles-checkmark"></span>
         </label>
       </p>
     </section>
@@ -498,18 +496,18 @@
         <div class="container container--flex container--contacts">
           <p class="contacts__title">Остались вопросы?
             Свяжитесь с нами!</p>
-          <ul class="contacts__list site-list">
-            <li class="contacts__list-item contacts__list-item--phone">
-              <h3 class="contacts__list-item-title">Звоните:</h3>
-              <a class="contacts__list-item-link" href="tel:+7(812)555-66-66">+7 (812) 555-66-66</a>
+          <ul class="contacts__list">
+            <li class="contacts__item contacts__item--phone">
+              <h3 class="contacts__item-title">Звоните:</h3>
+              <a class="contacts__link" href="tel:+7(812)555-66-66">+7 (812) 555-66-66</a>
             </li>
-            <li class="contacts__list-item contacts__list-item--mail">
-              <h3 class="contacts__list-item-title">Пишите:</h3>
-              <a class="contacts__list-item-link contacts__list-item-link--mail" href="#">mail@htmlacademy.ru</a>
+            <li class="contacts__item contacts__item--mail">
+              <h3 class="contacts__item-title">Пишите:</h3>
+              <a class="contacts__link contacts__link--mail" href="#">mail@htmlacademy.ru</a>
             </li>
-            <li class="contacts__list-item contacts__list-item--adress">
-              <h3 class="contacts__list-item-title">Приезжайте в гости:</h3>
-              <a class="contacts__list-item-link" href="#">ул. Большая<br> Конюшенная, 19/8</a>
+            <li class="contacts__item contacts__item--adress">
+              <h3 class="contacts__item-title">Приезжайте в гости:</h3>
+              <a class="contacts__link" href="#">ул. Большая<br> Конюшенная, 19/8</a>
             </li>
           </ul>
         </div>
@@ -527,14 +525,14 @@
           <use xlink:href="#logo-pink-footer-adaptive"></use>
         </svg>
       </a>
-      <ul class="page-footer__list social-list">
-        <li class="social-list__item" tabindex="0">
+      <ul class="page-footer__list">
+        <li class="page-footer__item" tabindex="0">
           <a href="#"><img src="img/icon-twitter.svg" width="18" height="14" alt="#"></a>
         </li>
-        <li class="social-list__item" tabindex="0">
+        <li class="page-footer__item" tabindex="0">
           <a href="#"><img src="img/icon-facebook.svg" width="9" height="18" alt="#"></a>
         </li>
-        <li class="social-list__item" tabindex="0">
+        <li class="page-footer__item" tabindex="0">
           <a href="#"><img src="img/icon-youtube.svg" width="15" height="13" alt="#"></a>
         </li>
       </ul>

@@ -1,7 +1,6 @@
 /*
   $Раздел загрузки
 */
-
 .upload {
   margin-bottom: 40px;
 }
@@ -18,17 +17,17 @@
   margin-right: 19px;
   margin-bottom: 20px;
   margin-left: 19px;
+  width: 280px;
+  height: 374px;
 }
 
-.upload__filter-button-wrapper {
+.upload__filter-panel-wrapper{
   padding-top: 17px;
 }
 
-.list-filter {
+.upload__list {
   @include list-style-none;
-}
 
-.upload__filter-list {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -38,50 +37,44 @@
   margin-bottom: 37px;
   padding-left: 37px;
   padding-right: 48px;
-  padding-bottom: 53px;
+  padding-bottom: 0;
   width: 100%;
 
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
 
-.current-item {
+.upload__item--current {
   position: relative;
 }
 
-.upload__filter-scale {
-  margin-bottom: 38px;
-  padding-bottom: 34px;
+.upload__filter--slice {
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
 
-.list-filter__item-button {
+.upload__filter {
   display: block;
-  margin-bottom: 20px;
+  margin-bottom: 38px;
+  padding-bottom: 34px
 }
 
-.list-filter__item-button svg {
+.upload__filter svg {
   fill: #283645;
   opacity: 0.3;
 }
 
-.current-item svg {
+.upload__item--current svg {
   color: #d22856;
   opacity: 1;
 }
 
-.list-filter__item-button:hover svg {
+.upload__filter:hover svg {
   fill: #283645;
   opacity: 0.5;
 }
 
-.list-filter__item-button:active svg {
+.upload__filter:active svg {
   fill: #283645;
   opacity: 0.1;
-}
-
-.mobile-divider {
-  opacity: 0.5;
-  margin-bottom: 37px;
 }
 
 .upload__button-wrapper {
@@ -142,7 +135,7 @@
   }
 }
 
-.range-controls {
+.upload__range-controls {
   position: relative;
 
   height: 20px;
@@ -150,14 +143,14 @@
   margin-left: 20px;
 }
 
-.range-controls__bar {
+.upload__bar {
   width: 240px;
   height: 2px;
 
   background-color: #000000;
 }
 
-.range-controls__toggle {
+.upload__toggle {
   position: absolute;
 
   top: -6px;
@@ -177,67 +170,27 @@
   }
 }
 
-.range-controls__toggle--fill {
+.upload__toggle--fill {
   left: 20px;
 }
 
-.range-controls__toggle--contrast {
+.upload__toggle--contrast {
   left: 130px;
 }
 
-.range-controls--fill,
-.range-controls--contrast {
+.upload__range-controls--fill,
+.upload__range-controls--contrast {
   display: none;
 }
 
-.filter__slider-wrapper {
+.upload__slider-wrapper {
   position: absolute;
   top: 84px;
   left: -36px;
 }
 
-.filter__slider {
-  width: 240px;
-  height: 2px;
-  background: #000000;
-  outline: none;
-  opacity: 1;
-  transition: opacity 0.2s;
-
-  &:hover {
-    opacity: 0.8;
-  }
-
-  &::-webkit-slider-thumb {
-    appearance: none;
-    width: 16px;
-    height: 16px;
-    border: 2px solid #d22856;
-    background: $features-list-bg-color;
-    cursor: pointer;
-    border-radius: 50%;
-  }
-
-  &::-webkit-slider-thumb:hover {
-    background: #d22856;
-  }
-
-  &::-moz-range-thumb {
-    width: 16px;
-    height: 16px;
-    border: 2px solid #d22856;
-    background: $features-list-bg-color;
-    cursor: pointer;
-    border-radius: 50%;
-  }
-
-  &::-moz-range-thumb:hover {
-    background: #d22856;
-  }
-}
-
-.slider--fill,
-.slider--contrast {
+.upload__slider-wrapper--fill,
+.upload__slider-wrapper--contrast {
   display: none;
 }
 
@@ -263,25 +216,23 @@
     order: 1;
   }
 
-  .upload__filter-button-wrapper {
+  .upload__filter-panel-wrapper {
     @include zero-margin-padding;
-  }
 
-  .upload_filter-button-wrapper {
-    @include zero-margin-padding;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     padding-top: 0;
     padding-right: 25px;
     padding-bottom: 5px;
-    padding-left: 25px;
+    padding-left: 0;
 
     order: 2;
   }
 
-  .upload__filter-list {
+  .upload__list {
     @include zero-margin-padding;
+
     flex-direction: column;
     align-items: center;
     margin: 0;
@@ -292,7 +243,7 @@
     border: none;
   }
 
-  .list-filter__item {
+  .upload__item {
     display: flex;
     flex-direction: row;
     align-items: end;
@@ -304,28 +255,28 @@
 
     border-bottom: 1px solid transparentize(#000000, 0.9);
 
-    &:nth-child(1) .filter__icon {
+    &:nth-child(1) .upload__filter-icon {
       width: 22px;
       height: 22px;
     }
 
-    &:nth-child(2) .filter__icon {
+    &:nth-child(2) .upload__filter-icon {
       width: 24px;
       height: 22px;
     }
 
-    &:nth-child(3) .filter__icon {
+    &:nth-child(3) .upload__filter-icon{
       width: 16px;
       height: 16px;
     }
   }
 
-  .current-item--no-mobile svg {
+  .upload__item--current-no-mobile svg {
     color: $contacts__link-color;
     opacity: 1;
   }
 
-  .list-filter__item-button {
+  .upload__filter {
     @include zero-margin-padding;
     box-sizing: border-box;
     margin-right: 29px;
@@ -335,11 +286,11 @@
     line-height: 1;
   }
 
-  .filter-contrast {
+  .upload__filter--contrast {
     padding: 3px;
   }
 
-  .filter__slider-wrapper {
+  .upload__slider-wrapper {
     position: static;
   }
 
@@ -351,45 +302,41 @@
     width: 100%;
   }
 
-  .range-controls {
+  .upload__range-controls {
     margin-top: 4px;
     min-height: 21px;
   }
 
-  .range-controls__bar {
+  .upload__bar {
     position: absolute;
     top: 5px;
     left: -159px;
     width: 202px;
   }
 
-  .range-controls__toggle {
+  .upload__toggle {
     top: 0;
     left: -13px;
   }
 
-  .range-controls__toggle--fill {
+  .upload__toggle--fill {
     top: 0;
     left: -134px;
   }
 
-  .range-controls__toggle--contrast {
+  .upload__toggle--contrast {
     top: 0;
     left: -63px;
   }
 
-  .range-controls--fill,
-  .range-controls--contrast {
+  .upload__range-controls--fill,
+  .upload__range-controls--contrast {
     display: block;
   }
 
-  .slider--fill,
-  .slider--contrast {
+  .upload__slider-wrapper--fill,
+  .upload__slider-wrapper--contrast {
     display: block;
-  }
-
-  .mobile-divider {
-    display: none;
   }
 
   .upload__button {
@@ -425,19 +372,19 @@
     height: 400px;
   }
 
-  .upload_filter-button-wrapper {
+  .upload__filter-panel-wrapper {
     padding-left: 78px;
     padding-right: 90px;
-    padding-bottom: 13px;
+    padding-bottom: 0;
   }
 
-  .upload__filter-list {
+  .upload__list {
     @include zero-margin-padding;
     margin-bottom: 131px;
     width: auto;
   }
 
-  .list-filter__item {
+  .upload__item {
     @include zero-margin-padding;
 
     justify-content: space-between;
@@ -450,17 +397,17 @@
     padding-bottom: 4px;
     width: 420px;
 
-    &:nth-child(1) .filter__icon {
+    &:nth-child(1) .upload__filter-icon {
       width: 45px;
       height: 45px;
     }
 
-    &:nth-child(2) .filter__icon {
+    &:nth-child(2) .upload__filter-icon {
       width: 48px;
       height: 45px;
     }
 
-    &:nth-child(3) .filter__icon {
+    &:nth-child(3) .upload__filter-icon {
       width: 32px;
       height: 32px;
     }
@@ -469,55 +416,51 @@
       margin-left: 7px;
     }
 
-    &:nth-child(3) .list-filter__item-button {
+    &:nth-child(3) .upload__filter {
       margin-right: 55px;
     }
   }
 
-  .list-filter__item-button {
+  .upload__filter {
     margin-right: 47px;
   }
 
-  .filter__slider-wrapper {
+  .upload__slider-wrapper {
     padding-top: 6px;
     padding-bottom: 22px;
     width: 230px;
   }
 
-  .range-controls__bar {
+  .upload__bar {
     left: -109px;
     top: 13px;
     width: 288px;
   }
 
-  .slider--fill,
-  .slider--contrast {
+  .upload__filter--fill,
+  .upload__filter--contrast {
     display: block;
   }
 
-  .current-item--no-mobile .filter-icon {
+  .upload__item--current-no-mobile .upload__filter-icon {
     color: $contacts__link-color;
   }
 
-  .range-controls__toggle {
+  .upload__toggle {
     top: 7px;
     left: -38px;
     width: 14px;
     height: 14px;
   }
 
-  .range-controls__toggle--fill {
+  .upload__toggle--fill {
     top: 7px;
     left: 140px;
   }
 
-  .range-controls__toggle--contrast {
+  .upload__toggle--contrast {
     top: 7px;
     left: 50px;
-  }
-
-  .mobile-divider {
-    display: none;
   }
 
   .upload__button-wrapper {

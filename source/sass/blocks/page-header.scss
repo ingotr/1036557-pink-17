@@ -61,10 +61,6 @@
     }
   }
 
-  .page-header .container {
-    width: 100%;
-  }
-
   .page-header__wrapper-photo,
   .page-header__wrapper-contest {
     width: $tablet-width;
@@ -118,15 +114,11 @@
     }
   }
 
-  .page-header .container {
-    width: $desktop-width;
-  }
-
   .page-header__title--photo {
     padding-top: 10px;
     padding-bottom: 98px;
-    padding-left: 133px;
-    padding-right: 136px;
+    padding-left: 202px;
+    padding-right: 200px;
   }
 
   .page-header__wrapper-photo {

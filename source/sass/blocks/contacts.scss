@@ -24,13 +24,13 @@
   @include list-style-none;
 }
 
-.contacts__list-item {
+.contacts__item {
   margin-bottom: 7px;
 
   text-align: center;
 }
 
-.contacts__list-item-link--mail {
+.contacts__link--mail {
   &:hover {
     color: $top-menu-bg-color;
     text-decoration: underline;
@@ -54,7 +54,7 @@
   text-align: center;
 }
 
-.contacts__list-item-title {
+.contacts__item-title {
   @include zero-margin-padding;
   padding-top: 18px;
   padding-bottom: 4px;
@@ -64,7 +64,7 @@
   font-weight: 700;
 }
 
-.contacts__list-item-link {
+.contacts__link {
   color: $contacts__link-color;
   font-size: 24px;
   font-weight: 300;
@@ -143,7 +143,7 @@
     flex-wrap: wrap;
   }
 
-  .contacts__list-item-title {
+  .contacts__item-title {
     @include zero-margin-padding;
     margin-top: 0;
     margin-bottom: 8px;
@@ -151,7 +151,7 @@
     padding-bottom: 0;
   }
 
-  .contacts__list-item {
+  .contacts__item {
     margin-top: 3px;
     margin-left: 58px;
     margin-right: 40px;
@@ -160,12 +160,12 @@
     width: 33%;
   }
 
-  .contacts__list-item:last-child {
+  .contacts__item:last-child {
     margin-left: 40px;
     margin-bottom: 23px;
   }
 
-  .contacts__list-item-link {
+  .contacts__link {
     @include zero-margin-padding;
     display: block;
   }
@@ -215,24 +215,24 @@
     padding-left: 9px;
   }
 
-  .contacts__list-item:last-child {
+  .contacts__item:last-child {
     @include zero-margin-padding;
   }
 
-  .contacts__list-item {
+  .contacts__item {
     @include zero-margin-padding;
     padding-bottom: 18px;
   }
 
-  .contacts__list-item-title {
+  .contacts__item-title {
     margin-bottom: 24px;
   }
 
-  .contacts__list-item--mail {
+  .contacts__item--mail {
     order: 3;
   }
 
-  .contacts__list-item--adress {
+  .contacts__item--adress {
     order: 2;
   }
 

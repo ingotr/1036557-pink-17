@@ -17,15 +17,15 @@
   text-align: center;
 }
 
-.title-up {
+.photos__title--up {
   padding-top: 11px;
   padding-right: 50px;
   padding-bottom: 21px;
   padding-left: 38px;
-  width: 100%;
+  width: 79%;
 }
 
-.photos__title-down {
+.photos__title--down {
   margin: 0;
   margin-bottom: 43px;
   padding: 0 27px;
@@ -37,7 +37,7 @@
   margin-bottom: 24px;
 }
 
-.photos__list-item-card {
+.photos__card {
   padding-top: 16px;
   padding-right: 23px;
   padding-bottom: 21px;
@@ -45,7 +45,7 @@
   width: 86%;
 }
 
-.panorama--ribbon {
+.photos__item--panorama-ribbon {
   position: absolute;
   align-self: flex-end;
   padding-top: 7px;
@@ -63,7 +63,7 @@
   z-index: 1;
 }
 
-.photos__list-item {
+.photos__item {
   display: flex;
   flex-direction: column;
   width: $mobile-width - 40px;
@@ -72,17 +72,21 @@
   background-color: $features-list-bg-color;
 }
 
-.photos__list-item a {
+.photos__item a {
   @include zero-margin-padding;
   text-decoration: none;
 }
 
-.photos__list-image,
-.panorama-image {
+.photos__item--panorama {
+  align-items: center;
+}
+
+.photos__image,
+.photos__image--panorama {
   @include zero-margin-padding;
 }
 
-.photos__list-item-author {
+.photos__author {
   @include zero-margin-padding;
   align-self: flex-start;
 
@@ -92,12 +96,12 @@
   line-height: 24px;
 }
 
-.photos__list-item-author span {
+.photos__author span {
   font-size: 14px;
   font-weight: 300;
 }
 
-.photos__list-item-description {
+.photos__description {
   @include zero-margin-padding;
   align-self: flex-start;
   padding-bottom: 9px;
@@ -110,13 +114,13 @@
   word-break: break-all;
 }
 
-.likes-wrapper {
+.photos__likes-wrapper {
   display: flex;
   flex-direction: row;
   align-items: center;
 }
 
-.photos__list-item-likes {
+.photos__likes-text {
   @include zero-margin-padding;
 
   order: 2;
@@ -128,7 +132,7 @@
   text-transform: uppercase;
 }
 
-.likes-heart {
+.photos__likes-icon {
   background-image: url("../img/icon-heart.svg");
   background-repeat: no-repeat;
   background-position: center;
@@ -139,42 +143,33 @@
   cursor: pointer;
 }
 
-.panorama-of-day {
+.photos__card--panorama {
   align-items: center;
 }
 
-.panorama-of-day a {
+.photos__card--panorama a {
   position: relative;
   align-self: center;
-}
-
-.upload-photo {
-  width: 280px;
-  height: 374px;
 }
 
 @media (min-width: $tablet-width) {
   .photos__title {
     @include zero-margin-padding;
     margin-top: 80px;
-    // margin-right: 120px;
     margin-bottom: 50px;
-    // margin-left: 120px;
-    // padding-left: 62px;
-    // padding-right: 67px;
 
     font-size: 18px;
     font-weight: 400;
     line-height: 30px;
   }
 
-  .title-up {
+  .photos__title--up {
     margin-top: 40px;
     margin-bottom: 75px;
     width: 75%;
   }
 
-  .photos__title-down {
+  .photos__title--down {
     margin-top: 40px;
     margin-right: 90px;
     margin-bottom: 68px;
@@ -191,7 +186,7 @@
     margin-bottom: 5px;
   }
 
-  .photos__list-item {
+  .photos__item {
     box-sizing: border-box;
     margin-left: 20px;
     margin-bottom: 20px;
@@ -199,7 +194,7 @@
     max-height: 455px;
   }
 
-  .photos__list-item-card {
+  .photos__card {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -213,7 +208,7 @@
     justify-content: space-between;
   }
 
-  .photos__list-item-card--panorama {
+  .photos__card--panorama {
     flex-direction: row;
     justify-content: space-between;
     width: 620px;
@@ -221,30 +216,30 @@
     padding-top: 10px;
     padding-bottom: 0;
 
-    & .photos__list-item-author {
+    & .photos__author {
       margin-top: 10px;
       margin-left: 27px;
     }
 
-    & .photos__list-item-description {
+    & .photos__description {
       margin-left: 11px;
     }
 
-    & .photos__list-item-likes--panorama {
+    & .photos__likes-text--panorama {
       padding-bottom: 0;
       padding-top: 11px;
       padding-right: 62px;
     }
   }
 
-  .panorama-of-day .photos__list-item-author {
+  .photos__card--panorama .photos__author {
     @include zero-margin-padding;
     order: 1;
 
     margin-top: 10px;
   }
 
-  .panorama-of-day .photos__list-item-likes {
+  .photos__card--panorama .photos__likes-text {
     @include zero-margin-padding;
     order: 2;
 
@@ -253,43 +248,43 @@
     padding-bottom: 1px;
   }
 
-  .panorama-of-day .likes-wrapper {
+  .photos__card--panorama .photos__likes-wrapper {
     order: 2;
 
     align-items: baseline;
   }
 
-  .panorama-of-day .photos__list-item-description {
+  .photos__card--panorama .photos__description {
     order: 3;
 
     margin-bottom: 4px;
     margin-left: 0;
   }
 
-  .photos__list-item-author {
+  .photos__author {
     order: 1;
 
     margin: 0;
   }
 
-  .photos__list-item-description {
+  .photos__description {
     order: 2;
 
     margin-bottom: 4px;
     padding-left: 0;
   }
 
-  .likes-wrapper {
+  .photos__likes-wrapper {
     justify-content: space-between;
   }
 
-  .likes-heart {
+  .photos__likes-icon {
     order: 2;
 
     margin-right: 0;
   }
 
-  .photos__list-image {
+  .photos__image {
     padding-bottom: 0;
     width: 300px;
     min-height: 300px;
@@ -302,23 +297,23 @@
     margin-bottom: 70px;
   }
 
-  .panorama-of-day {
+  .photos__item--panorama {
     position: relative;
     margin: 0 20px;
     margin-bottom: 50px;
     padding-bottom: 10px;
     width: $tablet-width - 40px;
     max-height: 630px;
-    align-items: unset;
+    align-items: center;
   }
 
-  .panorama-image {
+  .photos__image--panorama {
     width: 660px;
     min-height: 509px;
     padding-bottom: 0;
   }
 
-  .panorama--ribbon {
+  .photos__item--panorama-ribbon {
     position: absolute;
     top: 57px;
     right: 0;
@@ -340,23 +335,23 @@
     width: $desktop-width;
   }
 
-  .photos__list-item {
+  .photos__item {
     margin-left: 0;
     margin-bottom: 54px;
     margin-right: 20px;
     max-height: 555px;
   }
 
-  .photos__list-item:nth-child(3n + 1) {
+  .photos__item:nth-child(3n + 1) {
     margin-right: 0;
   }
 
-  .photos__list-image {
+  .photos__image {
     width: 300px;
     min-height: 400px;
   }
 
-  .panorama-of-day {
+  .photos__item--panorama {
     @include zero-margin-padding;
     margin-bottom: 50px;
     width: $desktop-width;
@@ -368,15 +363,15 @@
     }
   }
 
-  .panorama-of-day .photos__list-item-author {
+  .photos__item--panorama .photos__-author {
     margin-top: 7px;
   }
 
-  .panorama-of-day .photos__list-item-likes {
+  .photos__item--panorama .photos__likes-text {
     padding-top: 9px;
   }
 
-  .panorama--ribbon {
+  .photos__item--panorama-ribbon {
     top: 54px;
     right: 0;
     padding-top: 6px;
@@ -384,13 +379,13 @@
     padding-bottom: 6px;
   }
 
-  .panorama-image {
+  .photos__image--panorama {
     @include zero-margin-padding;
     width: 1200px;
     min-height: 506px;
   }
 
-  .photos__list-item-card--panorama {
+  .photos__card--panorama {
     padding-top: 13px;
     padding-right: 32px;
     padding-bottom: 9px;
@@ -398,11 +393,11 @@
     width: 100%;
   }
 
-  .photos__list-item-card {
+  .photos__card {
     width: 100%;
   }
 
-  .photos__title-down {
+  .photos__title--down {
     @include zero-margin-padding;
     margin-right: 119px;
     margin-bottom: 66px;
