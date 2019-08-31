@@ -63,7 +63,7 @@
   }
 
   .container--features-mobile {
-    max-height: unset;
+    max-height: none;
 
     overflow: unset;
   }
@@ -99,7 +99,6 @@
   .container {
     width: $desktop-width;
     margin: 0 auto;
-    padding: 0 10px;
   }
 
   .container--modal {
@@ -111,7 +110,7 @@
   }
 
   .container--features-mobile {
-    max-height: unset;
+    max-height: none;
 
     overflow: unset;
   }
