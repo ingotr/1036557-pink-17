@@ -21,7 +21,7 @@
   height: 374px;
 }
 
-.upload__filter-panel-wrapper{
+.upload__filter-panel-wrapper {
   padding-top: 17px;
 }
 
@@ -47,14 +47,10 @@
   position: relative;
 }
 
-.upload__filter--slice {
-  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-}
-
 .upload__filter {
   display: block;
   margin-bottom: 38px;
-  padding-bottom: 34px
+  padding-bottom: 34px;
 }
 
 .upload__filter svg {
@@ -265,7 +261,7 @@
       height: 22px;
     }
 
-    &:nth-child(3) .upload__filter-icon{
+    &:nth-child(3) .upload__filter-icon {
       width: 16px;
       height: 16px;
     }

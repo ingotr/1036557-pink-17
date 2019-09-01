@@ -215,21 +215,6 @@
     min-height: 71px;
     padding-top: 10px;
     padding-bottom: 0;
-
-    & .photos__author {
-      margin-top: 10px;
-      margin-left: 27px;
-    }
-
-    & .photos__description {
-      margin-left: 11px;
-    }
-
-    & .photos__likes-text--panorama {
-      padding-bottom: 0;
-      padding-top: 11px;
-      padding-right: 62px;
-    }
   }
 
   .photos__card--panorama .photos__author {
@@ -237,6 +222,7 @@
     order: 1;
 
     margin-top: 10px;
+    margin-left: 27px;
   }
 
   .photos__card--panorama .photos__likes-text {
@@ -246,6 +232,12 @@
     padding-top: 12px;
     padding-right: 15px;
     padding-bottom: 1px;
+  }
+
+  .photos__card--panorama .photos__likes-text--panorama {
+    padding-bottom: 0;
+    padding-top: 11px;
+    padding-right: 62px;
   }
 
   .photos__card--panorama .photos__likes-wrapper {
