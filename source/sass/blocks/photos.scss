@@ -355,12 +355,17 @@
     }
   }
 
+  .photos__card--panorama .photos__author {
+    margin-left: 0;
+  }
+
   .photos__item--panorama .photos__-author {
     margin-top: 7px;
   }
 
   .photos__item--panorama .photos__likes-text {
     padding-top: 9px;
+    padding-right: 16px;
   }
 
   .photos__item--panorama-ribbon {

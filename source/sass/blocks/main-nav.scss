@@ -17,12 +17,12 @@
   align-self: flex-start;
   align-items: center;
   justify-content: space-between;
-  padding-top: 19px;
+  padding-top: 12px;
   padding-right: 20px;
   padding-left: 20px;
   width: auto;
-  height: 63px;
-  min-height: 63px;
+  height: 65px;
+  min-height: 65px;
 
   z-index: 10;
 
@@ -107,8 +107,8 @@
     content: "";
 
     position: absolute;
-    top: 3px;
-    left: 27px;
+    top: -2px;
+    left: 26px;
 
     width: 30px;
     height: 5px;
@@ -204,7 +204,7 @@
 
   .main-nav__top-menu {
     align-items: center;
-    padding-bottom: 29px;
+    padding-bottom: 30px;
     width: auto;
     height: 110px;
 

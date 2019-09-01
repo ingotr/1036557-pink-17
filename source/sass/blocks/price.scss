@@ -11,8 +11,8 @@
 }
 
 .price__table {
-  margin-left: -81%;
-  padding-bottom: 19px;
+  margin-left: -82%;
+  padding-bottom: 25px;
   width: 241%;
 }
 
@@ -89,7 +89,7 @@
 .price__item {
   padding-top: 12px;
   padding-right: 17px;
-  padding-bottom: 14px;
+  padding-bottom: 12px;
   padding-left: 22px;
 
   background-color: $top-menu-text-color;
@@ -253,6 +253,7 @@
   }
 
   .price__item {
+    box-sizing: border-box;
     max-width: 240px;
     margin: 0;
     padding-top: 3px;
@@ -270,7 +271,7 @@
     min-width: 190px;
     padding-top: 18px;
     padding-left: 20px;
-    padding-bottom: 23px;
+    padding-bottom: 19px;
   }
 
   .price__value {
@@ -281,10 +282,12 @@
   }
 
   .price__item--desktop {
+    box-sizing: border-box;
     display: table-cell;
-    width: 200px;
-    padding-top: 12px;
-    padding-bottom: 15px;
+    padding-top: 15px;
+    padding-bottom: 14px;
+    width: 234px;
+    min-height: 59px;
 
     color: $top-menu-bg-color;
     font-size: 18px;
@@ -299,12 +302,13 @@
     &::before {
       position: absolute;
       top: 0;
+      left: -2px;
     }
 
     &::after {
       position: absolute;
       top: 16px;
-      left: 14px;
+      left: 12px;
       content: "Хит";
       width: 24px;
       height: 26px;

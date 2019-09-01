@@ -68,6 +68,7 @@
   color: $contacts__link-color;
   font-size: 24px;
   font-weight: 300;
+  line-height: 28px;
 
   text-decoration: none;
 }
@@ -129,7 +130,7 @@
     margin-right: 120px;
     margin-left: 120px;
     padding-top: 40px;
-    padding-bottom: 27px;
+    padding-bottom: 29px;
     width: 60%;
 
     font-size: 40px;
@@ -153,9 +154,9 @@
 
   .contacts__item {
     margin-top: 3px;
-    margin-left: 58px;
-    margin-right: 40px;
-    margin-bottom: 16px;
+    margin-left: 52px;
+    margin-right: 51px;
+    margin-bottom: 12px;
     padding-bottom: 18px;
     width: 33%;
   }
@@ -198,20 +199,22 @@
 
   .contacts__title {
     margin-top: 0;
+    margin-bottom: 41px;
     padding-top: 0;
     padding-right: 70px;
     padding-left: 70px;
-    padding-bottom: 40px;
+    padding-bottom: 0;
     width: 75%;
 
     font-size: 50px;
     font-weight: 300;
+    line-height: 60px;
   }
 
   .contacts__list {
     width: 100%;
     justify-content: space-around;
-    padding-top: 7px;
+    padding-top: 0;
     padding-left: 9px;
   }
 
@@ -226,6 +229,9 @@
 
   .contacts__item-title {
     margin-bottom: 24px;
+    padding-left: 7px;
+    padding-right: 14px;
+    width: 93%;
   }
 
   .contacts__item--mail {
@@ -237,16 +243,22 @@
   }
 
   .contacts__wrapper {
-    padding-top: 67px;
+    padding-top: 63px;
     padding-bottom: 0;
 
     background:
-      linear-gradient(-10deg, transparent 146px, white 0) bottom right,
-      linear-gradient(10deg, transparent 146px, white 0) bottom left;
+      linear-gradient(-10deg, transparent 153px, white 0) bottom right,
+      linear-gradient(10deg, transparent 153px, white 0) bottom left;
     background-size: 51% 100%;
     background-repeat: no-repeat;
 
     z-index: 10;
+  }
+
+  .contacts__link {
+    width: 96%;
+
+    line-height: 30px;
   }
 
   .contacts__map {
