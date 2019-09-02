@@ -287,20 +287,22 @@
       </p>
       <form class="contest-form__fields" action="https://echo.htmlacademy.ru" method="get">
         <fieldset class="contest-form__fields-name contest-form__fields--fieldset-none">
-          <div class="contest-form__input-wrapper">
-            <label for="contest-form__surname" class="contest-form__label">Фамилия:</label>
-            <input id="contest-form__surname" class="contest-form__input-text" type="text" name="surname" value=""
-              placeholder="Укажите фамилию *">
-          </div>
-          <div class="contest-form__input-wrapper">
-            <label for="contest-form__name" class="contest-form__label">Имя:</label>
-            <input id="contest-form__name" class="contest-form__input-text" type="text" name="name" value=""
-              placeholder="Введите ваше имя *">
-          </div>
-          <div class="contest-form__input-wrapper">
-            <label for="contest-form__middle-name" class="contest-form__label">Отчество:</label>
-            <input id="contest-form__middle-name" class="contest-form__input-text" type="text" name="middle-name"
-              value="" placeholder="Ну и отчество тоже">
+          <div class="contest-form__outer-wrapper">
+            <div class="contest-form__input-wrapper">
+              <label for="contest-form__surname" class="contest-form__label">Фамилия:</label>
+              <input id="contest-form__surname" class="contest-form__input-text" type="text" name="surname" value=""
+                placeholder="Укажите фамилию *" autofocus>
+            </div>
+            <div class="contest-form__input-wrapper">
+              <label for="contest-form__name" class="contest-form__label">Имя:</label>
+              <input id="contest-form__name" class="contest-form__input-text" type="text" name="name" value=""
+                placeholder="Введите ваше имя *">
+            </div>
+            <div class="contest-form__input-wrapper">
+              <label for="contest-form__middle-name" class="contest-form__label">Отчество:</label>
+              <input id="contest-form__middle-name" class="contest-form__input-text" type="text" name="middle-name"
+                value="" placeholder="Ну и отчество тоже">
+            </div>
           </div>
         </fieldset>
         <fieldset class="contest-form__fields-achievments contest-form__fields--fieldset-none">
@@ -309,44 +311,53 @@
           </legend>
           <div class="contest-form__fields-achievments-wrapper">
             <label for="contest-form__selfie-with-shark" class="contest-form__label contest-form__label--checkbox">
-              <input id="contest-form__selfie-with-shark" class="contest-form__input-checkbox" type="checkbox"
-                name="achievments" value="Сделал селфи с акулой" checked="">
-              <div class="contest-form__fields-achievments-wrapper--inner">
-                <div class="contest-form__checkmark-wrapper">
-                  <span class="contest-form__checkmark" tabindex="0"></span>
-                </div>
-                <span class="contest-form__checkbox-text contest-form__checkbox-text--radio">Сделал селфи с акулой</span>
-              </div>
+              <span class="contest-form__fields-achievments-wrapper--inner">
+                <input id="contest-form__selfie-with-shark" class="contest-form__input-checkbox" type="checkbox"
+                  name="achievments" value="Сделал селфи с акулой" checked="">
+                <span class="contest-form__checkmark" tabindex="0"></span>
+                <span class="contest-form__checkbox-text contest-form__checkbox-text--radio">Сделал селфи с
+                  акулой</span>
+              </span>
             </label>
             <label for="contest-form__burned-on-beach" class="contest-form__label contest-form__label--checkbox">
-              <input id="contest-form__burned-on-beach" class="contest-form__input-checkbox" type="checkbox"
-                name="achievments" value="Сгорел на пляже" checked="">
-              <span class="contest-form__checkmark" tabindex="0"></span>
-              <span class="contest-form__checkbox-text contest-form__checkbox-text--radio">Обгорел на пляже</span>
+              <span class="contest-form__fields-achievments-wrapper--inner">
+                <input id="contest-form__burned-on-beach" class="contest-form__input-checkbox" type="checkbox"
+                  name="achievments" value="Сгорел на пляже" checked="">
+                <span class="contest-form__checkmark" tabindex="0"></span>
+                <span class="contest-form__checkbox-text contest-form__checkbox-text--radio">Обгорел на пляже</span>
+              </span>
             </label>
             <label for="contest-form__seen-chuck-norris" class="contest-form__label contest-form__label--checkbox">
-              <input id="contest-form__seen-chuck-norris" class="contest-form__input-checkbox" type="checkbox"
-                name="achievments" value="Видел Чака Норриса">
-              <span class="contest-form__checkmark" tabindex="0"></span>
-              <span class="contest-form__checkbox-text contest-form__checkbox-text--radio">Видел Чака Норриса</span>
+              <span class="contest-form__fields-achievments-wrapper--inner">
+                <input id="contest-form__seen-chuck-norris" class="contest-form__input-checkbox" type="checkbox"
+                  name="achievments" value="Видел Чака Норриса">
+                <span class="contest-form__checkmark" tabindex="0"></span>
+                <span class="contest-form__checkbox-text contest-form__checkbox-text--radio">Видел Чака Норриса</span>
+              </span>
             </label>
             <label for="contest-form__buy-souvenir" class="contest-form__label contest-form__label--checkbox">
-              <input id="contest-form__buy-souvenir" class="contest-form__input-checkbox" type="checkbox"
-                name="achievments" value="Накупил сувениров">
-              <span class="contest-form__checkmark" tabindex="0"></span>
-              <span class="contest-form__checkbox-text contest-form__checkbox-text--radio">Накупил сувениров</span>
+              <span class="contest-form__fields-achievments-wrapper--inner">
+                <input id="contest-form__buy-souvenir" class="contest-form__input-checkbox" type="checkbox"
+                  name="achievments" value="Накупил сувениров">
+                <span class="contest-form__checkmark" tabindex="0"></span>
+                <span class="contest-form__checkbox-text contest-form__checkbox-text--radio">Накупил сувениров</span>
+              </span>
             </label>
             <label for="contest-form__hold-the-tower" class="contest-form__label contest-form__label--checkbox">
-              <input id="contest-form__hold-the-tower" class="contest-form__input-checkbox" type="checkbox"
-                name="achievments" value="Удержал башню" checked="">
-              <span class="contest-form__checkmark" tabindex="0"></span>
-              <span class="contest-form__checkbox-text contest-form__checkbox-text--radio">Удержал башню</span>
+              <span class="contest-form__fields-achievments-wrapper--inner">
+                <input id="contest-form__hold-the-tower" class="contest-form__input-checkbox" type="checkbox"
+                  name="achievments" value="Удержал башню" checked="">
+                <span class="contest-form__checkmark" tabindex="0"></span>
+                <span class="contest-form__checkbox-text contest-form__checkbox-text--radio">Удержал башню</span>
+              </span>
             </label>
             <label for="contest-form__crush-hotel" class="contest-form__label contest-form__label--checkbox">
-              <input id="contest-form__crush-hotel" class="contest-form__input-checkbox" type="checkbox"
-                name="achievments" value="Разгромил отель">
-              <span class="contest-form__checkmark" tabindex="0"></span>
-              <span class="contest-form__checkbox-text contest-form__checkbox-text--radio">Разгромил отель</span>
+              <span class="contest-form__fields-achievments-wrapper--inner">
+                <input id="contest-form__crush-hotel" class="contest-form__input-checkbox" type="checkbox"
+                  name="achievments" value="Разгромил отель">
+                <span class="contest-form__checkmark" tabindex="0"></span>
+                <span class="contest-form__checkbox-text contest-form__checkbox-text--radio">Разгромил отель</span>
+              </span>
             </label>
           </div>
         </fieldset>
