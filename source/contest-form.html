@@ -311,38 +311,42 @@
             <label for="contest-form__selfie-with-shark" class="contest-form__label contest-form__label--checkbox">
               <input id="contest-form__selfie-with-shark" class="contest-form__input-checkbox" type="checkbox"
                 name="achievments" value="Сделал селфи с акулой" checked="">
-              <span class="contest-form__checkmark" tabindex="0"></span>
-              <span class="contest-form__checkbox-text">Сделал селфи с акулой</span>
+              <div class="contest-form__fields-achievments-wrapper--inner">
+                <div class="contest-form__checkmark-wrapper">
+                  <span class="contest-form__checkmark" tabindex="0"></span>
+                </div>
+                <span class="contest-form__checkbox-text contest-form__checkbox-text--radio">Сделал селфи с акулой</span>
+              </div>
             </label>
             <label for="contest-form__burned-on-beach" class="contest-form__label contest-form__label--checkbox">
               <input id="contest-form__burned-on-beach" class="contest-form__input-checkbox" type="checkbox"
                 name="achievments" value="Сгорел на пляже" checked="">
               <span class="contest-form__checkmark" tabindex="0"></span>
-              <span class="contest-form__checkbox-text">Обгорел на пляже</span>
+              <span class="contest-form__checkbox-text contest-form__checkbox-text--radio">Обгорел на пляже</span>
             </label>
             <label for="contest-form__seen-chuck-norris" class="contest-form__label contest-form__label--checkbox">
               <input id="contest-form__seen-chuck-norris" class="contest-form__input-checkbox" type="checkbox"
                 name="achievments" value="Видел Чака Норриса">
               <span class="contest-form__checkmark" tabindex="0"></span>
-              <span class="contest-form__checkbox-text">Видел Чака Норриса</span>
+              <span class="contest-form__checkbox-text contest-form__checkbox-text--radio">Видел Чака Норриса</span>
             </label>
             <label for="contest-form__buy-souvenir" class="contest-form__label contest-form__label--checkbox">
               <input id="contest-form__buy-souvenir" class="contest-form__input-checkbox" type="checkbox"
                 name="achievments" value="Накупил сувениров">
               <span class="contest-form__checkmark" tabindex="0"></span>
-              <span class="contest-form__checkbox-text">Накупил сувениров</span>
+              <span class="contest-form__checkbox-text contest-form__checkbox-text--radio">Накупил сувениров</span>
             </label>
             <label for="contest-form__hold-the-tower" class="contest-form__label contest-form__label--checkbox">
               <input id="contest-form__hold-the-tower" class="contest-form__input-checkbox" type="checkbox"
                 name="achievments" value="Удержал башню" checked="">
               <span class="contest-form__checkmark" tabindex="0"></span>
-              <span class="contest-form__checkbox-text">Удержал башню</span>
+              <span class="contest-form__checkbox-text contest-form__checkbox-text--radio">Удержал башню</span>
             </label>
             <label for="contest-form__crush-hotel" class="contest-form__label contest-form__label--checkbox">
               <input id="contest-form__crush-hotel" class="contest-form__input-checkbox" type="checkbox"
                 name="achievments" value="Разгромил отель">
               <span class="contest-form__checkmark" tabindex="0"></span>
-              <span class="contest-form__checkbox-text">Разгромил отель</span>
+              <span class="contest-form__checkbox-text contest-form__checkbox-text--radio">Разгромил отель</span>
             </label>
           </div>
         </fieldset>
@@ -375,24 +379,26 @@
           <legend class="contest-form__fields-legend">
             С каким приложением путешествовали?
           </legend>
-          <label for="contest-form__pink-ios" class="contest-form__label contest-form__label--radio">
-            <input id="contest-form__pink-ios" class="contest-form__input-radio" type="radio" name="app-version"
-              value="Pink для iOS" checked="">
-            <span class="contest-form__radio-checkmark" tabindex="0"></span>
-            <span class="contest-form__checkbox-text">Pink для iOS</span>
-          </label>
-          <label for="contest-form__pink-android" class="contest-form__label contest-form__label--radio">
-            <input id="contest-form__pink-android" class="contest-form__input-radio" type="radio" name="app-version"
-              value="Pink на Android">
-            <span class="contest-form__radio-checkmark" tabindex="0"></span>
-            <span class="contest-form__checkbox-text">Pink на Android</span>
-          </label>
-          <label for="contest-form__pink-windows" class="contest-form__label contest-form__label--radio">
-            <input id="contest-form__pink-windows" class="contest-form__input-radio" type="radio" name="app-version"
-              value="Windows Phone">
-            <span class="contest-form__radio-checkmark" tabindex="0"></span>
-            <span class="contest-form__checkbox-text">Windows Phone</span>
-          </label>
+          <div class="contest-form__app-wrapper">
+            <label for="contest-form__pink-ios" class="contest-form__label contest-form__label--radio">
+              <input id="contest-form__pink-ios" class="contest-form__input-radio" type="radio" name="app-version"
+                value="Pink для iOS" checked="">
+              <span class="contest-form__radio-checkmark" tabindex="0"></span>
+              <span class="contest-form__checkbox-text">Pink для iOS</span>
+            </label>
+            <label for="contest-form__pink-android" class="contest-form__label contest-form__label--radio">
+              <input id="contest-form__pink-android" class="contest-form__input-radio" type="radio" name="app-version"
+                value="Pink на Android">
+              <span class="contest-form__radio-checkmark" tabindex="0"></span>
+              <span class="contest-form__checkbox-text">Pink на Android</span>
+            </label>
+            <label for="contest-form__pink-windows" class="contest-form__label contest-form__label--radio">
+              <input id="contest-form__pink-windows" class="contest-form__input-radio" type="radio" name="app-version"
+                value="Windows Phone">
+              <span class="contest-form__radio-checkmark" tabindex="0"></span>
+              <span class="contest-form__checkbox-text">Windows Phone</span>
+            </label>
+          </div>
         </fieldset>
         <fieldset class="contest-form__fields-emotions contest-form__fields--fieldset-none">
           <legend class="contest-form__fields-legend contest-form__fields-legend--emotions">Опишите свои эмоции</legend>
