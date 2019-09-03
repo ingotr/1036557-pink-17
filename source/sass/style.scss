@@ -9,6 +9,7 @@
 @import "visually-hidden";
 @import "core";
 @import "container";
+@import "blocks/toggles";
 @import "blocks/page-header.scss";
 @import "blocks/main-nav";
 @import "blocks/app-download";
@@ -19,5 +20,6 @@
 @import "blocks/photos";
 @import "blocks/upload";
 @import "blocks/page-footer";
+@import "blocks/form-button.scss";
 @import "blocks/contest-form";
 @import "blocks/modal";

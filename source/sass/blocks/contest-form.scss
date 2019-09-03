@@ -310,7 +310,7 @@
   margin-bottom: 48px;
 }
 
-.contest-form__input-text--emotions {
+.contest-form__user-emotions {
   padding-top: 19px;
   padding-bottom: 118px;
   padding-left: 21px;
@@ -494,7 +494,7 @@
     order: 3;
   }
 
-  .contest-form__fields--contacts-wrapper {
+  .contest-form__contacts-wrapper {
     display: flex;
     flex-direction: column;
   }
@@ -606,7 +606,7 @@
     padding-top: 8px;
   }
 
-  .contest-form__input-text--emotions {
+  .contest-form__user-emotions {
     padding-bottom: 112px;
     min-width: 474px;
   }
@@ -653,7 +653,7 @@
 }
 
 @media (min-width: $desktop-width) {
-  .contest-form__fields {
+  .contest-form__main-form {
     flex-direction: row;
     align-items: center;
     flex-wrap: wrap;
@@ -800,7 +800,7 @@
     order: 3;
   }
 
-  .contest-form__fields--contacts-wrapper {
+  .contest-form__contacts-wrapper {
     @include zero-margin-padding;
     display: flex;
     flex-direction: row;
@@ -877,7 +877,7 @@
     order: 4;
   }
 
-  .contest-form__fields--achievments-wrapper {
+  .contest-form__fields-achievments-wrapper {
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
@@ -894,7 +894,7 @@
     max-height: 240px;
   }
 
-  .contest-form__fields--achievments-wrapper--inner {
+  .contest-form__wrapper-inner {
     display: flex;
     flex-direction: row;
     padding-left: 62px;
@@ -929,7 +929,7 @@
     padding-top: 0;
   }
 
-  .contest-form__input-text--emotions {
+  .contest-form__user-emotions {
     padding-bottom: 50px;
     min-width: 795px;
   }

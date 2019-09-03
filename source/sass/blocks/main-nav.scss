@@ -392,15 +392,6 @@
     background-color: transparent;
   }
 
-  .main-nav__item--active a[href]` {
-    padding-top: 5px;
-    padding-bottom: 13px;
-
-    border-bottom: 2px solid #ffffff;
-
-    text-decoration: none;
-  }
-
   .main-nav__item {
     display: flex;
     align-items: center;
@@ -437,5 +428,14 @@
     &:active {
       color: transparentize(#ffffff, 0.7);
     }
+  }
+
+  .main-nav__item--active a {
+    padding-top: 5px;
+    padding-bottom: 13px;
+
+    border-bottom: 2px solid #ffffff;
+
+    text-decoration: none;
   }
 }
