@@ -2,11 +2,7 @@
 var navMain = document.querySelector(".main-nav");
 var navBurger = document.querySelector(".main-nav__burger");
 var isStorageSupport = true;
-
-// Для отладки
-// console.log(surname.value);
-// console.log(name.value);
-// console.log(email.value);
+var isPageHasForm = true;
 
 // Раздел открытия мобильного меню
 navMain.classList.remove("main-nav--nojs");
@@ -19,7 +15,7 @@ try {
   isStorageSupport = false;
 }
 
-navBurger.addEventListener("click", function() {
+navBurger.addEventListener("click", function () {
   if (navMain.classList.contains("main-nav--closed")) {
     navMain.classList.remove("main-nav--closed");
     navMain.classList.add("main-nav--opened");
@@ -29,20 +25,15 @@ navBurger.addEventListener("click", function() {
   }
 });
 
-
-if (document.contains(document.form)) {
-  showModalWindow();
-}
-
-var showModalWindow = new function () {
+function showModalWindow () {
   // Обязательные поля для формы
-  let form = document.querySelector(".contest-form__fields");
+  let form = document.querySelector(".contest-form__main-form");
   let modalSuccess = document.querySelector(".modal--success");
   let modalFailure = document.querySelector(".modal--failure");
-  let failureClose = document.querySelector(".failure-close");
-  let successClose = document.querySelector(".success-close");
+  let failureClose = document.querySelector(".modal__button-failure-close");
+  let successClose = document.querySelector(".modal__button-success-close");
 
-  let formSubmitBtn = document.querySelector(".contest-form__button--submit");
+  let formSubmitBtn = document.querySelector(".form-button--submit");
 
   let surname = form.querySelector("[name=surname]");
   let name = form.querySelector("[name=name]");
@@ -87,4 +78,12 @@ var showModalWindow = new function () {
       }
     }
   });
+};
+
+try {
+  if (document.contains()) {
+    showModal();
+  }
+} catch (err) {
+  isPageHasForm = false;
 };
