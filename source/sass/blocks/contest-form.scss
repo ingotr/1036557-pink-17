@@ -33,13 +33,13 @@
   margin-bottom: 20px;
 }
 
-.contest-form__fields {
+.contest-form__main-form {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-.contest-form__fields-name {
+.contest-form__fields--name {
   display: flex;
   flex-direction: column;
   width: $mobile-width - 40px;
@@ -126,8 +126,8 @@
   text-transform: none;
 }
 
-.contest-form__fields-achievments,
-.contest-form__fields-app-version {
+.contest-form__fields--achievments,
+.contest-form__fields--app-version {
   align-items: flex-start;
   margin-bottom: 32px;
   width: 320px;
@@ -135,7 +135,7 @@
   background-color: $features-list-bg-color;
 }
 
-.contest-form__fields-achievments {
+.contest-form__fields--achievments {
   order: 2;
   margin-bottom: 5px;
 }
@@ -273,7 +273,7 @@
   }
 }
 
-.contest-form__fields-contacts {
+.contest-form__fields--contacts {
   width: $mobile-width - 40px;
   display: flex;
   flex-direction: column;
@@ -287,13 +287,13 @@
   display: none;
 }
 
-.contest-form__fields-app-version {
+.contest-form__fields--app-version {
   margin-bottom: 0;
 
   order: 4;
 }
 
-.contest-form__fields-emotions {
+.contest-form__fields--emotions {
   width: $mobile-width - 40px;
   margin-bottom: 0;
 
@@ -380,7 +380,7 @@
   color: $contacts__link-color;
 }
 
-.note--desktop {
+.note-desktop {
   display: none;
 }
 
@@ -400,7 +400,7 @@
     border: 2px solid #e5e5e5;
   }
 
-  .contest-form__fields {
+  .contest-form__main-form {
     width: $tablet-width;
     margin-bottom: 20px;
   }
@@ -456,7 +456,7 @@
     flex-grow: 1;
   }
 
-  .contest-form__fields-name {
+  .contest-form__fields--name {
     margin-bottom: 0;
     padding-top: 30px;
     padding-right: 40px;
@@ -468,7 +468,7 @@
     border: none;
   }
 
-  .contest-form__fields-app-version {
+  .contest-form__fields--app-version {
     display: block;
     margin-bottom: 52px;
     padding-top: 45px;
@@ -482,7 +482,7 @@
     background-color: $top-menu-text-color;
   }
 
-  .contest-form__fields-contacts {
+  .contest-form__fields--contacts {
     display: block;
     margin-bottom: 59px;
     padding-top: 38px;
@@ -494,7 +494,7 @@
     order: 3;
   }
 
-  .contest-form__fields-contacts-wrapper {
+  .contest-form__fields--contacts-wrapper {
     display: flex;
     flex-direction: column;
   }
@@ -568,7 +568,7 @@
     margin-left: 50px;
   }
 
-  .contest-form__fields-achievments {
+  .contest-form__fields--achievments {
     display: block;
     margin-bottom: 57px;
     padding-top: 43px;
@@ -589,7 +589,7 @@
     padding-bottom: 20px;
   }
 
-  .contest-form__fields-emotions {
+  .contest-form__fields--emotions {
     margin-bottom: 67px;
     padding-top: 30px;
     padding-right: 40px;
@@ -721,7 +721,7 @@
     height: 308px;
   }
 
-  .contest-form__fields-name {
+  .contest-form__fields--name {
     box-sizing: border-box;
     display: flex;
     justify-content: space-between;
@@ -737,7 +737,7 @@
     order: 1;
   }
 
-  .contest-form__fields-app-version {
+  .contest-form__fields--app-version {
     @include zero-margin-padding;
 
     display: block;
@@ -788,7 +788,7 @@
     padding-left: 0;
   }
 
-  .contest-form__fields-contacts {
+  .contest-form__fields--contacts {
     @include zero-margin-padding;
     display: block;
     margin-bottom: 59px;
@@ -800,7 +800,7 @@
     order: 3;
   }
 
-  .contest-form__fields-contacts-wrapper {
+  .contest-form__fields--contacts-wrapper {
     @include zero-margin-padding;
     display: flex;
     flex-direction: row;
@@ -867,7 +867,7 @@
     padding-left: 0;
   }
 
-  .contest-form__fields-achievments {
+  .contest-form__fields--achievments {
     @include zero-margin-padding;
 
     display: block;
@@ -877,7 +877,7 @@
     order: 4;
   }
 
-  .contest-form__fields-achievments-wrapper {
+  .contest-form__fields--achievments-wrapper {
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
@@ -894,7 +894,7 @@
     max-height: 240px;
   }
 
-  .contest-form__fields-achievments-wrapper--inner {
+  .contest-form__fields--achievments-wrapper--inner {
     display: flex;
     flex-direction: row;
     padding-left: 62px;
@@ -911,7 +911,7 @@
     position: relative;
   }
 
-  .contest-form__fields-emotions {
+  .contest-form__fields--emotions {
     margin-bottom: 65px;
     padding-top: 34px;
     width: $desktop-width;
@@ -934,7 +934,7 @@
     min-width: 795px;
   }
 
-  .note--desktop {
+  .note-desktop {
     display: inline;
 
     color: #000000;

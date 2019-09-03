@@ -45,7 +45,7 @@
   width: 86%;
 }
 
-.photos__item--panorama-ribbon {
+.photos__ribbon {
   position: absolute;
   align-self: flex-end;
   padding-top: 7px;
@@ -305,7 +305,7 @@
     padding-bottom: 0;
   }
 
-  .photos__item--panorama-ribbon {
+  .photos__ribbon {
     position: absolute;
     top: 57px;
     right: 0;
@@ -368,7 +368,7 @@
     padding-right: 16px;
   }
 
-  .photos__item--panorama-ribbon {
+  .photos__ribbon {
     top: 54px;
     right: 0;
     padding-top: 6px;

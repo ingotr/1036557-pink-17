@@ -285,8 +285,8 @@
         выиграть ценный приз — 1000 миль на вашу бонусную карту!
         <span>Пожалуйста, заполните форму ниже:</span>
       </p>
-      <form class="contest-form__fields" action="https://echo.htmlacademy.ru" method="get">
-        <fieldset class="contest-form__fields-name contest-form__fields--fieldset-none">
+      <form class="contest-form__main-form" action="https://echo.htmlacademy.ru" method="get">
+        <fieldset class="contest-form__fields contest-form__fields--name contest-form__fields--fieldset-none">
           <div class="contest-form__outer-wrapper">
             <div class="contest-form__input-wrapper">
               <label for="contest-form__surname" class="contest-form__label">Фамилия:</label>
@@ -305,7 +305,7 @@
             </div>
           </div>
         </fieldset>
-        <fieldset class="contest-form__fields-achievments contest-form__fields--fieldset-none">
+        <fieldset class="contest-form__fields contest-form__fields--achievments contest-form__fields--fieldset-none">
           <legend class="contest-form__fields-legend contest-form__fields-legend--achievments">
             Ваши безбашенные достижения в путешествии
           </legend>
@@ -361,11 +361,11 @@
             </label>
           </div>
         </fieldset>
-        <fieldset class="contest-form__fields-contacts contest-form__fields--fieldset-none">
+        <fieldset class="contest-form__fields contest-form__fields--contacts contest-form__fields--fieldset-none">
           <legend class="contest-form__fields-legend contacts-mobile contest-form__fields-legend--contacts">
             Контактная информация
           </legend>
-          <div class="contest-form__fields-contacts-wrapper">
+          <div class="contest-form__fields--contacts-wrapper">
             <div class="contest-form__contacts-input-wrapper">
               <label for="contest-form__telephone" class="contest-form__label contest-form__label--phone">Номер
                 телефона</label>
@@ -386,7 +386,7 @@
             </div>
           </div>
         </fieldset>
-        <fieldset class="contest-form__fields-app-version contest-form__fields--fieldset-none container--flex">
+        <fieldset class="contest-form__fields contest-form__fields--app-version contest-form__fields--fieldset-none container--flex">
           <legend class="contest-form__fields-legend">
             С каким приложением путешествовали?
           </legend>
@@ -411,7 +411,7 @@
             </label>
           </div>
         </fieldset>
-        <fieldset class="contest-form__fields-emotions contest-form__fields--fieldset-none">
+        <fieldset class="contest-form__fields contest-form__fields--emotions contest-form__fields--fieldset-none">
           <legend class="contest-form__fields-legend contest-form__fields-legend--emotions">Опишите свои эмоции</legend>
           <div class="contest-form__input-wrapper contest-form__input-wrapper--emotions">
             <textarea class="contest-form__input-text--emotions" name="emotions"
@@ -421,7 +421,7 @@
         </fieldset>
         <div class="contest-form__button-wrapper">
           <button class="contest-form__button contest-form__button--submit" type="submit">Отправить форму</button>
-          <p class="contest-form__note"><span class="note-star">*</span> — обязательные <span class="note--desktop"> для
+          <p class="contest-form__note"><span class="note-star">*</span> — обязательные <span class="note-desktop"> для
               заполнения </span>поля</p>
         </div>
       </form>
@@ -462,7 +462,7 @@
       <p class="modal__description">Проверьте поля, выделенные красным,
         скорее всего вы забыли их заполнить
       </p>
-      <button class="contest-form__button modal__button-failure-close" type="button">Ок</button>
+      <button class="modal__button-failure-close contest-form__button" type="button">Ок</button>
     </div>
   </div>
   <div class="modal modal--success">
