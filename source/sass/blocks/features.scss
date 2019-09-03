@@ -5,7 +5,6 @@
 .features {
   margin-bottom: 42px;
 
-  background-color: #f2f2f2;
   background: linear-gradient(175deg, transparent 21%, $features-list-bg-color 0%);
 }
 
@@ -18,13 +17,12 @@
   overflow: hidden;
 }
 
-.features-list {
+.features__list {
   @include list-style-none;
 
   margin-bottom: 9px;
-  padding-top: 84px;
-  padding-right: 14px;
-  padding-left: 14px;
+  padding-top: 86px;
+  width: 100%;
 
   text-align: center;
 
@@ -37,52 +35,55 @@
   margin-bottom: 32px;
   margin-left: 55px;
 
-  background-color: $top-menu-text-color;
+  background-color: transparent;
   color: $top-menu-bg-color;
   font-size: 24px;
   font-weight: 300;
   text-align: center;
 }
 
-.features-list__item {
+.features__list-item {
   display: flex;
   flex-direction: column;
   align-items: center;
   margin-bottom: 31px;
 }
 
-.features-list__item-phone {
+.features__list-item-phone {
   display: none;
 }
 
-.features-list__item:last-child .features-list__item-phone {
+.features__list-item:nth-child(3) .features__list-item-phone {
   display: block;
+  width: 157px;
+  min-height: 320px;
+
   order: 2;
 
   background-image: url("../img/iphone-screen-mobile@1x.png");
   background-repeat: no-repeat;
   background-size: cover;
-  width: 157px;
-  min-height: 320px;
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
     background-image: url("../img/iphone-screen-mobile@2x.png");
   }
 }
 
-.features-list__item-card {
+.features__list-item-card {
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 80%;
 }
 
-.features-list__item:last-child .features-list__item-card {
+.features__list-item:nth-child(3) .features__list-item-card {
   padding-bottom: 40px;
 }
 
-.features-title {
+.features__list-item-title {
   @include zero-margin-padding;
-  padding-bottom: 12px;
+
+  padding-bottom: 13px;
 
   color: $features-title-text-color;
   font-size: 18px;
@@ -90,10 +91,12 @@
   line-height: 24px;
 }
 
-.features-description {
+.features__list-item-description {
   @include zero-margin-padding;
+
   padding-right: 11px;
   padding-left: 11px;
+  width: 100%;
 
   color: $top-menu-bg-color;
   font-size: 14px;
@@ -107,37 +110,26 @@
 
 .features__iphones-screen-list {
   @include list-style-none;
+
   display: flex;
   flex-direction: column;
 
   order: 2;
 }
 
-.information__iphone-screen {
-  &:nth-child(1),
-  &:nth-child(2) {
-    display: none;
-  }
-
-  figure {
-    margin: 0;
-  }
-}
-
 @media (min-width: $tablet-width) {
   .features {
-    margin-bottom: 80px;
+    margin-bottom: 95px;
 
-    background-color: #f2f2f2;
     background: linear-gradient(176deg, transparent 34%, #f2f2f2 0%);
-    background-size: 100% 63%;
+    background-size: 100% 67%;
     background-repeat: no-repeat;
   }
 
   .features__wrapper {
     position: relative;
     flex-direction: row;
-    margin-bottom: 36px;
+    margin-bottom: 23px;
 
     overflow: unset;
   }
@@ -159,11 +151,11 @@
     padding-right: 100px;
   }
 
-  .features-list__item:last-child .features-list__item-phone {
+  .features__list-item:nth-child(3) .features__list-item-phone {
     display: block;
     position: absolute;
-    top: 52px;
-    left: 40px;
+    top: 49px;
+    left: -129px;
     width: 268px;
     min-height: 481px;
 
@@ -178,42 +170,58 @@
     }
   }
 
-  .features-list__item-card {
+  .features__list-item-card {
     display: flex;
     flex-direction: column;
-    align-items: baseline;
+    align-items: flex-start;
+    width: 90%;
   }
 
-  .features-list__item:last-child .features-list__item-card {
+  .features__list-item:nth-child(3) .features__list-item-card {
     order: 2;
     margin-bottom: 0;
     padding-bottom: 0;
   }
 
-  .features-list {
+  .features__list {
+    @include zero-margin-padding;
     order: 2;
+    position: relative;
 
-    margin-left: 191px;
-    padding-left: 131px;
-    padding-top: 120px;
+    margin-left: 150px;
+    padding-top: 119px;
+    padding-left: 161px;
+    padding-right: 0;
+    padding-bottom: 62px;
+    width: auto;
   }
 
-  .features-list__item {
-    margin-bottom: 35px;
+  .features__list-item {
+    margin-bottom: 30px;
 
     text-align: left;
   }
 
-  .features-title {
+  .features__title {
     margin-left: 27px;
     padding-bottom: 10px;
   }
 
-  .features-description {
-    padding-top: 2px;
-    padding-right: 30px;
-    margin-left: 15px;
+  .features__list-item-title {
+    @include zero-margin-padding;
+    margin-bottom: 5px;
 
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 32px;
+  }
+
+  .features__list-item-description {
+    @include zero-margin-padding;
+    width: 100%;
+
+    font-size: 14px;
+    line-height: 25px;
     text-align: left;
   }
 
@@ -228,49 +236,54 @@
   }
 
   // Циферблат часов
-  .timer {
+  .features__timer {
+    margin: 0;
     position: relative;
-    margin-left: 21px;
+  }
 
-    &::before {
-      position: absolute;
-      content: "";
-      width: 175px;
-      height: 175px;
-      top: 54px;
-      left: 16px;
+  .features__timer::before {
+    display: block;
+    position: absolute;
+    content: "";
+    width: 175px;
+    height: 175px;
+    top: 54px;
+    left: 16px;
+    box-sizing: content-box;
 
-      border: 15px solid #d22856;
-      border-radius: 50%;
-    }
+    border: 15px solid #d22856;
+    border-radius: 50%;
+  }
 
-    &::after {
-      position: absolute;
-      content: "24";
-      top: 76px;
-      left: 63px;
+  .features__timer::after {
+    display: inline-block;
+    position: absolute;
+    content: "24";
+    top: 76px;
+    left: 63px;
 
-      color: #d22856;
-      font-size: 96px;
-      font-weight: 700;
-      line-height: 149.47px;
-    }
+    color: #d22856;
+    font-size: 96px;
+    font-weight: 700;
+    line-height: 149.47px;
+  }
+
+  .features__facts-wrapper {
+    margin-left: 70px;
+    padding-top: 32px;
   }
 
   .features__facts-title {
-    margin-top: 53px;
-    margin-left: 30px;
+    margin-top: 5px;
     margin-bottom: 10px;
-    padding-right: 150px;
+    padding-right: 158px;
 
     font-size: 30px;
-    font-weight: 700;
-    line-height: 36px;
+    line-height: 37px;
   }
 
   .features__facts-link {
     margin-top: 0;
-    margin-left: 30px;
     color: #d22856;
 
     text-decoration: underline;
@@ -278,7 +291,6 @@
 
   .features__facts-description {
     margin-top: 5px;
-    margin-left: 30px;
     margin-bottom: 13px;
     padding-right: 35px;
 
@@ -292,14 +304,13 @@
   .features {
     margin-bottom: 72px;
 
-    background-color: #f2f2f2;
     background: linear-gradient(175deg, transparent 26%, #f2f2f2 0%);
   }
 
   .features__wrapper {
     flex-direction: column;
     align-items: inherit;
-    margin-bottom: 0;
+    margin-bottom: 64px;
   }
 
   .features__slogan {
@@ -307,7 +318,7 @@
     margin-right: 0;
     margin-bottom: 0;
     padding-top: 12px;
-    padding-left: 112px;
+    padding-left: 71px;
     padding-right: 71px;
 
     font-size: 50px;
@@ -316,28 +327,29 @@
   }
 
   .features__slogan--second-part {
-    margin-bottom: 0;
+    margin-bottom: 78px;
     padding-top: 4px;
-    padding-left: 181px;
+    padding-left: 113px;
     padding-right: 114px;
   }
 
-  .features-list {
+  .features__list {
+    @include zero-margin-padding;
+
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-    margin-left: 0;
-    margin-bottom: 54px;
-    padding-top: 78px;
-    padding-left: 0;
-    padding-right: 0;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    margin-bottom: 62px;
+    width: 100%;
   }
 
-  .features-list__item-phone {
-    margin-left: -35px;
-    margin-bottom: 55px;
+  .features__list-item-phone {
+    @include zero-margin-padding;
+
     display: block;
     order: 1;
+    margin-bottom: 57px;
     width: 292px;
     min-height: 302px;
 
@@ -345,10 +357,12 @@
     background-size: cover;
   }
 
-  .features-list__item {
-    margin-bottom: 5px;
+  .features__list-item {
+    margin-bottom: 0;
+    margin-right: 20px;
+    width: 300px;
 
-    &:nth-child(1) .features-list__item-phone {
+    &:nth-child(1n) .features__list-item-phone {
       background-image: url("../img/iphone-screen-1-desktop@1x.png");
 
       @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
@@ -356,7 +370,7 @@
       }
     }
 
-    &:nth-child(2) .features-list__item-phone {
+    &:nth-child(2n) .features__list-item-phone {
       background-image: url("../img/iphone-screen-2-desktop@1x.png");
 
       @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
@@ -364,7 +378,8 @@
       }
     }
 
-    &:nth-child(3) .features-list__item-phone {
+    &:nth-child(3n) .features__list-item-phone {
+      align-self: flex-end;
       position: static;
       margin-left: 0;
       width: 292px;
@@ -376,26 +391,26 @@
       }
     }
 
-    &:nth-child(3) .features-list__item-card {
-      margin-left: -46px;
-    }
-
-    &:nth-child(3) .features-title {
+    &:nth-child(3) .features__title {
       padding-left: 42px;
     }
+
+    &:nth-child(3n) {
+      margin-right: 0;
+    }
   }
 
-  .features-list__item-card {
+  .features__list-item-card {
+    @include zero-margin-padding;
+    width: 83%;
     order: 2;
 
-    margin-left: -30px;
-    padding-left: 27px;
-    padding-right: 0;
-    padding-bottom: 5px;
+    text-align: center;
   }
 
-  .features-title {
+  .features__title {
     @include zero-margin-padding;
+
     margin-bottom: 28px;
     padding-left: 1px;
     padding-right: 35px;
@@ -406,10 +421,10 @@
     text-align: center;
   }
 
-  .features-description {
+  .features__list-item-description {
     @include zero-margin-padding;
-    padding-left: 37px;
-    padding-right: 27px;
+
+    width: 100%;
 
     font-size: 18px;
     font-weight: 400;
@@ -417,7 +432,7 @@
     text-align: center;
   }
 
-  .timer {
+  .features__timer {
     margin-top: 0;
     margin-left: 0;
     margin-bottom: 0;
@@ -426,35 +441,52 @@
       width: 298px;
       height: 345px;
     }
+  }
 
-    &::before {
-      width: 222px;
-      height: 222px;
-      top: 70px;
-      left: 24px;
-    }
+  .features__timer::before {
+    width: 222px;
+    height: 222px;
+    top: 70px;
+    left: 24px;
+  }
 
-    &::after {
-      content: "24";
-      top: 114px;
-      left: 80px;
-      font-size: 120px;
-      font-weight: 700;
-      line-height: 149.47px;
-    }
+  .features__timer::after {
+    content: "24";
+
+    top: 114px;
+    left: 80px;
+
+    font-size: 120px;
+    font-weight: 700;
+    line-height: 149.47px;
+  }
+
+  .features__facts-wrapper {
+    @include zero-margin-padding;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-left: 68px;
+    padding-top: 87px;
+    padding-bottom: 50px;
+    width: 100%;
   }
 
   .features__facts {
-    padding-top: 0;
-    padding-bottom: 66px;
+    @include zero-margin-padding;
+    padding-bottom: 62px;
 
     background-color: #f2f2f2;
   }
 
-  .features__facts-title {
-    margin-top: 94px;
-    margin-bottom: 23px;
+  .features__list-item-title {
+    @include zero-margin-padding;
+
+    margin-bottom: 25px;
+    padding-left: 1%;
     padding-right: 0;
+    width: 97%;
 
     color: #000000;
     font-size: 30px;
@@ -462,7 +494,14 @@
     line-height: 30px;
   }
 
+  .features__facts-title {
+    margin-top: 5px;
+    margin-bottom: 21px;
+    padding-right: 158px;
+  }
+
   .features__facts-description {
+    margin-top: 0;
     margin-bottom: 32px;
 
     font-size: 18px;

@@ -52,10 +52,10 @@ var showModalWindow = new function () {
   form.addEventListener("submit", function (evt) {
     if (!surname.value && !name.value && !email.value) {
       evt.preventDefault();
-      modalFailure.classList.add("modal-show");
+      modalFailure.classList.add("modal--show");
     } else {
       if (isStorageSupport) {
-        modalSuccess.classList.add("modal-show");
+        modalSuccess.classList.add("modal--show");
         evt.preventDefault();
         localStorage.setItem("name", name.value);
         localStorage.setItem("surname", surname.value);
@@ -67,23 +67,23 @@ var showModalWindow = new function () {
   // Раздел закрытия формы
   failureClose.addEventListener("click", function (evt) {
     evt.preventDefault();
-    modalFailure.remove("modal-show");
+    modalFailure.remove("modal--show");
   });
 
   successClose.addEventListener("click", function (evt) {
     evt.preventDefault();
-    modalSuccess.remove("modal-show");
+    modalSuccess.remove("modal--show");
   });
 
   // Отключение модального окна по esc
   window.addEventListener("keydown", function (evt) {
     if (evt.keyCode === 27) {
       evt.preventDefault();
-      if (modalFailure.classList.contains("modal-show")) {
-        modalFailure.classList.remove("modal-show");
+      if (modalFailure.classList.contains("modal--show")) {
+        modalFailure.classList.remove("modal--show");
       }
-      if (modalSuccess.classList.contains("modal-show")) {
-        modalSuccess.classList.remove("modal-show");
+      if (modalSuccess.classList.contains("modal--show")) {
+        modalSuccess.classList.remove("modal--show");
       }
     }
   });

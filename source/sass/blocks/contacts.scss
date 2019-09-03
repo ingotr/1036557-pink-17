@@ -6,16 +6,11 @@
   position: relative;
 }
 
-.contacts__container {
-  position: relative;
-}
-
 .contacts__wrapper {
   position: relative;
   width: 100%;
   min-height: 447px;
 
-  background-color: gray;
   background:
     linear-gradient(-10deg, transparent 55px, white 0) bottom right,
     linear-gradient(10deg, transparent 55px, white 0) bottom left;
@@ -25,17 +20,17 @@
   z-index: 10;
 }
 
-.contacts_list {
+.contacts__list {
   @include list-style-none;
 }
 
-.contacts_list__item {
-  margin-bottom: 8px;
+.contacts__item {
+  margin-bottom: 7px;
 
   text-align: center;
 }
 
-.contacts_list__item-link--mail {
+.contacts__link--mail {
   &:hover {
     color: $top-menu-bg-color;
     text-decoration: underline;
@@ -59,7 +54,7 @@
   text-align: center;
 }
 
-.contacts_list__item-title {
+.contacts__item-title {
   @include zero-margin-padding;
   padding-top: 18px;
   padding-bottom: 4px;
@@ -69,10 +64,11 @@
   font-weight: 700;
 }
 
-.contacts_list__item-link {
+.contacts__link {
   color: $contacts__link-color;
   font-size: 24px;
   font-weight: 300;
+  line-height: 28px;
 
   text-decoration: none;
 }
@@ -107,7 +103,7 @@
     background-image: url("../img/bg-map-tablet@1x.jpg");
     background-repeat: no-repeat;
     background-position: center;
-    background-size: cover;
+    background-size: 660px;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: url("../img/bg-map-tablet@2x.jpg");
@@ -119,10 +115,9 @@
     padding-bottom: 26px;
     width: 100%;
 
-    background-color: $top-menu-text-color;
     background:
-      linear-gradient(-12deg, transparent 72px, white 0) bottom right,
-      linear-gradient(12deg, transparent 72px, white 0) bottom left;
+      linear-gradient(-12deg, transparent 68px, white 0) bottom right,
+      linear-gradient(12deg, transparent 68px, white 0) bottom left;
     background-size: 51% 100%;
     background-repeat: no-repeat;
 
@@ -135,20 +130,21 @@
     margin-right: 120px;
     margin-left: 120px;
     padding-top: 40px;
-    padding-bottom: 27px;
+    padding-bottom: 29px;
+    width: 60%;
 
     font-size: 40px;
     font-weight: 300;
   }
 
-  .contacts_list {
+  .contacts__list {
     display: flex;
     flex-direction: row;
     justify-content: center;
     flex-wrap: wrap;
   }
 
-  .contacts_list__item-title {
+  .contacts__item-title {
     @include zero-margin-padding;
     margin-top: 0;
     margin-bottom: 8px;
@@ -156,20 +152,21 @@
     padding-bottom: 0;
   }
 
-  .contacts_list__item {
+  .contacts__item {
     margin-top: 3px;
-    margin-left: 58px;
-    margin-right: 40px;
-    margin-bottom: 16px;
+    margin-left: 52px;
+    margin-right: 51px;
+    margin-bottom: 12px;
     padding-bottom: 18px;
+    width: 33%;
   }
 
-  .contacts_list__item:last-child {
+  .contacts__item:last-child {
     margin-left: 40px;
     margin-bottom: 23px;
   }
 
-  .contacts_list__item-link {
+  .contacts__link {
     @include zero-margin-padding;
     display: block;
   }
@@ -179,7 +176,7 @@
     z-index: 1;
 
     width: 100%;
-    min-height: 795px;
+    min-height: 780px;
     margin: 0;
     padding: 0;
   }
@@ -202,55 +199,66 @@
 
   .contacts__title {
     margin-top: 0;
+    margin-bottom: 41px;
     padding-top: 0;
     padding-right: 70px;
     padding-left: 70px;
-    padding-bottom: 40px;
+    padding-bottom: 0;
+    width: 75%;
 
     font-size: 50px;
     font-weight: 300;
+    line-height: 60px;
   }
 
-  .contacts_list {
+  .contacts__list {
     width: 100%;
     justify-content: space-around;
-    padding-top: 7px;
+    padding-top: 0;
     padding-left: 9px;
   }
 
-  .contacts_list__item:last-child {
+  .contacts__item:last-child {
     @include zero-margin-padding;
   }
 
-  .contacts_list__item {
+  .contacts__item {
     @include zero-margin-padding;
     padding-bottom: 18px;
   }
 
-  .contacts_list__item-title {
+  .contacts__item-title {
     margin-bottom: 24px;
+    padding-left: 7px;
+    padding-right: 14px;
+    width: 93%;
   }
 
-  .contacts_list__item--mail {
+  .contacts__item--mail {
     order: 3;
   }
 
-  .contacts_list__item--adress {
+  .contacts__item--adress {
     order: 2;
   }
 
   .contacts__wrapper {
-    padding-top: 67px;
+    padding-top: 63px;
     padding-bottom: 0;
 
-    background-color: $top-menu-text-color;
     background:
-      linear-gradient(-10deg, transparent 95px, white 0) bottom right,
-      linear-gradient(10deg, transparent 95px, white 0) bottom left;
+      linear-gradient(-10deg, transparent 153px, white 0) bottom right,
+      linear-gradient(10deg, transparent 153px, white 0) bottom left;
     background-size: 51% 100%;
     background-repeat: no-repeat;
 
     z-index: 10;
+  }
+
+  .contacts__link {
+    width: 96%;
+
+    line-height: 30px;
   }
 
   .contacts__map {

@@ -6,7 +6,7 @@
   background-color: $top-menu-text-color;
 }
 
-.slider__list {
+.reviews__list {
   @include list-style-none;
   margin-bottom: 48px;
 }
@@ -44,7 +44,7 @@
   line-height: 30px;
 }
 
-.slider__toggle-container {
+.reviews__toggles-container {
   position: relative;
   margin-left: 7px;
   margin-right: 3px;
@@ -55,20 +55,20 @@
 
   cursor: pointer;
 
-  &:hover input ~ .slide__toggle-checkmark {
+  &:hover input ~ .reviews__toggles-checkmark {
     background-color: transparentize(#283645, 0.4);
   }
 
-  input:active ~ .slide__toggle-checkmark {
+  input:active ~ .reviews__toggles-checkmark {
     background-color: transparentize(#283645, 0.9);
   }
 
-  input:checked ~ .slide__toggle-checkmark::after {
+  input:checked ~ .reviews__toggles-checkmark::after {
     display: block;
   }
 }
 
-.slider__toggle {
+.reviews__toggles-dot {
   position: absolute;
   opacity: 0;
   cursor: pointer;
@@ -76,7 +76,7 @@
   width: 0;
 }
 
-.slide__toggle-checkmark {
+.reviews__toggles-checkmark {
   position: absolute;
   top: 0;
   left: 4px;
@@ -101,8 +101,8 @@
   }
 }
 
-.slider__prev,
-.slider__next {
+.reviews__arrow-prev,
+.reviews__arrow-next {
   display: none;
 }
 
@@ -140,8 +140,8 @@
     font-size: 18px;
   }
 
-  .slider__prev,
-  .slider__next {
+  .reviews__arrow-prev,
+  .reviews__arrow-next {
     display: none;
   }
 }
@@ -156,8 +156,12 @@
     background-color: transparent;
   }
 
-  .slider__prev,
-  .slider__next {
+  .reviews__list {
+    width: 100%;
+  }
+
+  .reviews__arrow-prev,
+  .reviews__arrow-next {
     display: block;
     position: absolute;
     top: 100px;
@@ -180,24 +184,26 @@
     }
   }
 
-  .slider__prev {
+  .reviews__arrow-prev {
     background-image: url("../img/icon-review-arrow-left.svg");
     background-repeat: no-repeat;
+    background-position: center;
 
     width: 22px;
     height: 41px;
-    top: 138px;
-    left: 121px;
+    top: 125px;
+    left: -16px;
   }
 
-  .slider__next {
+  .reviews__arrow-next {
     background-image: url("../img/icon-review-arrow-right.svg");
     background-repeat: no-repeat;
+    background-position: center;
 
     width: 22px;
     height: 41px;
-    top: 138px;
-    right: 27px;
+    top: 125px;
+    right: -16px;
   }
 
   .reviews__quotes-image {
@@ -212,8 +218,8 @@
 
   .reviews__description {
     padding-right: 127px;
-    padding-left: 127px;
-    margin-bottom: 34px;
+    padding-left: 123px;
+    margin-bottom: 37px;
   }
 
   .reviews__author {

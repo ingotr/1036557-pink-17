@@ -2,19 +2,29 @@
   $Раздел загрузки
 */
 .app-download {
+  margin-top: -79px;
   margin-bottom: 40px;
+  padding-top: 247px;
+  min-height: 462px;
 
-  background-color: $top-menu-bg-color;
-}
+  background-color: #2a3a4a;
+  background-image: url("../img/iphone-hand-mobile@1x.png"), url("../img/bg-back-mobile@1x.jpg");
+  background-repeat: no-repeat, no-repeat;
+  background-size: 260px 286px, 100% 455px;
+  background-position: -1px 180px, 0 4%;
 
-.container-app {
-  align-items: flex-start;
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../img/iphone-hand-mobile@2x.png"),
+      url("../img/bg-back-mobile@2x.jpg");
+  }
 }
 
 .app-download__wrapper {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-top: 72%;
+  width: 100%;
 
   z-index: 1;
 }
@@ -25,13 +35,8 @@
   text-align: center;
 }
 
-.button {
-  text-decoration: none;
-  text-align: center;
-}
-
 .app-download__button {
-  margin-top: 28px;
+  margin-top: 17px;
   margin-right: 15px;
   margin-bottom: 20px;
   margin-left: 15px;
@@ -59,24 +64,23 @@
   }
 }
 
-.app-list {
-  @include list-style-none;
-}
-
 .app-download__list {
+  @include list-style-none;
+
   display: flex;
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
-  min-width: 240px;
   margin-bottom: 5px;
   padding-top: 12px;
+  min-width: 240px;
 }
 
 .app-download__description {
-  margin-bottom: 32px;
+  margin-bottom: 29px;
   padding-right: 20px;
   padding-left: 20px;
+  width: 90%;
 
   color: $top-menu-text-color;
   font-size: 14px;
@@ -88,8 +92,8 @@
 @media (min-width: $tablet-width) {
   .app-download {
     margin-top: -21%;
-    padding-top: 16%;
-    padding-left: 20px;
+    padding-top: 117px;
+    padding-left: 0;
     padding-right: 20px;
 
     background-color: #2a3a4a;
@@ -104,21 +108,8 @@
     }
   }
 
-  .container-app {
-    padding-top: 93px;
-    padding-bottom: 78px;
-
-    background-image: url("../img/iphone-hand-tablet@1x.png");
-    background-repeat: no-repeat;
-    background-size: 700px 547px;
-    background-position: -20px 71px;
-
-    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-      background-image: url("../img/iphone-hand-tablet@2x.png");
-    }
-  }
-
   .app-download__wrapper {
+    margin-top: 89px;
     width: 340px;
 
     background-color: transparent;
@@ -126,11 +117,11 @@
 
   .app-download__title {
     @include zero-margin-padding;
-    margin-bottom: 34px;
-    padding-left: 64px;
-    padding-right: 63px;
 
     display: block;
+    margin-bottom: 34px;
+    width: 60%;
+
     color: $top-menu-text-color;
     font-size: 40px;
     font-weight: 300;
@@ -161,12 +152,11 @@
 @media (min-width: $desktop-width) {
   .app-download {
     @include zero-margin-padding;
-    margin-top: -12%;
+    margin-top: -22%;
     margin-bottom: 56px;
-    padding-top: 12%;
+    padding-top: 17%;
 
     background-color: #2a3a4a;
-
     background-image: url("../img/bg-back-desktop@1x.jpg");
     background-repeat: no-repeat;
     background-size: cover;
@@ -177,41 +167,32 @@
     }
   }
 
-  .container-app {
-    padding-top: 105px;
-    padding-left: 0;
-    padding-bottom: 90px;
-
-    background-image: url("../img/iphone-hand-desktop@1x.png");
-    background-repeat: no-repeat;
-    background-size: 1050px 645px;
-    background-position: 21px bottom;
-
-    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-      background-image: url("../img/iphone-hand-desktop@2x.png");
-    }
-  }
-
   .app-download__wrapper {
+    @include zero-margin-padding;
+    padding-top: 167px;
+    padding-left: 0;
+    padding-bottom: 93px;
     width: $tablet-width / 2;
+    align-items: flex-start;
 
     background-color: transparent;
   }
 
   .app-download__title {
-    margin-bottom: 53px;
-    padding-left: 48px;
-    padding-right: 63px;
+    @include zero-margin-padding;
+
+    margin-bottom: 52px;
+    width: 91%;
 
     font-size: 50px;
-    line-height: 59px;
+    line-height: 60px;
   }
 
   .app-download__button {
     @include zero-margin-padding;
 
     align-self: flex-start;
-    margin-left: 5px;
+    margin-left: 0;
     margin-bottom: 55px;
     padding-bottom: 17px;
     padding-left: 29px;
@@ -225,14 +206,15 @@
 
   .app-download__list {
     justify-content: space-between;
+    align-self: center;
     align-items: flex-end;
     box-sizing: border-box;
-    min-width: 229px;
     margin-bottom: 36px;
     padding-left: 0;
     padding-top: 10px;
-    padding-right: 23px;
+    padding-right: 32px;
     padding-bottom: 1px;
+    min-width: 238px;
   }
 
   .app-download__description {

@@ -3,11 +3,12 @@
 */
 
 @import "normalize";
-@import "fonts";
 @import "variables";
+@import "fonts";
 @import "mixins";
-@import "outlines";
 @import "visually-hidden";
+@import "core";
+@import "container";
 @import "blocks/page-header.scss";
 @import "blocks/main-nav";
 @import "blocks/app-download";
