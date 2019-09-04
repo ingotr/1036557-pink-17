@@ -192,6 +192,14 @@
   .modal--success {
     height: 427px;
   }
+
+  .modal--show {
+    display: block;
+
+    animation-name: appear;
+    animation-duration: 500ms;
+    animation-timing-function: linear;
+  }
 }
 
 @media (min-width: $desktop-width) {
@@ -273,5 +281,13 @@
 
   .modal--success {
     height: 377px;
+  }
+
+  .modal--show {
+    display: block;
+
+    animation-name: appear;
+    animation-duration: 500ms;
+    animation-timing-function: linear;
   }
 }

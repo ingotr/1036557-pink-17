@@ -25,13 +25,23 @@ navBurger.addEventListener("click", function () {
   }
 });
 
-function showModalWindow () {
+try {
+  var form = document.querySelector(".contest-form__main-form");
+} catch(err) {
+  form = null;
+};
+
+if (form) {
+  showModalWindow();
+};
+
+function showModalWindow() {
   // Обязательные поля для формы
-  let form = document.querySelector(".contest-form__main-form");
-  let modalSuccess = document.querySelector(".modal--success");
+
   let modalFailure = document.querySelector(".modal--failure");
-  let failureClose = document.querySelector(".modal__button-failure-close");
-  let successClose = document.querySelector(".modal__button-success-close");
+  let modalSuccess = document.querySelector(".modal--success");
+  let failureClose = modalFailure.querySelector(".modal__button-failure-close");
+  let successClose = modalSuccess.querySelector(".modal__button-success-close");
 
   let formSubmitBtn = document.querySelector(".form-button--submit");
 
@@ -78,12 +88,4 @@ function showModalWindow () {
       }
     }
   });
-};
-
-try {
-  if (document.contains()) {
-    showModal();
-  }
-} catch (err) {
-  isPageHasForm = false;
 };
